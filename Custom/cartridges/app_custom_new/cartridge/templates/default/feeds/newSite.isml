@@ -119,8 +119,8 @@ btn.addEventListener('click', async () => {
             'Invoke-Expression "npm i -D sass"\n' +
             'Invoke-Expression "npm i --force"\n' +
             'Invoke-Expression "rm dw.json"\n' +
-            'Invoke-Expression "Copy-Item -Path "..\\\..\dw.json" -Destination "."\n' +
-            'Invoke-Expression "sgmf-scripts --uploadCartridge app_custom_' + givenId +'"\n'
+            `Invoke-Expression "Copy-Item -Path '..\\\dw.json' -Destination '.\\\dw.json'"\n` +
+            'Invoke-Expression "sgmf-scripts --uploadCartridge app_custom_' + givenId + '"\n'
     
   var file = new Blob([data], {type: "text/plain"});
   var fileUrl = URL.createObjectURL(file);
