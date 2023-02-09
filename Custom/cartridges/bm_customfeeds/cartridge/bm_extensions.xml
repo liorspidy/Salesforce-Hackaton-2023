@@ -39,4 +39,26 @@
 		<icon>icons/createAsite.gif</icon>
 	</menuaction>
 
+
+	<menuaction id="createSite" menupath="custom-integration" position="101" site="false">
+		<name xml:lang="x-default">Create a new site</name>
+		<short_description xml:lang="x-default">
+			Create a new site
+		</short_description>
+		<description xml:lang="x-default">
+			Click here to create a new site
+		</description>
+		<!-- no icon specified -->
+		<exec pipeline="BMCreateNewSite" node="Start" />
+		<sub-pipelines>
+			<pipeline name="BMCreateNewSite-Start" />
+			<pipeline name="BMCreateNewSite-Handle" />
+		</sub-pipelines>
+		<parameters>
+			<parameter name="menuname" value="Custom Feeds" />
+			<parameter name="mainmenuname" value="Integration" />
+			<parameter name="test" value="222" />
+		</parameters>
+		<icon>icons/createAsite.gif</icon>
+	</menuaction>
 </extensions>
