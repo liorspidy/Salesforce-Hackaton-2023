@@ -52,7 +52,11 @@
     }
 </style>
 
+
+
 <isdecorate template="application/MenuFrame">
+
+
     <div class="main-container">
         <h1>Create a new site</h1>
         <a href="https://google.com" class="manual-link" target="_blank">Create a site manually</a>
@@ -82,10 +86,49 @@
                     <label for="secondaryColor">Choose Secondary Color</label>
                     <input id="secondaryColor" name="secondaryColor" type="color" />
                 </div>
+
                 <div class="btn-container">
-                    <button type="submit">Create Site</button>
+                    <button type="button">Create Site</button>
                 </div>
             </form>
         </div>
     </div>
 </isdecorate>
+
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+
+
+const btn = document.querySelector('.btn-container button')
+const inputField = document.getElementById('siteName')
+
+
+
+btn.addEventListener('click', async () => {
+  var givenId = inputField.value;
+
+
+    var data = 
+            'Invoke-Expression "mkdir ' + givenId + '"\n' +
+            'Invoke-Expression "cd ' + givenId + '"\n' +
+            'Invoke-Expression "npm install -g sgmf-scripts --save-dev"\n' +
+            'Invoke-Expression "sgmf-scripts --createCartridge app_custom_' + givenId + '"\n' +
+            'Invoke-Expression "npm uninstall node-sass"\n' +
+            'Invoke-Expression "npm i -D sass"\n' +
+            'Invoke-Expression "npm i --force"\n' +
+            'Invoke-Expression "sgmf-scripts --uploadCartridge app_custom_' + givenId +'"\n'
+    
+  var file = new Blob([data], {type: "text/plain"});
+  var fileUrl = URL.createObjectURL(file);
+
+  var a = document.createElement("a");
+  a.href = fileUrl;
+  a.download = "my_new_" + givenId + "_site.ps1";
+  a.click();
+
+  console.log(data)
+  })
+});
+</script>
