@@ -1,5 +1,11 @@
 <isdecorate template="application/ExtJS5ApplicationFrame.isml">
 
+    <iscomment>
+        <isscript>
+                var assets = require('*/cartridge/scripts/assets.js');
+                assets.addCss('/css/mysitelist.css');
+            </isscript>
+    </iscomment>
 
     <style>
         html {
@@ -8,9 +14,10 @@
         }
 
         .title {
-            color: green;
-            font-weigt: bold;
-            margin: 3rem;
+            color: black;
+            font-weight: bold;
+            font-size: 2rem;
+            margin: 1rem;
         }
 
         .tableContent {
