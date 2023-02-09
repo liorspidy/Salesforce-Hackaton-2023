@@ -1,0 +1,42 @@
+{
+  "name": "Blog Post",
+  "description": "Singular Blog Post With Description",
+  "group": "maytronics_custom",
+  "attribute_definition_groups": [
+      {
+        "id": "imageBanner",
+        "name": "Image Banner",
+        "description": "Image Banner",
+        "attribute_definitions": [
+            {
+                "id": "image",
+                "name": "Banner Image",
+                "description": "The image shown by the banner.",
+                "type": "file",
+                "required": true
+            },
+            {
+                "id": "alt",
+                "name": "Banner Image Alt Text",
+                "description": "The image alt text shown by the banner.",
+                "type": "string",
+                "required": false
+            },
+            {
+               "id": "headline",
+               "name": "Headline",
+               "type": "string",
+               "required": true
+            },
+            {
+               "id": "text",
+               "name": "Text Overlay",
+               "type": "markup",
+               "required": false
+            }
+        ]
+      }
+
+  ],
+  "region_definitions": []
+}

@@ -1,0 +1,71 @@
+.mainComponent-container {
+    text-align: -webkit-center;
+}
+.componentContainer {
+    padding: 36px;
+    margin: 2rem auto;
+    border-radius: 30px;
+    box-shadow: 0 0 45px 4px rgb(0 0 0 / 10%);
+    max-width: 1380px;
+}
+
+.box {
+    display: flex;
+    /* place-content: center; */
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap-reverse;
+}
+
+.text-box {
+    inline-size: 500px;
+    overflow-wrap: break-word;
+    margin-top: 2rem;
+    margin-left: 1rem;
+}
+
+.text {
+    margin: 14px 90px 0px 0;
+    font-size: 0.8rem;
+    text-align: left;
+    width: 100%;
+    p {
+        margin-bottom: 2.5rem;
+    }
+}
+.imagePageDesigner {
+    width: 602px;
+    height: 511px;
+    border-radius: 30px;
+}
+
+.headlineContent {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.leftSide-headline {
+    color: black;
+    margin-right: 12px;
+    font-size: 3.125rem;
+    font-weight: bold;
+}
+
+.fullheadline {
+    color: rgb(163, 163, 163);
+    font-size: 3.125rem;
+    text-align: left;
+    font-weight: bold;
+}
+
+.customBtn {
+    border-radius: 1.875rem;
+    width: 10rem;
+    height: 3rem;
+    font-weight: bold;
+    background-color: black;
+    font-size: 0.9rem;
+    box-shadow: 0 0 20px 8px rgb(0 0 0 / 12%);
+    float: left;
+}

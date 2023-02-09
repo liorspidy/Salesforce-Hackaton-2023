@@ -1,0 +1,30 @@
+{
+  "name": "Divided Headline",
+  "description": "A Divided Headline In Grey And Black",
+  "group": "maytronics_custom",
+  "attribute_definition_groups": [
+      {
+        "id": "headline",
+        "name": "Headline",
+        "description": "Grey and black headline",
+        "attribute_definitions": [
+            {
+                "id": "headline1",
+                "name": "Grey Headline",
+                "description": "The grey headline.",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "headline2",
+                "name": "Other Headline",
+                "description": "The rest of the headline in black.",
+                "type": "string",
+                "required": false
+            }
+        ]
+      }
+
+  ],
+  "region_definitions": []
+}

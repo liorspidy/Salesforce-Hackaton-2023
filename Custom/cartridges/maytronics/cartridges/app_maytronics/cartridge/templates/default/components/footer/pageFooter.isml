@@ -1,0 +1,110 @@
+<isscript>
+        var assets = require('*/cartridge/scripts/assets.js');
+        assets.addCss('/css/footer.css');
+</isscript>
+
+<footer id="footercontent" class="footer w-100">
+    <div class="container">
+        <div class="footer-container row">
+            <div class="col-12">
+
+
+
+
+
+
+                <div class="footer-item logo border-0 my-4">
+                    <div class="content-asset">
+                        <iscontentasset aid="logo" />
+
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer-item col-lg-3   ">
+                <div class="footer-item newsletter-footer border-0 mb-4">
+
+                    <form action="${URLUtils.url('SrvNewsletter-HandleForm')}" method="POST">
+                        <label for="newsletter" class="fs-16 lh-16  font-weight-bold">Join Our Newsletter</label>
+                        <p class="newsletter-desc fs-11 lh-17 text-secondary-black">Yes, I'd like to receive promotions
+                            and updates to my email </p>
+                        <div class="">
+                            <div <isif condition=" ${pdict.newsletterForm.fname.mandatory === true}">required</isif>">
+
+                                <input type="text" class="form-control rounded-pill my-3 border-dark" id="fname"
+                                    placeholder="First Name" <isprint value="${pdict.newsletterForm.fname.attributes}"
+                                    encoding="off" />
+                                <div class="invalid-feedback"></div>
+                            </div>
+
+
+                            <div <isif condition=" ${pdict.newsletterForm.lname.mandatory === true}">required</isif>">
+
+                                <input type="text" class="form-control rounded-pill my-3 border-dark"
+                                    placeholder="Last Name" id="lname" <isprint
+                                    value="${pdict.newsletterForm.lname.attributes}" encoding="off" />>
+                                <div class="invalid-feedback"></div>
+                            </div>
+
+                            <div <isif condition=" ${pdict.newsletterForm.email.mandatory === true}">required</isif>">
+
+
+                                <iscomment> follow this example to complete your code </iscomment>
+                                <input type="text" class="form-control rounded-pill my-3 border-dark" id="email"
+                                    placeholder="Email" <isprint value="${pdict.newsletterForm.email.attributes}"
+                                    encoding="off" />>
+                                <div class="invalid-feedback"></div>
+                                <isif condition="${pdict.emailerror != null}">
+                                    <h3>${pdict.emailerror}</h3>
+                                </isif>
+                            </div>
+
+
+                            <button type="submit" name="subscribe"
+                                class="btn btn-save btn-block btn-dark my-4 rounded-pill">${Resource.msg('Submit', 'locale', null)}</button>
+                        </div>
+
+
+
+                </div>
+
+
+                </form>
+                <div class="footer-item col-sm-2  store mx-2  ">
+                    <iscontentasset aid="products" />
+                </div>
+                <div class="footer-item col-sm-2 collapsible-xs mx-2 ">
+                    <iscontentasset aid="corporate" />
+                </div>
+                <div class="footer-item col-sm-2 collapsible-xs mx-2 ">
+                    <iscontentasset aid="support" />
+                </div>
+                <div class="footer-item col-sm-2 collapsible-xs mx-2 ">
+
+                    <iscontentasset aid="partners_dealers" />
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 col-sm-5 push-sm-7 push-lg-8 social">
+                    <isslot id="footer-column-m" description="Content in column 1 of the Footer" context="global" />
+                    <iscomment> <button class="back-to-top"
+                            title="${Resource.msg('button.back_to_top', 'common', null)}"
+                            aria-label="${Resource.msg('button.back_to_top', 'common', null)}">
+                            <span class="fa-stack fa-lg" aria-hidden="true">
+                                <i class="fa fa-circle fa-inverse fa-stack-2x"></i>
+                                <i class="fa fa-arrow-up fa-stack-1x"></i>
+                            </span>
+                        </button> </iscomment>
+                </div>
+                <iscomment>
+                    <div class="col-lg-8 col-sm-7 pull-sm-5 pull-lg-4 copyright-notice">
+                        <iscontentasset aid="footer-copy" />
+                    </div>
+                </iscomment>
+            </div>
+        </div>
+    </div>
+</footer>

@@ -1,0 +1,91 @@
+{
+    "name": "imageWithText",
+    "description": "Middle Banner with Store Locator",
+    "group": "maytronics_custom",
+    "attribute_definition_groups": [
+        {
+          "id": "imageBanner",
+          "name": "Image Banner",
+          "description": "Image Banner",
+          "attribute_definitions": [
+              {
+                  "id": "image",
+                  "name": "Banner Image",
+                  "description": "The image shown by the banner.",
+                  "type": "file",
+                  "required": true
+              },
+              {
+                  "id": "alt",
+                  "name": "Banner Image Alt Text",
+                  "description": "The image alt text shown by the banner.",
+                  "type": "string",
+                  "required": true
+              }
+             
+          ]
+        },
+        {
+            "id": "headline",
+            "name": "text headline",
+            "description": "headline",
+            "attribute_definitions": [
+                {
+                    "id": "leftHeadline",
+                    "name": "leftHeadline",
+                    "description": "the left side of headline",
+                    "type": "string",
+                    "required": true
+                },
+                {
+                    "id": "rightHeadline",
+                    "name": "rightHeadline",
+                    "description": "the left side of headline",
+                    "type": "string",
+                    "required": true
+                }
+               
+            ]
+          },
+          {
+            "id": "mainText",
+            "name": "text",
+            "description": "main text",
+            "attribute_definitions": [
+                {
+                    "id": "mainText",
+                    "name": "main_text",
+                    "description": "main text",
+                    "type": "markup",
+                    "required": true
+                }
+               
+            ]
+          },
+          {
+            "id": "btn",
+            "name": "btn",
+            "description": "button",
+            "attribute_definitions": [
+                {
+                    "id": "btnName",
+                    "name": "btnName",
+                    "description": "text on btn",
+                    "type": "string",
+                    "required": true
+                },
+                {
+                    "id": "btnLink",
+                    "name": "btnLink",
+                    "description": "path url link",
+                    "type": "string",
+                    "required": true
+                }
+               
+            ]
+          }
+       
+  
+    ],
+    "region_definitions": []
+  }

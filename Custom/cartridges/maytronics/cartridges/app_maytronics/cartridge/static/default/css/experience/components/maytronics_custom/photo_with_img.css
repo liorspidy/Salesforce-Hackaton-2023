@@ -1,0 +1,12 @@
+.ITC-image {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row-reverse;
+      flex-direction: row-reverse;
+}
+
+.customImg {
+  width: 650px !important;
+  height: 650px !important;
+  border-radius: 127px !important;
+}

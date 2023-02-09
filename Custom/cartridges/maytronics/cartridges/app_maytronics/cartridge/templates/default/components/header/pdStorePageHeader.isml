@@ -1,0 +1,224 @@
+<header>
+    <isinclude template="/components/header/skipNav" />
+    <isif condition="${pdict.regions.headerbanner}">
+        <!-- Campaign Banner Component renders here -->
+        <isprint value="${pdict.regions.headerbanner.render()}" encoding="off" />
+    </isif>
+    <div class="top-header">
+        <div class="container px-lg-0">
+            <nav class="navbar navbar-expand navbar-dark bg-body px-lg-0">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="globe" aria-hidden="true"></i>
+                                <span>Global</span>
+                            </a>
+                            <div class="dropdown-menu">
+                                <div class="container">
+
+
+
+                                    <div class="content-asset">
+                                        <!-- dwMarker="content" dwContentID="c89a81fcd3c661a4653c5fbd1c" -->
+                                        <div class="row no-gutters">
+                                            <div class="col-12 col-md-2">
+                                                <ul class="menu-items list-unstyled">
+                                                    <li class="menu-item"> <a href="https://global.maytronics.com/"
+                                                            target="_blank" title="Global - English">Global -
+                                                            English</a>
+
+                                                    </li>
+                                                    <li class="menu-item"> <a href="https://www.maytronics.com.au/"
+                                                            target="_blank" title="Australia - English">Australia -
+                                                            English</a>
+
+                                                    </li>
+                                                    <li class="menu-item"> <a href="https://www.maytronics.com/en-ca/"
+                                                            title="Canada - English">Canada - English</a>
+
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-12 col-md-2">
+                                                <ul class="menu-items list-unstyled">
+                                                    <li class="menu-item"> <a href="https://www.robot-dolphin.fr/"
+                                                            target="_blank" title="France - Français">France -
+                                                            Français</a>
+
+                                                    </li>
+                                                    <li class="menu-item"> <a href="https://www.maytronics.com.de/"
+                                                            target="_blank" title="Germany - Deutsch">Germany -
+                                                            Deutsch</a>
+
+                                                    </li>
+                                                    <li class="menu-item"> <a href="https://www.maytronics.co.il/"
+                                                            target="_blank" title="Israel - Hebrew">Israel - Hebrew</a>
+
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-12 col-md-2">
+                                                <ul class="menu-items list-unstyled">
+                                                    <li class="menu-item"> <a href="https://www.maytronics.it/"
+                                                            target="_blank" title="Italy - Italiano">Italy -
+                                                            Italiano</a>
+
+                                                    </li>
+                                                    <li class="menu-item"> <a href="https://maytronicsla.com/site/"
+                                                            target="_blank" title="Latin America - Español">Latin
+                                                            America - Español</a>
+
+                                                    </li>
+                                                    <li class="menu-item"> <a href="https://www.maytronics.com.es/"
+                                                            target="_blank" title="Spain - Español">Spain - Español</a>
+
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-12 col-md-2">
+                                                <ul class="menu-items list-unstyled">
+                                                    <li class="menu-item"> <a href="https://www.maytronics.com/en-us/"
+                                                            title="USA - English">USA -
+                                                            English</a>
+
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div> <!-- End content-asset -->
+
+
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="qrcode" aria-hidden="true"></i>
+                                <span>Corporate</span>
+                            </a>
+                            <div class="dropdown-menu corporate" aria-labelledby="navbarDropdown">
+                                <a class="nav-link-mobile dropdown-toggle d-flex d-md-none" href="#" id="navbarDropdown"
+                                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="/on/demandware.static/Sites-MTNA-Site/-/default/dwfcf700eb/images/icon-corporate.svg"
+                                        alt="">
+                                    <span>Corporate</span>
+                                </a>
+                                <div class="container">
+
+
+                                    <div class="content-asset">
+                                        <!-- dwMarker="content" dwContentID="419f89dd428e0f820325a0865b" -->
+                                        <div class="row no-gutters">
+                                            <div class="col-12 col-md-2">
+                                                <ul class="menu-items list-unstyled">
+                                                    <li class="menu-item"><a
+                                                            href="https://global.maytronics.com/about-us"
+                                                            target="_blank" title="About Us">About Us</a></li>
+                                                    <li class="menu-item"><a href="https://blog.maytronics.com/en-us/"
+                                                            target="_blank" title="Blog">Blog</a></li>
+                                                    <li class="menu-item"><a
+                                                            href="https://sustainability.maytronics.com/"
+                                                            target="_blank" title="Sustainability">Sustainability</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="col-12 col-md-2">
+                                                <ul class="menu-items list-unstyled">
+                                                    <li class="menu-item"><a
+                                                            href="https://global.maytronics.com/investors"
+                                                            target="_blank" title="Investors">Investors</a></li>
+                                                    <li class="menu-item"><a
+                                                            href="https://global.maytronics.com/management"
+                                                            target="_blank" title="Management">Management</a></li>
+                                                    <li class="menu-item"><a
+                                                            href="https://global.maytronics.com/directors"
+                                                            target="_blank" title="Directors">Directors</a></li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="col-12 col-md-2">
+                                                <ul class="menu-items list-unstyled">
+                                                    <li class="menu-item"><a
+                                                            href="https://global.maytronics.com/about-us/maytronics-history"
+                                                            target="_blank" title="Maytronics History">Maytronics
+                                                            History</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div> <!-- End content-asset -->
+
+
+
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="briefcase" aria-hidden="true"></i>
+                                <span>Partners</span>
+                            </a>
+                            <div class="dropdown-menu partners" aria-labelledby="navbarDropdown">
+                                <a class="nav-link-mobile dropdown-toggle d-flex d-md-none" href="#" id="navbarDropdown"
+                                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="/on/demandware.static/Sites-MTNA-Site/-/default/dw996d9172/images/icon-partners.svg"
+                                        alt="">
+                                    <span>Partners</span>
+                                </a>
+                                <div class="container">
+
+
+                                    <div class="content-asset">
+                                        <!-- dwMarker="content" dwContentID="d5f2c4e91640ffe4727c5b2643" -->
+                                        <div class="row no-gutters">
+                                            <div class="col-12 col-md-2">
+                                                <ul class="menu-items list-unstyled">
+                                                    <li class="menu-item"><a
+                                                            href="https://mpp.maytronicsus.com/ausers/login_2?ReturnUrl=%2f"
+                                                            target="_blank" title="Partner Portal">Partner Portal</a>
+                                                    </li>
+                                                    <li class="menu-item"><a
+                                                            href="https://www.maytronics.com/en-us/dealers-and-distributors.html"
+                                                            title="Dealers and Distributors">Dealers and
+                                                            Distributors</a>
+                                                    </li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div> <!-- End content-asset -->
+
+
+
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item find-store">
+                            <a class="nav-link find-store" href="${URLUtils.url('Stores-Find')}" role="button">
+                                <i class="map-marker" aria-hidden="true"></i>
+                                <span>Find a Store</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="main-header my-auto">
+        <div class="container">
+
+            <div class="row">
+                <isinclude url="${URLUtils.url('Page-IncludeHeaderMenu')}" />
+            </div>
+
+        </div>
+
+    </div>
+</header>

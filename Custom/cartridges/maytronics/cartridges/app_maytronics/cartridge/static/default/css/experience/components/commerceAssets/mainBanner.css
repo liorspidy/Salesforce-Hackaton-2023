@@ -1,0 +1,10 @@
+.main-banner-image {
+  position: relative !important;
+}
+.main-banner-image .main-header-text {
+  position: absolute;
+  text-align: center;
+  top: 7%;
+  left: 50%;
+  transform: translate(-50%, 7%);
+}

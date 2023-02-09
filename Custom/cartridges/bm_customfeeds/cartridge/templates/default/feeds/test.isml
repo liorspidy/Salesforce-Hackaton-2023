@@ -1,0 +1,70 @@
+<isdecorate template="application/ExtJS5ApplicationFrame.isml">
+
+
+    <style>
+        html {
+
+            font-family: sans-serif;
+        }
+
+        .title {
+            color: green;
+            font-weigt: bold;
+            margin: 3rem;
+        }
+
+        .tableContent {
+            border-collapse: collapse;
+            width: 40%;
+            margin: 2rem 1rem;
+        }
+
+        .tableHeads,
+        .tableData {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+
+        .btn {
+            width: 5rem;
+            height: 2rem;
+            font-size: 1.2rem;
+            color: white;
+            border-radius: 5px;
+            background-color: black;
+            cursor: pointer;
+            margin: 2rem 1rem;
+        }
+
+        .btn:hover {
+            background-color: #333;
+        }
+
+        .tableHeads {
+            background-color: darkgray;
+        }
+    </style>
+
+    <h1 class="title">My Sites</h1>
+    <table class="tableContent">
+        <tr>
+            <th class="tableHeads">ID</th>
+            <th class="tableHeads">Name</th>
+        </tr>
+        <isloop items="${pdict.sites}" var="site" status="loopstatus">
+            <tr>
+                <td class="tableData">
+                    <a target="_blank"
+                        href="https://${site.httpsHostName}/on/demandware.store/Sites-${site.id}-Site">${site.id}</a>
+                </td>
+                <td class="tableData">${site.name}</td>
+            </tr>
+        </isloop>
+    </table>
+    <button onclick="window.history.back()" class="btn">
+        Return
+    </button>
+
+
+</isdecorate>

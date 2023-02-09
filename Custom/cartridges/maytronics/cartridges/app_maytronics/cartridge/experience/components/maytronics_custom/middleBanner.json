@@ -1,0 +1,64 @@
+{
+  "name": "Middle Banner",
+  "description": "Middle Banner with Store Locator",
+  "group": "maytronics_custom",
+  "attribute_definition_groups": [
+      {
+        "id": "imageBanner",
+        "name": "Image Banner",
+        "description": "Image Banner",
+        "attribute_definitions": [
+            {
+                "id": "image",
+                "name": "Banner Image",
+                "description": "The image shown by the banner.",
+                "type": "file",
+                "required": true
+            },
+            {
+                "id": "alt",
+                "name": "Banner Image Alt Text",
+                "description": "The image alt text shown by the banner.",
+                "type": "string",
+                "required": true
+            }
+        ]
+      },
+      {
+        "id": "textOverlay",
+        "name": "Text Overlay",
+        "description": "The overlay text on top of the banner image.",
+        "attribute_definitions": [
+          {
+            "id": "heading",
+            "name": "Heading",
+            "type": "markup",
+            "required": true
+          }
+        ]
+      },
+      {
+        "id": "category",
+        "name": "Category",
+        "description": "Specify the Category to be Displayed.",
+        "attribute_definitions": [
+            {
+                "id": "category",
+                "name": "Category",
+                "description": "Select Category to be displayed.",
+                "type": "category",
+                "required": true
+            },
+            {
+                "id": "catDisplayName",
+                "name": "Custom Display Name",
+                "description": "Overwrite the category name if needed.",
+                "type": "string",
+                "required": false
+            }
+        ]
+    }
+
+  ],
+  "region_definitions": []
+}

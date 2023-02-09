@@ -1,0 +1,14 @@
+.dividedHeadline {
+  width: 100%;
+  color: black;
+  margin-top: 2rem;
+}
+
+.headlineContent {
+  font-weight: bold;
+  font-size: 2.7rem;
+}
+
+.greyHeadline {
+  color: #acacac;
+}

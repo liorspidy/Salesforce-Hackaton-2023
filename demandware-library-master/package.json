@@ -1,0 +1,34 @@
+{
+  "name": "demandware-library",
+  "version": "1.7.0",
+  "description": "The Demandware library contains all shared code for various demandware community projects.",
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {
+    "app-module-path": "^1.0.4",
+    "chai": "^3.4.1",
+    "dw-api-mock": "git+ssh://git@bitbucket.org/demandware/dw-api-mock.git",
+    "istanbul": "^0.4.1",
+    "mocha": "^2.3.4",
+    "proxyquire": "^1.7.3",
+    "sinon": "^1.17.2",
+    "sinon-chai": "^2.8.0",
+    "xunit-file": "0.0.7"
+  },
+  "scripts": {
+    "test": "mocha test/*",
+    "coverage": "istanbul cover ./node_modules/mocha/bin/_mocha"
+  },
+  "keywords": [
+    "demandware-library"
+  ],
+  "author": "Demandware Client Services",
+  "license": "GPL-3.0",
+  "homepage": "https://bitbucket.org/demandware/demandware-library/",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/demandware/demandware-library.git"
+  }
+}
