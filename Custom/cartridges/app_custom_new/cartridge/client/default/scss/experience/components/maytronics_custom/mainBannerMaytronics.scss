@@ -1,0 +1,18 @@
+.main-banner-image{
+    width: 100%;
+    position: relative ;
+
+    img{
+        width: 100%;
+    }
+
+    .main-header-text {
+        position: absolute ;
+        text-align: center ;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, 10%);
+        color: white;
+    }
+}
+

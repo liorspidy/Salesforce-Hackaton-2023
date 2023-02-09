@@ -73,5 +73,7 @@
         Return
     </button>
 
-
+    <iscomment>
+        <isinclude url="${URLUtils.url('BMCustomFeeds-Preview')}" />
+    </iscomment>
 </isdecorate>

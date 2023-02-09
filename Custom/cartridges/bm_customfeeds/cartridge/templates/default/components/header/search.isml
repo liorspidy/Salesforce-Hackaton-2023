@@ -1,0 +1,3 @@
+<div class="search-mobile d-sm-none">
+    <isinclude template="components/header/search" />
+</div>

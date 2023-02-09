@@ -1,0 +1,17 @@
+<isscript>
+        var assets = require('*/cartridge/scripts/assets.js');
+        assets.addCss('/css/experience/components/commerceAssets/blogPost.css');
+</isscript>
+
+
+<div class="blogPost">
+    <div class="blogImage">
+        <img class="image" src="${pdict.imgUrl}" alt="${pdict.imgAlt}">
+    </div>
+    <div class="blogContent">
+        <h1 class="blogHeadline">${pdict.headline}</h1>
+        <span class="blogtext">
+            <isprint value="${pdict.text}" encoding="off" />
+        </span>
+    </div>
+</div>
