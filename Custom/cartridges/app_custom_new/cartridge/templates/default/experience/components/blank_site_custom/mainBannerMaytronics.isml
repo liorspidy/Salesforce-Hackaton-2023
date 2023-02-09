@@ -1,6 +1,6 @@
 <isscript>
     var assets = require('*/cartridge/scripts/assets.js');
-    assets.addCss('/css/experience/components/maytronics_custom/mainBannerMaytronics.css');
+    assets.addCss('/css/experience/components/blank_site_custom/mainBannerMaytronics.css');
 </isscript>
 
 <div class="main-banner-image">
