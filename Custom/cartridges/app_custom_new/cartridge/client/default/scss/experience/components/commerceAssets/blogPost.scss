@@ -1,0 +1,28 @@
+.blogPost {
+    margin: 1rem 0;
+    margin-bottom: 3rem;
+}
+
+.image {
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.blogHeadline {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.blogContent {
+    margin: 1rem 0;
+    width: 85%;
+    text-align: left;
+    font-size: 0.85rem;
+    strong {
+        color: black;
+        text-decoration: none;
+    }
+}
