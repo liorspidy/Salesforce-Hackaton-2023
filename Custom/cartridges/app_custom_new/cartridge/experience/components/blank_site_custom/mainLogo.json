@@ -1,0 +1,30 @@
+{
+    "name": "main logo",
+    "description": "Main logo",
+    "group": "blank_site_custom",
+    "attribute_definition_groups": [
+        {
+          "id": "logo",
+          "name": "Image Logo",
+          "description": "Image Logo",
+          "attribute_definitions": [
+              {
+                  "id": "image",
+                  "name": "Image Logo",
+                  "description": "The image of the company logo.",
+                  "type": "file",
+                  "required": true
+              },
+              {
+                  "id": "alt",
+                  "name": "logo's Image Alt Text",
+                  "description": "The image alt text.",
+                  "type": "string",
+                  "required": true
+              }
+          ]
+        }
+  
+    ],
+    "region_definitions": []
+  }
