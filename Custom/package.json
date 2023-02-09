@@ -9,9 +9,7 @@
     "upload": "sgmf-scripts --upload -- ",
     "uploadCartridge": "sgmf-scripts --uploadCartridge app_custom_new",
     "compile:js": "sgmf-scripts --compile js",
-    "compile:scss": "sgmf-scripts --compile css",
-    "build": "npm run compile:js && npm run compile:scss"
-
+    "compile:scss": "sgmf-scripts --compile css"
   },
   "devDependencies": {
     "chai": "^3.5.0",

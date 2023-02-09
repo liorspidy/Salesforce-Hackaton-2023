@@ -1,0 +1,16 @@
+{
+  "name": "Search Bar",
+  "description": "Search Bar Component",
+  "group": "blank_site_custom",
+  "attribute_definition_groups": [
+      {
+        "id": "searchbar",
+        "name": "Search Bar",
+        "description": "Search Bar",
+        "attribute_definitions": [
+        ]
+      }
+
+  ],
+  "region_definitions": []
+}
