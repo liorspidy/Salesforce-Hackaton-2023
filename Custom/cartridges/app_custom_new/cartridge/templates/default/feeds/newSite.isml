@@ -55,13 +55,15 @@
 <isdecorate template="application/MenuFrame">
     <div class="main-container">
         <h1>Create a new site</h1>
-        <a href="https://google.com" class="manual-link">Create a site manually</a>
+        <a href="https://google.com" class="manual-link" target="_blank">Create a site manually</a>
         <div class="form-container">
             <form action="${URLUtils.url('BMCreateNewSite-Handle')}" method="POST" enctype="multipart/form-data">
-                <div class="input-container">
-                    <label for="siteId">Site ID</label>
-                    <input id="siteId" name="siteId" type="text" required />
-                </div>
+                <iscomment>
+                    <div class="input-container">
+                        <label for="siteId">Site ID</label>
+                        <input id="siteId" name="siteId" type="text" required />
+                    </div>
+                </iscomment>
                 <div class="input-container">
                     <label for="siteName">Site Name</label>
                     <input id="siteName" name="siteName" type="text" required />

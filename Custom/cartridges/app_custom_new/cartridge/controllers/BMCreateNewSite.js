@@ -12,10 +12,17 @@ function start() {
   ISML.renderTemplate("feeds/newSite.isml");
 }
 
+const convertNameToId = (str) => {
+  str = str.trim();
+  str = str.toLowerCase().replace(/[^a-z\s]/g, "");
+  return str.replace(/\s(?=\S)/g, "_").trim();
+};
+
 function handle() {
   const body = request.httpParameterMap;
+  const siteId = convertNameToId(body.siteName.value);
   const siteData = {
-    siteId: body.siteId.value,
+    siteId: siteId,
     siteName: body.siteName.value,
     mainColor: body.mainColor.value,
     secondaryColor: body.secondaryColor.value,
