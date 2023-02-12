@@ -1,0 +1,30 @@
+.mainBox {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.form-control {
+  border-radius: 1rem;
+}
+
+.leftCart {
+  -ms-flex-direction: row;
+      flex-direction: row;
+}
+
+.rightCart {
+  -ms-flex-direction: row-reverse;
+      flex-direction: row-reverse;
+}
+
+.site-search {
+  width: 100%;
+}
+
+.cart {
+  padding: 0.2rem;
+  padding-top: 1.2rem;
+  padding-left: 1rem;
+}

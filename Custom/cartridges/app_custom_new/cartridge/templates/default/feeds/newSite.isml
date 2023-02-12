@@ -1,79 +1,73 @@
-<style>
-    /* .main-container {
-        height: 100vh;
-    } */
-
-    html {
-        font-family: sans-serif;
-    }
-
-    .main-container h1 {
-        text-align: center;
-        margin-top: 1.5rem;
-        font-size: 40px;
-        font-weight: bold;
-    }
-
-    .form-container {
-        margin: auto;
-        width: fit-content;
-    }
-
-    .input-container {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 15px;
-    }
-
-    .manual-link {
-        text-decoration: none;
-        background-color: #3F979B;
-        color: #fff;
-        padding: 5px 7px;
-        border-radius: 10px;
-        margin: auto;
-        text-align: center;
-        display: block;
-        width: fit-content;
-        margin: 10px auto 40px auto;
-    }
-
-    .manual-link:visited,
-    .manual-link:active {
-        color: #fff;
-    }
-
-    .btn-container {
-        text-align: center;
-        margin-top: 30px;
-    }
-
-    .btn-container button {
-        padding: 20px;
-        border-radius: 20px;
-        background-color: black;
-        color: white;
-        font-size: 20px;
-        cursor: pointer;
-    }
-</style>
-
-
-
 <isdecorate template="application/MenuFrame">
+    <style>
+        html {
+            font-family: sans-serif;
+        }
+
+        .main-container h1 {
+            text-align: center;
+            margin-top: 1.5rem;
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        .form-container {
+            margin: auto;
+            width: fit-content;
+        }
+
+        .input-container {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 15px;
+        }
+
+        .manual-link {
+            text-decoration: none;
+            background-color: #3F979B;
+            color: #fff;
+            padding: 5px 7px;
+            border-radius: 10px;
+            margin: auto;
+            text-align: center;
+            display: block;
+            width: fit-content;
+            margin: 10px auto 40px auto;
+            cursor: pointer;
+            border: 1px solid #000;
+        }
+
+        .manual-link:visited,
+        .manual-link:active {
+            color: #fff;
+        }
+
+        .btn-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .btn-container button {
+            padding: 20px;
+            border-radius: 20px;
+            background-color: black;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        
+    </style>
+
+
+
 
     <div class="main-container">
         <h1>Create a new site</h1>
-        <a href="${URLUtils.url('ViewChannelList-ListAll')}" class="manual-link" target="_blank">Create a site
-            manually</a>
-        <iscomment>
-            <form
-                action="${URLUtils.url('ViewChannelList-Dispatch', 'MenuGroupID', 'ChannelMenu', csrf_token ', pdict.token)}"
-                name="SiteSelectionForm" method="POST">
-                <input type="hidden" name="csrf_token" value="${pdict.token}">
-                <button type="submit">New</button>
-            </form>
-        </iscomment>
+        
+        <form action="${URLUtils.url('ViewChannelList-Dispatch')}" name="SiteSelectionForm" method="POST">
+            <button class="manual-link" type="submit" name="new">Create a new site manually</button>
+        </form>
+
         <div class="form-container">
             <form action="${URLUtils.url('BMCreateNewSite-Handle')}" method="POST" enctype="multipart/form-data">
                 <iscomment>
