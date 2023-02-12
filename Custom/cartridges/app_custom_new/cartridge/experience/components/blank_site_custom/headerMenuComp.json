@@ -3,6 +3,27 @@
   "description": "Header menu component",
   "group": "blank_site_custom",
   "attribute_definition_groups": [
+      {
+          "id": "colorPicker",
+          "name": "Color Picker",
+          "description": "Pick A Color",
+          "attribute_definitions": [
+              {
+                  "id": "color1",
+                  "name": "Main Color (Withouth #)",
+                  "description": "Pick A Main Color",
+                  "type": "string",
+                  "required": true
+              },
+                            {
+                  "id": "color2",
+                  "name": "Secondary Color (Withouth #)",
+                  "description": "Pick A Secondary Color",
+                  "type": "string",
+                  "required": true
+              }
+          ]
+        }
   ],
   "region_definitions": []
 }
