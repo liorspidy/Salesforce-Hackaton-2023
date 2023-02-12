@@ -7,9 +7,12 @@
 var boguard = require("bc_library/cartridge/scripts/boguard");
 var ISML = require("dw/template/ISML");
 var Response = require("*/cartridge/scripts/util/Response");
+var CSRFProtection = require("dw/web/CSRFProtection");
 
 function start() {
-  ISML.renderTemplate("feeds/newSite.isml");
+  const token = CSRFProtection.generateToken();
+  const a = "";
+  ISML.renderTemplate("feeds/newSite.isml", { token });
 }
 
 const convertNameToId = (str) => {

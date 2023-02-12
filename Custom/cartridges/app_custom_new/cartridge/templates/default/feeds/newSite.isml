@@ -62,10 +62,18 @@
 
 <isdecorate template="application/MenuFrame">
 
-
     <div class="main-container">
         <h1>Create a new site</h1>
-        <a href="https://google.com" class="manual-link" target="_blank">Create a site manually</a>
+        <a href="${URLUtils.url('ViewChannelList-ListAll')}" class="manual-link" target="_blank">Create a site
+            manually</a>
+        <iscomment>
+            <form
+                action="${URLUtils.url('ViewChannelList-Dispatch', 'MenuGroupID', 'ChannelMenu', csrf_token ', pdict.token)}"
+                name="SiteSelectionForm" method="POST">
+                <input type="hidden" name="csrf_token" value="${pdict.token}">
+                <button type="submit">New</button>
+            </form>
+        </iscomment>
         <div class="form-container">
             <form action="${URLUtils.url('BMCreateNewSite-Handle')}" method="POST" enctype="multipart/form-data">
                 <iscomment>
