@@ -8,6 +8,7 @@
         assets.addCss('/css/experience/components/blank_site_custom/mainLogo.css');
         assets.addCss('/css/experience/components/blank_site_custom/headerMenuComp.css');
         assets.addCss('/css/experience/components/blank_site_custom/colorBox.css');
+        assets.addCss('/css/experience/components/commerceLayouts/layout.css');
     </isscript>
 
     <div class="storepage" id="${pdict.page.ID}">
