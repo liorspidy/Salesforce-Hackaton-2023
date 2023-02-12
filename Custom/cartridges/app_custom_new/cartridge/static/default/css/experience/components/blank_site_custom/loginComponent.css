@@ -1,0 +1,15 @@
+.displayHeight {
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1.4rem 1.5rem;
+}
+
+.right {
+  -ms-flex-pack: right;
+      justify-content: right;
+}
+
+.center {
+  -ms-flex-pack: center;
+      justify-content: center;
+}
