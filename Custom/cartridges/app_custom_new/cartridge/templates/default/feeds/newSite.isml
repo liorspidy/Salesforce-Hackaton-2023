@@ -55,6 +55,7 @@
             font-size: 20px;
             cursor: pointer;
         }
+        
     </style>
 
 
@@ -62,6 +63,7 @@
 
     <div class="main-container">
         <h1>Create a new site</h1>
+        
         <form action="${URLUtils.url('ViewChannelList-Dispatch')}" name="SiteSelectionForm" method="POST">
             <button class="manual-link" type="submit" name="new">Create a new site manually</button>
         </form>
