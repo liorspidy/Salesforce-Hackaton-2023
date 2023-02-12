@@ -67,7 +67,8 @@
         </form>
 
         <div class="form-container">
-            <form action="${URLUtils.url('BMCreateNewSite-Handle')}" method="POST" enctype="multipart/form-data">
+            <form name="newSiteForm" action="${URLUtils.url('BMCreateNewSite-Handle')}" method="POST"
+                enctype="multipart/form-data">
                 <iscomment>
                     <div class="input-container">
                         <label for="siteId">Site ID</label>
@@ -99,4 +100,8 @@
             </form>
         </div>
     </div>
+    <script defer>
+    const form = document.forms.newSiteForm;
+    console.log(form);
+    </script>
 </isdecorate>

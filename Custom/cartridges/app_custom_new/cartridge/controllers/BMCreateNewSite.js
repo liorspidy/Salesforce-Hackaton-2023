@@ -30,6 +30,9 @@ function handle() {
     mainColor: body.mainColor.value,
     secondaryColor: body.secondaryColor.value,
   };
+  // const FormData = require("form-data");
+  // const formData = new FormData();
+  const a = "";
   ISML.renderTemplate("feeds/siteCreated", { siteId: siteId });
   // Response.renderJSON({ siteData });
 }
