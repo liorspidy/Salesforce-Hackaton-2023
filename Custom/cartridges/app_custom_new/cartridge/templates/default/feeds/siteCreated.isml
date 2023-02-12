@@ -29,6 +29,7 @@
     </style>
 
     <h1 class="heading">Site created successfully</h1>
+    <isinclude template="components/newSiteTutorial"/>
     <input type="hidden" id="siteId" value="${pdict.siteId}">
     <a class="btn" href="${URLUtils.url('BMCustomFeeds-Start')}">See all sites</a>
 

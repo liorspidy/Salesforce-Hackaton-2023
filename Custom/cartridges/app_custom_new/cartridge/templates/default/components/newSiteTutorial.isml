@@ -1,0 +1,37 @@
+<style>
+    .images-container {
+        display:flex;
+        flex-direction: column;
+        width: 70%;
+        margin: auto;
+    }
+    
+    .line-item {
+        display:flex;
+        flex-direction: column;
+    }
+
+    .line-item img {
+        width: 50%;
+    }
+</style>
+
+<div class="images-container">
+   <div class="line-item">
+       <p>1.	Move file to project folder</p>
+       <p>2.	Right click -> Run with powershell </p>
+       <img src="${URLUtils.staticURL('/images/Picture1.png')}" alt="">
+   </div>
+   <div class="line-item">
+       <p>3.	Press R(Capital letter)</p>
+       <img src="${URLUtils.staticURL('/images/Picture2.png')}" alt="">
+       <img src="${URLUtils.staticURL('/images/Picture3.png')}" alt="">
+   </div>
+   <div class="line-item">
+       <p>4.	After complete (2-3 minutes), black window will close -> Delete ps1 file</p>
+       <img src="${URLUtils.staticURL('/images/Picture4.png')}" alt="">
+   </div>
+   <div class="line-item">
+       <p>your new site is uploaded to your sandbox!</p>
+   </div>
+</div>
