@@ -1,0 +1,8 @@
+<isscript>
+    var assets = require('*/cartridge/scripts/assets.js');
+    assets.addCss('/css/experience/components/blank_site_custom/colorBox.css');
+</isscript>
+
+<div class="boxContainer">
+    <span class="box" style="background-color: ${pdict.color}"></span>
+</div>

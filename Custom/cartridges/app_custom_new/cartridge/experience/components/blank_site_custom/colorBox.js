@@ -14,7 +14,9 @@ module.exports.render = function (context) {
   const model = new HashMap();
   const content = context.content;
 
+  model.color = content.color ? content.color : "#ffffff";
+
   return new Template(
-    "experience/components/blank_site_custom/searchComp"
+    "experience/components/blank_site_custom/colorBox"
   ).render(model).text;
 };

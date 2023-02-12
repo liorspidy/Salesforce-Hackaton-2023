@@ -1,0 +1,19 @@
+.headerMenuContent {
+  background-color: transparent !important;
+  padding: 0;
+  width: 100%;
+  background-color: #444444 !important;
+}
+.headerMenuContent .nav-item > .nav-link:hover {
+  color: #444444 !important;
+  background-color: white !important;
+}
+.headerMenuContent .dropdown-item a {
+  color: #444444 !important;
+  background-color: white !important;
+}
+
+.headerMenuContent a {
+  color: white !important;
+  background-color: #444444 !important;
+}
