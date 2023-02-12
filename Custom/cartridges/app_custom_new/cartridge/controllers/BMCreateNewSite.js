@@ -30,8 +30,8 @@ function handle() {
     mainColor: body.mainColor.value,
     secondaryColor: body.secondaryColor.value,
   };
-  const a = "";
-  Response.renderJSON({ siteData });
+  ISML.renderTemplate("feeds/siteCreated", { siteId: siteId });
+  // Response.renderJSON({ siteData });
 }
 
 exports.Start = boguard.ensure(["get"], start);
