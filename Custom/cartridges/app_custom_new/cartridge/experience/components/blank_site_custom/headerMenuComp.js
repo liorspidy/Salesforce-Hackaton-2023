@@ -15,6 +15,6 @@ module.exports.render = function (context) {
   const content = context.content;
 
   return new Template(
-    "experience/components/blank_site_custom/searchComp"
+    "experience/components/blank_site_custom/headerMenuComp"
   ).render(model).text;
 };

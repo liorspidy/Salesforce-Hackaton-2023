@@ -1,0 +1,10 @@
+img.logo,
+.logoContent {
+  width: 100%;
+  height: 3rem;
+  object-fit: contain;
+}
+
+.logoContent {
+  margin: 0.2rem;
+}

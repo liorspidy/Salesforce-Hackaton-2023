@@ -1,0 +1,8 @@
+{
+  "name": "Header Menu",
+  "description": "Header menu component",
+  "group": "blank_site_custom",
+  "attribute_definition_groups": [
+  ],
+  "region_definitions": []
+}
