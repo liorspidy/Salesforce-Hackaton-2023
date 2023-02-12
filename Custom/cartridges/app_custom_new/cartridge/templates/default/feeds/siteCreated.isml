@@ -1,0 +1,71 @@
+<isdecorate template="application/MenuFrame">
+    <style>
+        .heading {
+            color: #698269;
+            font-size: 40px;
+            text-align: center;
+        }
+
+        .btn {
+            margin: auto;
+            display: block;
+            width: fit-content;
+            color: #3a96d0;
+            text-decoration: none;
+            background-color: #fff;
+            border-radius: 20px;
+            padding: 20px 40px;
+            font-weight: 600;
+            font-size: 20px;
+            border: 1px solid #3a96d0;
+            transition: all ease-in 0.2s;
+            text-align: center;
+        }
+
+        .btn:hover {
+            color: #fff;
+            background-color: #3a96d0;
+        }
+    </style>
+
+    <h1 class="heading">Site created successfully</h1>
+    <isinclude template="components/newSiteTutorial"/>
+    <input type="hidden" id="siteId" value="${pdict.siteId}">
+    <a class="btn" href="${URLUtils.url('BMCustomFeeds-Start')}">See all sites</a>
+
+    <script>
+document.addEventListener("DOMContentLoaded", function() {
+    
+    
+    const form = document.querySelector('form');
+const inputField = document.getElementById('siteId');
+
+
+  var givenId = inputField.value;
+
+
+    var data =
+            'Invoke-Expression "mkdir ' + givenId + '"\n' +
+            'Invoke-Expression "cd ' + givenId + '"\n' +
+            'Invoke-Expression "npm install -g sgmf-scripts --save-dev"\n' +
+            'Invoke-Expression "sgmf-scripts --createCartridge app_custom_' + givenId + '"\n' +
+            'Invoke-Expression "npm uninstall node-sass"\n' +
+            'Invoke-Expression "npm i -D sass"\n' +
+            'Invoke-Expression "npm i --force"\n' +
+            'Invoke-Expression "rm dw.json"\n' +
+            `Invoke-Expression "Copy-Item -Path '..\\\dw.json' -Destination '.\\\dw.json'"\n` +
+            'Invoke-Expression "sgmf-scripts --uploadCartridge app_custom_' + givenId + '"\n'
+    
+  var file = new Blob([data], {type: "text/plain"});
+  var fileUrl = URL.createObjectURL(file);
+
+  var a = document.createElement("a");
+  a.href = fileUrl;
+  a.download = "my_new_" + givenId + "_site.ps1";
+  a.click();
+
+  console.log(data)
+ 
+});
+</script>
+</isdecorate>

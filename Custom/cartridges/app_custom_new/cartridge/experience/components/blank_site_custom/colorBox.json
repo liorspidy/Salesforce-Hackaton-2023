@@ -14,6 +14,13 @@
                   "description": "Pick A Color",
                   "type": "string",
                   "required": true
+              },
+                            {
+                  "id": "height",
+                  "name": "Height (Numbers)",
+                  "description": "Pick A Height",
+                  "type": "string",
+                  "required": false
               }
           ]
         }

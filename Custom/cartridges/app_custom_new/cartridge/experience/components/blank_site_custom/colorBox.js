@@ -15,6 +15,7 @@ module.exports.render = function (context) {
   const content = context.content;
 
   model.color = content.color ? content.color : "#ffffff";
+  model.height = content.height ? content.height : "1";
 
   return new Template(
     "experience/components/blank_site_custom/colorBox"

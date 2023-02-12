@@ -1,79 +1,73 @@
-<style>
-    /* .main-container {
-        height: 100vh;
-    } */
-
-    html {
-        font-family: sans-serif;
-    }
-
-    .main-container h1 {
-        text-align: center;
-        margin-top: 1.5rem;
-        font-size: 40px;
-        font-weight: bold;
-    }
-
-    .form-container {
-        margin: auto;
-        width: fit-content;
-    }
-
-    .input-container {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 15px;
-    }
-
-    .manual-link {
-        text-decoration: none;
-        background-color: #3F979B;
-        color: #fff;
-        padding: 5px 7px;
-        border-radius: 10px;
-        margin: auto;
-        text-align: center;
-        display: block;
-        width: fit-content;
-        margin: 10px auto 40px auto;
-    }
-
-    .manual-link:visited,
-    .manual-link:active {
-        color: #fff;
-    }
-
-    .btn-container {
-        text-align: center;
-        margin-top: 30px;
-    }
-
-    .btn-container button {
-        padding: 20px;
-        border-radius: 20px;
-        background-color: black;
-        color: white;
-        font-size: 20px;
-        cursor: pointer;
-    }
-</style>
-
-
-
 <isdecorate template="application/MenuFrame">
+    <style>
+        html {
+            font-family: sans-serif;
+        }
+
+        .main-container h1 {
+            text-align: center;
+            margin-top: 1.5rem;
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        .form-container {
+            margin: auto;
+            width: fit-content;
+        }
+
+        .input-container {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 15px;
+        }
+
+        .manual-link {
+            text-decoration: none;
+            background-color: #3F979B;
+            color: #fff;
+            padding: 5px 7px;
+            border-radius: 10px;
+            margin: auto;
+            text-align: center;
+            display: block;
+            width: fit-content;
+            margin: 10px auto 40px auto;
+            cursor: pointer;
+            border: 1px solid #000;
+        }
+
+        .manual-link:visited,
+        .manual-link:active {
+            color: #fff;
+        }
+
+        .btn-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .btn-container button {
+            padding: 20px;
+            border-radius: 20px;
+            background-color: black;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        
+    </style>
+
+
+
 
     <div class="main-container">
         <h1>Create a new site</h1>
-        <a href="${URLUtils.url('ViewChannelList-ListAll')}" class="manual-link" target="_blank">Create a site
-            manually</a>
-        <iscomment>
-            <form
-                action="${URLUtils.url('ViewChannelList-Dispatch', 'MenuGroupID', 'ChannelMenu', csrf_token ', pdict.token)}"
-                name="SiteSelectionForm" method="POST">
-                <input type="hidden" name="csrf_token" value="${pdict.token}">
-                <button type="submit">New</button>
-            </form>
-        </iscomment>
+        
+        <form action="${URLUtils.url('ViewChannelList-Dispatch')}" name="SiteSelectionForm" method="POST">
+            <button class="manual-link" type="submit" name="new">Create a new site manually</button>
+        </form>
+
         <div class="form-container">
             <form action="${URLUtils.url('BMCreateNewSite-Handle')}" method="POST" enctype="multipart/form-data">
                 <iscomment>
@@ -100,51 +94,11 @@
                     <label for="secondaryColor">Choose Secondary Color</label>
                     <input id="secondaryColor" name="secondaryColor" type="color" />
                 </div>
-
+                <input type="hidden" id="siteId" value="${pdict.siteId}">
                 <div class="btn-container">
-                    <button type="button">Create Site</button>
+                    <button type="submit">Create Site</button>
                 </div>
             </form>
         </div>
     </div>
 </isdecorate>
-
-
-
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-
-
-const btn = document.querySelector('.btn-container button')
-const inputField = document.getElementById('siteName')
-
-
-
-btn.addEventListener('click', async () => {
-  var givenId = inputField.value;
-
-
-    var data = 
-            'Invoke-Expression "mkdir ' + givenId + '"\n' +
-            'Invoke-Expression "cd ' + givenId + '"\n' +
-            'Invoke-Expression "npm install -g sgmf-scripts --save-dev"\n' +
-            'Invoke-Expression "sgmf-scripts --createCartridge app_custom_' + givenId + '"\n' +
-            'Invoke-Expression "npm uninstall node-sass"\n' +
-            'Invoke-Expression "npm i -D sass"\n' +
-            'Invoke-Expression "npm i --force"\n' +
-            'Invoke-Expression "rm dw.json"\n' +
-            `Invoke-Expression "Copy-Item -Path '..\\\dw.json' -Destination '.\\\dw.json'"\n` +
-            'Invoke-Expression "sgmf-scripts --uploadCartridge app_custom_' + givenId + '"\n'
-    
-  var file = new Blob([data], {type: "text/plain"});
-  var fileUrl = URL.createObjectURL(file);
-
-  var a = document.createElement("a");
-  a.href = fileUrl;
-  a.download = "my_new_" + givenId + "_site.ps1";
-  a.click();
-
-  console.log(data)
-  })
-});
-</script>

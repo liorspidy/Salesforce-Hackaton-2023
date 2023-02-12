@@ -1,5 +1,8 @@
 .boxContainer,
 .box {
+    min-height: 2rem;
     width: 100%;
     height: 100%;
+    display: block;
+    // background-color is determaind in the isml file
 }
