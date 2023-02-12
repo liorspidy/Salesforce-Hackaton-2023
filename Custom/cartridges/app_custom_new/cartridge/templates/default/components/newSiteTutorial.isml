@@ -9,10 +9,14 @@
     .line-item {
         display:flex;
         flex-direction: column;
+        margin: 20px 0;
+        border-bottom: 3px solid black;
+        padding-bottom: 10px;
     }
 
     .line-item img {
         width: 50%;
+        margin: 10px 0;
     }
 </style>
 
