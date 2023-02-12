@@ -48,7 +48,7 @@ function start() {
         sites.push(site);
     }
     
-    ISML.renderTemplate('feeds/test.isml',{sites:sites});
+    ISML.renderTemplate('feeds/mysitelist.isml',{sites:sites});
 
     // Response.renderJSON(sites);
 }

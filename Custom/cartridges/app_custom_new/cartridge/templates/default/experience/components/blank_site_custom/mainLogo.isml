@@ -5,15 +5,7 @@
 
 
 <div>
-
     <div>
-
-
-        <img src="${pdict.img}" alt="${pdict.imgAlt}">
-
-
+        <img src="${pdict.imgUrl}" alt="${pdict.imgAlt}">
     </div>
-
-
-
 </div>

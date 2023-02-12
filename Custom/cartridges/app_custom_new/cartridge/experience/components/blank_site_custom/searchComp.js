@@ -12,8 +12,11 @@ const URLUtils = require("dw/web/URLUtils");
 
 module.exports.render = function (context) {
   const model = new HashMap();
+  const content = context.content;
+
+  model.str = "yes";
 
   return new Template(
-    "experience/components/blank_site_custom/searchbar"
-  ).render();
+    "experience/components/blank_site_custom/searchComp"
+  ).render(model).text;
 };

@@ -1,8 +1,8 @@
-'use strict';
+"use strict";
 
-const Template = require('dw/util/Template');
-const HashMap = require('dw/util/HashMap');
-const URLUtils = require('dw/web/URLUtils');
+const Template = require("dw/util/Template");
+const HashMap = require("dw/util/HashMap");
+const URLUtils = require("dw/web/URLUtils");
 
 /**
  * Render logic for storefront.productBannerStrip component.
@@ -14,10 +14,10 @@ module.exports.render = function (context) {
   const model = new HashMap();
   const content = context.content;
 
-  model.img = content.image ? content.image.absURL : null;
+  model.imgUrl = content.image ? content.image.absURL : null;
   model.imgAlt = content.alt;
 
   return new Template(
-    'experience/components/blank_site_custom/middleBanner'
+    "experience/components/blank_site_custom/mainLogo"
   ).render(model).text;
 };
