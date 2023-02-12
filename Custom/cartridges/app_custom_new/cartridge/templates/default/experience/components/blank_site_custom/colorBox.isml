@@ -3,6 +3,6 @@
     assets.addCss('/css/experience/components/blank_site_custom/colorBox.css');
 </isscript>
 
-<div class="boxContainer">
-    <span class="box" style="background-color: ${pdict.color}"></span>
+<div class="boxContainer" style="background-color: ${pdict.color}">
+    <span class="box" style="height: ${pdict.height}rem"></span>
 </div>
