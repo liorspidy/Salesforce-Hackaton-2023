@@ -39,13 +39,13 @@ module.exports.render = function (context) {
     return [r, g, b];
   };
 
-  model.red1 = hexToRgb("#" + model.color1)[0];
-  model.green1 = hexToRgb("#" + model.color1)[1];
-  model.blue1 = hexToRgb("#" + model.color1)[2];
+  model.red1 = hexToRgb(model.color1)[0];
+  model.green1 = hexToRgb(model.color1)[1];
+  model.blue1 = hexToRgb(model.color1)[2];
 
-  model.red2 = hexToRgb("#" + model.color2)[0];
-  model.green2 = hexToRgb("#" + model.color2)[1];
-  model.blue2 = hexToRgb("#" + model.color2)[2];
+  model.red2 = hexToRgb(model.color2)[0];
+  model.green2 = hexToRgb(model.color2)[1];
+  model.blue2 = hexToRgb(model.color2)[2];
 
   return new Template(
     "experience/components/blank_site_custom/headerMenuComp"

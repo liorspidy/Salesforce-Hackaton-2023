@@ -10,14 +10,14 @@
           "attribute_definitions": [
               {
                   "id": "color1",
-                  "name": "Main Color (Withouth #)",
+                  "name": "Main Color",
                   "description": "Pick A Main Color",
                   "type": "string",
                   "required": true
               },
                             {
                   "id": "color2",
-                  "name": "Secondary Color (Withouth #)",
+                  "name": "Secondary Color",
                   "description": "Pick A Secondary Color",
                   "type": "string",
                   "required": true
