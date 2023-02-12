@@ -1,8 +1,8 @@
-"use strict";
+'use strict';
 
-const Template = require("dw/util/Template");
-const HashMap = require("dw/util/HashMap");
-const URLUtils = require("dw/web/URLUtils");
+const Template = require('dw/util/Template');
+const HashMap = require('dw/util/HashMap');
+const URLUtils = require('dw/web/URLUtils');
 
 /**
  * Render logic for storefront.productBannerStrip component.
@@ -18,6 +18,6 @@ module.exports.render = function (context) {
   model.imgAlt = content.alt;
 
   return new Template(
-    "experience/components/blank_site_custom/mainLogo"
+    'experience/components/blank_site_custom/mainLogo'
   ).render(model).text;
 };

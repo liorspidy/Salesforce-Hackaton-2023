@@ -3,6 +3,29 @@
   "description": "Search Bar Component",
   "group": "blank_site_custom",
   "attribute_definition_groups": [
+{
+  "id": "displayCart",
+  "name": "side of cart",
+  "description": "diplay",
+  "attribute_definitions": [
+    {
+      "id": "leftOrRight",
+      "name": "choose if the cart will be in right side or left",
+      "description": "choose side of cart related to search component",
+      "type": "enum",
+      "values": ["leftCart","rightCart"],
+      "required": true
+    },
+    {
+      "id": "cartNumColor",
+      "name": "background color for number of items in cart",
+      "description": "background color for number of items in cart",
+      "type": "string",
+      "required": false
+    }
+  ]
+  }
+
   ],
   "region_definitions": []
 }
