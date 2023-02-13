@@ -16,6 +16,8 @@ module.exports.render = function (context) {
 
   model.color1 = content.color1 ? content.color1 : "#ffffff";
   model.color2 = content.color2 ? content.color2 : "#000000";
+  model.color3 = content.color3 ? content.color3 : "#ffffff";
+  model.color4 = content.color4 ? content.color4 : "#000000";
 
   let r = 0,
     g = 0,
@@ -46,6 +48,14 @@ module.exports.render = function (context) {
   model.red2 = hexToRgb(model.color2)[0];
   model.green2 = hexToRgb(model.color2)[1];
   model.blue2 = hexToRgb(model.color2)[2];
+
+  model.red3 = hexToRgb(model.color3)[0];
+  model.green3 = hexToRgb(model.color3)[1];
+  model.blue3 = hexToRgb(model.color3)[2];
+
+  model.red4 = hexToRgb(model.color4)[0];
+  model.green4 = hexToRgb(model.color4)[1];
+  model.blue4 = hexToRgb(model.color4)[2];
 
   return new Template(
     "experience/components/blank_site_custom/headerMenuComp"
