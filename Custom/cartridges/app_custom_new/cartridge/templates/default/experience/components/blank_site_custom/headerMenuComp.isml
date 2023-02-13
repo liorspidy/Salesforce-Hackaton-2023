@@ -2,7 +2,10 @@
     .headerMenuContent {
         padding: 0;
         width: 100%;
-        background-color: rgb(<isprint value="${pdict.red1}"/>, <isprint value="${pdict.green1}"/>, <isprint value="${pdict.blue1}"/>)
+        background-color: rgb(<isprint value="${pdict.red1}"/>, <isprint value="${pdict.green1}"/>, <isprint value="${pdict.blue1}"/>);
+        height: 100%;
+        display: flex;
+        align-items: center;
     }
 
     .headerMenuContent .nav-item>.nav-link:hover {

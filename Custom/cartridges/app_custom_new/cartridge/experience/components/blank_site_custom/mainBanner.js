@@ -19,6 +19,6 @@ module.exports.render = function (context) {
   model.heading = content.heading ? content.heading : null;
 
   return new Template(
-    "experience/components/blank_site_custom/mainBannerMaytronics"
+    "experience/components/blank_site_custom/mainBanner"
   ).render(model).text;
 };
