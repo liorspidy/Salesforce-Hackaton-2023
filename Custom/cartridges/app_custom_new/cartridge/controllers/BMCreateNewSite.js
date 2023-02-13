@@ -10,9 +10,18 @@ var Response = require("*/cartridge/scripts/util/Response");
 var CSRFProtection = require("dw/web/CSRFProtection");
 
 function start() {
-  const token = CSRFProtection.generateToken();
-  const a = "";
-  ISML.renderTemplate("feeds/newSite.isml", { token });
+  var Site = require("dw/system/Site");
+  const sites = Site.getAllSites();
+  const sitesArr = [];
+  for (let i = 0; i <= sites.length - 1; i++) {
+    sitesArr[i] = sites[i].name;
+  }
+  const sitesJson = JSON.stringify(sitesArr);
+  const sandboxUrl = request.httpHost;
+  ISML.renderTemplate("feeds/newSite.isml", {
+    sandboxUrl: sandboxUrl,
+    sites: sitesJson,
+  });
 }
 
 const convertNameToId = (str) => {
@@ -27,12 +36,7 @@ function handle() {
   const siteData = {
     siteId: siteId,
     siteName: body.siteName.value,
-    mainColor: body.mainColor.value,
-    secondaryColor: body.secondaryColor.value,
   };
-  // const FormData = require("form-data");
-  // const formData = new FormData();
-  const a = "";
   ISML.renderTemplate("feeds/siteCreated", { siteId: siteId });
   // Response.renderJSON({ siteData });
 }

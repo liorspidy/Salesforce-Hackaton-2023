@@ -22,7 +22,7 @@
 		</description>
 		<!-- no icon specified -->
 		<exec pipeline="BMCustomFeeds" node="Start" />
-		<sub-pipelines>
+		<!-- <sub-pipelines>
 			<pipeline name="BMCustomFeeds-Start" />
 			<pipeline name="BMCustomFeeds-Preview" />
 			<pipeline name="BMCustomFeeds-GetAllSites" />
@@ -30,12 +30,12 @@
 			<pipeline name="ObjectStore-SaveObject" />
 			<pipeline name="ObjectStore-CreateObject" />
 			<pipeline name="ObjectStore-DeleteObject" />
-		</sub-pipelines>
-		<parameters>
+		</sub-pipelines> -->
+		<!-- <parameters>
 			<parameter name="menuname" value="Custom Feeds" />
 			<parameter name="mainmenuname" value="Integration" />
 			<parameter name="test" value="222" />
-		</parameters>
+		</parameters> -->
 		<icon>icons/createAsite.gif</icon>
 	</menuaction>
 

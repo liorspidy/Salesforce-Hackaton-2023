@@ -20,6 +20,13 @@
             display: flex;
             flex-direction: column;
             margin-bottom: 15px;
+            margin: auto;
+            width: fit-content;
+            margin-bottom: 20px;
+        }
+
+        .input-container label {
+            text-align: center;
         }
 
         .manual-link {
@@ -55,7 +62,18 @@
             font-size: 20px;
             cursor: pointer;
         }
-        
+
+        .site-name {
+            width: 200px;
+            text-align: center;
+        }
+
+        .error-message {
+            color: red;
+            font-size: 20px;
+            font-weight: 600;
+            display: none;
+        }
     </style>
 
 
@@ -63,7 +81,7 @@
 
     <div class="main-container">
         <h1>Create a new site</h1>
-        
+
         <form action="${URLUtils.url('ViewChannelList-Dispatch')}" name="SiteSelectionForm" method="POST">
             <button class="manual-link" type="submit" name="new">Create a new site manually</button>
         </form>
@@ -79,7 +97,7 @@
                 </iscomment>
                 <div class="input-container">
                     <label for="siteName">Site Name</label>
-                    <input id="siteName" name="siteName" type="text" required />
+                    <input id="siteName" class="site-name" name="siteName" type="text" required />
                 </div>
                 <iscomment>
                     <div class="input-container">
@@ -87,23 +105,77 @@
                         <input id="logo" name="logo" type="file" />
                     </div>
                 </iscomment>
-                <div class="input-container">
-                    <label for="mainColor">Choose Main Color</label>
-                    <input id="mainColor" name="mainColor" type="color" />
-                </div>
-                <div class="input-container">
-                    <label for="secondaryColor">Choose Secondary Color</label>
-                    <input id="secondaryColor" name="secondaryColor" type="color" />
-                </div>
+                <iscomment>
+                    <div class="input-container">
+                        <label for="mainColor">Choose Main Color</label>
+                        <input id="mainColor" name="mainColor" type="color" />
+                    </div>
+                    <div class="input-container">
+                        <label for="secondaryColor">Choose Secondary Color</label>
+                        <input id="secondaryColor" name="secondaryColor" type="color" />
+                    </div>
+                </iscomment>
                 <input type="hidden" id="siteId" value="${pdict.siteId}">
+                <p class="error-message"></p>
                 <div class="btn-container">
-                    <button type="submit">Create Site</button>
+                    <button id="submitBtn" type="button">Create Site</button>
                 </div>
             </form>
         </div>
     </div>
+
+    <input type="hidden" id="sandboxUrl" value="${pdict.sandboxUrl}">
+    <input type="hidden" id="sites" value="${pdict.sites}">
+
     <script defer>
     const form = document.forms.newSiteForm;
-    console.log(form);
+    const btn = document.querySelector("#submitBtn");
+    const sandboxUrl = document.getElementById("sandboxUrl").value;
+    const token = document.getElementsByName("csrf_token");
+    const sites = JSON.parse(document.getElementById("sites").value);
+    const errorElement = document.querySelector(".error-message");
+
+    const convertNameToId = (str) => {
+         str = str.trim();
+         str = str.toLowerCase().replace(/[^a-z\s]/g, "");
+         return str.replaceAll(" ", "_").trim();
+           };
+
+    submitBtn.addEventListener("click", (e) => {
+        const formData = new FormData();
+        const siteName = form.siteName.value;
+        const siteId = convertNameToId(siteName);
+        formData.append("ChannelForm_RepositoryID",siteId);
+        formData.append("ChannelForm_DisplayName",siteName);
+        formData.append("ChannelForm_SiteTimeZone","Etc/UTC");
+        formData.append("ChannelForm_CurrencyCode","USD");
+        formData.append("ChannelForm_Taxation","net");
+        formData.append("ChannelForm_CustomerListID","CreateNewCustomerList");
+        formData.append("webform-id","ChannelForm");
+        formData.append("create","");
+        const createSite = async () => {
+            if(siteName === "") return;
+            const url = "https://" + sandboxUrl + "/on/demandware.store/Sites-Site/default/ViewChannel-Dispatch?csrf_token=" + token[0].value;
+            const response = await fetch(url, {
+                method:"POST",
+                body: formData
+            });
+            console.log(siteId);
+            return;
+            form.submit();
+        }
+        if(sites.some((name) => {
+           return convertNameToId(name) === siteId
+            })) {
+            errorElement.style.display = "inline";
+            errorElement.textContent = "ERROR!! You already have a site with that name!!";
+        } else if (siteName === "") {
+            errorElement.style.display = "inline";
+            errorElement.textContent = "ERROR!! You must enter a name for the site!!";
+        } else {
+            errorElement.style.display = "none";
+            createSite();
+        }
+    })
     </script>
 </isdecorate>
