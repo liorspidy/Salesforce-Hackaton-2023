@@ -1,0 +1,27 @@
+{
+    "name": "loginComponent",
+    "description": "Search Bar Component",
+    "group": "blank_site_custom",
+    "attribute_definition_groups": [
+      
+        {
+          "id": "displayLoginBtn",
+          "name": "posiiton of login",
+          "description": "diplay",
+          "attribute_definitions": [
+          
+            {
+              "id": "BtnPosition",
+              "name": "choose if the cart will be in right side or left",
+              "description": "choose side of cart related to search component",
+              "type": "enum",
+              "values": ["left","right","center"],
+              "required": true
+            }
+      
+
+    ]
+  }
+],
+    "region_definitions": []
+  }

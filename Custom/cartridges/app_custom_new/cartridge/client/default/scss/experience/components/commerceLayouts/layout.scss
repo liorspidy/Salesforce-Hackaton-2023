@@ -38,6 +38,10 @@ div.sf-interactions-proxyHoverContainer a {
     overflow: visible;
 }
 
-.experience-component.experience-blank_site_custom-colorBox {
+.experience-component.experience-blank_site_custom-colorBox,
+.experience-component.experience-blank_site_custom-mainLogo {
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

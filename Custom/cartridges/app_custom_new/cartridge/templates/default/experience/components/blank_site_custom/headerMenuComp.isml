@@ -1,7 +1,25 @@
-<isscript>
-    var assets = require('*/cartridge/scripts/assets.js');
-    assets.addCss('/css/experience/components/blank_site_custom/headerMenuComp.css');
-</isscript>
+<style>
+    .headerMenuContent {
+        padding: 0;
+        width: 100%;
+        background-color: rgb(<isprint value="${pdict.red1}"/>, <isprint value="${pdict.green1}"/>, <isprint value="${pdict.blue1}"/>)
+    }
+
+    .headerMenuContent .nav-item>.nav-link:hover {
+        color: rgb(<isprint value="${pdict.red1}"/>, <isprint value="${pdict.green1}"/>, <isprint value="${pdict.blue1}"/>) !important;
+        background-color: rgb(<isprint value="${pdict.red2}"/>, <isprint value="${pdict.green2}"/>, <isprint value="${pdict.blue2}"/>) !important;
+    }
+
+    .headerMenuContent .dropdown-item a {
+        color: rgb(<isprint value="${pdict.red1}"/>, <isprint value="${pdict.green1}"/>, <isprint value="${pdict.blue1}"/>) !important;
+        background-color: rgb(<isprint value="${pdict.red2}"/>, <isprint value="${pdict.green2}"/>, <isprint value="${pdict.blue2}"/>) !important;
+    }
+
+    .headerMenuContent a {
+        color: rgb(<isprint value="${pdict.red2}"/>, <isprint value="${pdict.green2}"/>, <isprint value="${pdict.blue2}"/>) !important;
+        background-color: rgb(<isprint value="${pdict.red1}"/>, <isprint value="${pdict.green1}"/>, <isprint value="${pdict.blue1}"/>) !important;
+    }
+</style>
 
 <div class="headerMenuContent">
     <isinclude url="${URLUtils.url('Page-IncludeHeaderMenu')}" />
