@@ -161,7 +161,6 @@
                 body: formData
             });
             console.log(siteId);
-            return;
             form.submit();
         }
         if(sites.some((name) => {
