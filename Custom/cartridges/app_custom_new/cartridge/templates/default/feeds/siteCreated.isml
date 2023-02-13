@@ -1,32 +1,7 @@
 <isdecorate template="application/MenuFrame">
-  <style>
-    .heading {
-      color: #698269;
-      font-size: 40px;
-      text-align: center;
-    }
 
-    .btn {
-      margin: auto;
-      display: block;
-      width: fit-content;
-      color: #3a96d0;
-      text-decoration: none;
-      background-color: #fff;
-      border-radius: 20px;
-      padding: 20px 40px;
-      font-weight: 600;
-      font-size: 20px;
-      border: 1px solid #3a96d0;
-      transition: all ease-in 0.2s;
-      text-align: center;
-    }
+  <link rel="stylesheet" href="${URLUtils.staticURL('/css/siteCreated.css')}">
 
-    .btn:hover {
-      color: #fff;
-      background-color: #3a96d0;
-    }
-  </style>
 
   <h1 class="heading">Site created successfully</h1>
   <input type="hidden" id="siteId" value="${pdict.siteId}">
@@ -35,31 +10,11 @@
   <isinclude template="components/newSiteTutorial" />
   <a class="btn" href="${URLUtils.url('BMCustomFeeds-Start')}">See all sites</a>
 
-  <script>
-  const inputField = document.getElementById('siteId');
-  const newSiteUUID = document.getElementById("newSiteUUID");
-  const token = document.getElementsByName("csrf_token");
-  const sandboxUrl = document.getElementById("sandboxUrl").value;
 
-  const updateCartridgePath = () => {
-    setTimeout(async () => {
-      const siteId = inputField.value;
-      const formData = new FormData();
-      formData.append("RepositoryUUID", "8827ae2f19571182f41cc29c1e");
-      formData.append("update", "");
-      formData.append("csrf_token", token[0].value);
-      formData.append("UpdateSite_Cartridges", "test:app_BS");
-      formData.append("instType", "sandbox");
-      formData.append("UpdateSite_InsecureHost", "");
-      formData.append("UpdateSite_SecureHost", "");
-      console.log(siteId,"///" ,newSiteUUID.value,"///", token[0].value,"///",sandboxUrl);
-      const url = "https://" + sandboxUrl + "/on/demandware.store/Sites-Site/default/ViewChannelDetails-Dispatch?csrf_token=" + token[0].value;
-      const response = await fetch(url, {
-        method: "POST",
-        body: formData
-      })
-      }, 1000);
-    }
+
+    <script defer src="${URLUtils.staticURL('/js/siteCreated.js')}"></script>
+
+    <script>
 
     const getOS = () => {
     const platform = window.navigator.platform;
@@ -76,7 +31,7 @@
 }
 
     const downloadFile = () => {
-      const form = document.querySelector('form');
+    const form = document.querySelector('form');
     const curOS = getOS();
     const givenId = inputField.value;
     const a = document.createElement("a");
@@ -131,9 +86,11 @@
     }
 
   document.addEventListener("DOMContentLoaded", function() {
-    updateCartridgePath();
+    
     downloadFile();
 });
 
-</script>
+    </script>
+
+
 </isdecorate>
