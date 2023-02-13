@@ -2,7 +2,10 @@
     .headerMenuContent {
         padding: 0;
         width: 100%;
-        background-color: rgb(<isprint value="${pdict.red1}"/>, <isprint value="${pdict.green1}"/>, <isprint value="${pdict.blue1}"/>)
+        background-color: rgb(<isprint value="${pdict.red1}"/>, <isprint value="${pdict.green1}"/>, <isprint value="${pdict.blue1}"/>);
+        height: 100%;
+        display: flex;
+        align-items: center;
     }
 
     .headerMenuContent .nav-item>.nav-link:hover {
@@ -12,12 +15,29 @@
 
     .headerMenuContent .dropdown-item a {
         color: rgb(<isprint value="${pdict.red1}"/>, <isprint value="${pdict.green1}"/>, <isprint value="${pdict.blue1}"/>) !important;
+        /* background-color: rgb(<isprint value="${pdict.red2}"/>, <isprint value="${pdict.green2}"/>, <isprint value="${pdict.blue2}"/>) !important; */
+    }
+
+    ul.dropdown-menu.show {
         background-color: rgb(<isprint value="${pdict.red2}"/>, <isprint value="${pdict.green2}"/>, <isprint value="${pdict.blue2}"/>) !important;
+        margin: 0;
     }
 
     .headerMenuContent a {
         color: rgb(<isprint value="${pdict.red2}"/>, <isprint value="${pdict.green2}"/>, <isprint value="${pdict.blue2}"/>) !important;
-        background-color: rgb(<isprint value="${pdict.red1}"/>, <isprint value="${pdict.green1}"/>, <isprint value="${pdict.blue1}"/>) !important;
+    }
+
+    .dropdown-item:hover,
+    .dropdown-item:focus {
+        text-decoration: none;
+        background-color: rgb(<isprint value="${pdict.red3}"/>, <isprint value="${pdict.green3}"/>, <isprint value="${pdict.blue3}"/>) !important;
+        ;
+    }
+
+    .dropdown-item:hover a,
+    .dropdown-item:focus a {
+        color: rgb(<isprint value="${pdict.red4}"/>, <isprint value="${pdict.green4}"/>, <isprint value="${pdict.blue4}"/>) !important;
+        ;
     }
 </style>
 

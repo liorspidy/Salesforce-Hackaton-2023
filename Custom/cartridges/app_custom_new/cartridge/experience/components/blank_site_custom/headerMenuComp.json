@@ -10,18 +10,32 @@
           "attribute_definitions": [
               {
                   "id": "color1",
-                  "name": "Main Color",
-                  "description": "Pick A Main Color",
+                  "name": "Background Color",
+                  "description": "Pick A Background Color",
                   "type": "string",
                   "required": true
               },
                             {
                   "id": "color2",
-                  "name": "Secondary Color",
-                  "description": "Pick A Secondary Color",
+                  "name": "Text Color",
+                  "description": "Pick A Text Color",
                   "type": "string",
                   "required": true
-              }
+              },
+              {
+                "id": "color3",
+                "name": "Hover Background Color",
+                "description": "Pick A Hover Background Color",
+                "type": "string",
+                "required": false
+                },
+                {
+                "id": "color4",
+                "name": "Hover Text Color",
+                "description": "Pick A Hover Text Color",
+                "type": "string",
+                "required": false
+                }
           ]
         }
   ],

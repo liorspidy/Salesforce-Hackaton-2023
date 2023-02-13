@@ -44,6 +44,7 @@ function handle() {
   ISML.renderTemplate('feeds/siteCreated', {
     siteId: siteId,
     newSiteUUID: newSiteUUID,
+    sandboxUrl: sandboxUrl,
   });
   // Response.renderJSON({ siteData });
 }
