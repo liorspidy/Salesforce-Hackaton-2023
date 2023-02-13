@@ -8,9 +8,9 @@ var boguard = require("bc_library/cartridge/scripts/boguard");
 var ISML = require("dw/template/ISML");
 var Response = require("*/cartridge/scripts/util/Response");
 var CSRFProtection = require("dw/web/CSRFProtection");
+var Site = require("dw/system/Site");
 
 function start() {
-  var Site = require("dw/system/Site");
   const sites = Site.getAllSites();
   const sitesArr = [];
   for (let i = 0; i <= sites.length - 1; i++) {
@@ -18,6 +18,7 @@ function start() {
   }
   const sitesJson = JSON.stringify(sitesArr);
   const sandboxUrl = request.httpHost;
+  const a = "";
   ISML.renderTemplate("feeds/newSite.isml", {
     sandboxUrl: sandboxUrl,
     sites: sitesJson,
@@ -33,11 +34,17 @@ const convertNameToId = (str) => {
 function handle() {
   const body = request.httpParameterMap;
   const siteId = convertNameToId(body.siteName.value);
+  const sites = Site.getAllSites();
+  const newSiteUUID = sites.toArray().filter((site) => site.ID === siteId)[0]
+    .preferences.UUID;
   const siteData = {
     siteId: siteId,
     siteName: body.siteName.value,
   };
-  ISML.renderTemplate("feeds/siteCreated", { siteId: siteId });
+  ISML.renderTemplate("feeds/siteCreated", {
+    siteId: siteId,
+    newSiteUUID: newSiteUUID,
+  });
   // Response.renderJSON({ siteData });
 }
 
