@@ -61,4 +61,30 @@
 		</parameters>
 		<icon>icons/createAsite.gif</icon>
 	</menuaction>
+
+
+
+
+
+	<menuaction id="editFooter" menupath="custom-integration" position="102" site="false">
+		<name xml:lang="x-default">Edit Footer</name>
+		<short_description xml:lang="x-default">
+			Edit Footer
+		</short_description>
+		<description xml:lang="x-default">
+			Click here to Edit the Footer
+		</description>
+		<!-- no icon specified -->
+		<exec pipeline="BMEditFooter" node="Start" />
+		<sub-pipelines>
+			<pipeline name="BMEditFooter-Start" />
+		 	<pipeline name="BMEditFooter-HandleForm" /> 
+		</sub-pipelines>
+		<!-- <parameters>
+			<parameter name="menuname" value="Custom Feeds" />
+			<parameter name="mainmenuname" value="Integration" />
+			<parameter name="test" value="222" />
+		</parameters> -->
+		<icon>icons/createAsite.gif</icon>
+	</menuaction>
 </extensions>

@@ -1,14 +1,14 @@
-"use strict";
+'use strict';
 
 /**
  * @module controllers/BMCreateNewSite
  */
 
-var boguard = require("bc_library/cartridge/scripts/boguard");
-var ISML = require("dw/template/ISML");
-var Response = require("*/cartridge/scripts/util/Response");
-var CSRFProtection = require("dw/web/CSRFProtection");
-var Site = require("dw/system/Site");
+var boguard = require('bc_library/cartridge/scripts/boguard');
+var ISML = require('dw/template/ISML');
+var Response = require('*/cartridge/scripts/util/Response');
+var CSRFProtection = require('dw/web/CSRFProtection');
+var Site = require('dw/system/Site');
 
 function start() {
   const sites = Site.getAllSites();
@@ -18,8 +18,8 @@ function start() {
   }
   const sitesJson = JSON.stringify(sitesArr);
   const sandboxUrl = request.httpHost;
-  const a = "";
-  ISML.renderTemplate("feeds/newSite.isml", {
+  const a = '';
+  ISML.renderTemplate('feeds/newSite.isml', {
     sandboxUrl: sandboxUrl,
     sites: sitesJson,
   });
@@ -27,8 +27,8 @@ function start() {
 
 const convertNameToId = (str) => {
   str = str.trim();
-  str = str.toLowerCase().replace(/[^a-z\s]/g, "");
-  return str.replace(/\s(?=\S)/g, "_").trim();
+  str = str.toLowerCase().replace(/[^a-z\s]/g, '');
+  return str.replace(/\s(?=\S)/g, '_').trim();
 };
 
 function handle() {
@@ -41,15 +41,15 @@ function handle() {
     siteId: siteId,
     siteName: body.siteName.value,
   };
-  ISML.renderTemplate("feeds/siteCreated", {
+  ISML.renderTemplate('feeds/siteCreated', {
     siteId: siteId,
     newSiteUUID: newSiteUUID,
   });
   // Response.renderJSON({ siteData });
 }
 
-exports.Start = boguard.ensure(["get"], start);
-exports.Handle = boguard.ensure(["post"], handle);
+exports.Start = boguard.ensure(['get'], start);
+exports.Handle = boguard.ensure(['post'], handle);
 
 // exports.Preview = boguard.ensure(['post'], preview);
 
