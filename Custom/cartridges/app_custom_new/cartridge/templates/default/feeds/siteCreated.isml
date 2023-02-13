@@ -31,15 +31,53 @@
   <h1 class="heading">Site created successfully</h1>
   <isinclude template="components/newSiteTutorial" />
   <input type="hidden" id="siteId" value="${pdict.siteId}">
+  <input type="hidden" id="newSiteUUID" value="${pdict.newSiteUUID}">
   <a class="btn" href="${URLUtils.url('BMCustomFeeds-Start')}">See all sites</a>
 
   <script>
+    const token = document.getElementsByName("csrf_token");
+    console.log(token[0]?.value);
+
+
   document.addEventListener("DOMContentLoaded", function() {
     const form = document.querySelector('form');
     const curOS = getOS();
     const inputField = document.getElementById('siteId');
+    const newSiteUUID = document.getElementById("newSiteUUID");
     const givenId = inputField.value;
     const a = document.createElement("a");
+
+
+    const updateCartridgePath = async () => {
+      const siteId = inputField.value;
+      const formData = new FormData();
+      formData.append("RepositoryUUID", newSiteUUID);
+      formData.append("update", "");
+      formData.append("csrf_token", token);
+      formData.append("UpdateSite_Cartridges", "test");
+      console.log(siteId,"///" ,newSiteUUID.value,"///", token[0]);
+    }
+
+    updateCartridgePath();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     if (curOS === "Mac") {
       data = 
