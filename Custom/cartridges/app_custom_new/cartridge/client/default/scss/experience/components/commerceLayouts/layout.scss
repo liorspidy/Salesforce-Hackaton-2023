@@ -39,9 +39,16 @@ div.sf-interactions-proxyHoverContainer a {
 }
 
 .experience-component.experience-blank_site_custom-colorBox,
-.experience-component.experience-blank_site_custom-mainLogo {
+.experience-component.experience-blank_site_custom-mainLogo,
+.experience-component.experience-blank_site_custom-headerMenuComp {
     height: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+.experience-component.experience-blank_site_custom-searchComp {
+    height: 100%;
+    display: grid;
     align-items: center;
 }

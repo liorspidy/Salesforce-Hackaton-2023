@@ -29,57 +29,60 @@
   </style>
 
   <h1 class="heading">Site created successfully</h1>
-  <isinclude template="components/newSiteTutorial" />
   <input type="hidden" id="siteId" value="${pdict.siteId}">
   <input type="hidden" id="newSiteUUID" value="${pdict.newSiteUUID}">
+  <input type="hidden" id="sandboxUrl" value="${pdict.sandboxUrl}">
+  <isinclude template="components/newSiteTutorial" />
   <a class="btn" href="${URLUtils.url('BMCustomFeeds-Start')}">See all sites</a>
 
   <script>
-    
+  const inputField = document.getElementById('siteId');
+  const newSiteUUID = document.getElementById("newSiteUUID");
+  const token = document.getElementsByName("csrf_token");
+  const sandboxUrl = document.getElementById("sandboxUrl").value;
 
-
-  document.addEventListener("DOMContentLoaded", function() {
-    const form = document.querySelector('form');
-    const curOS = getOS();
-    // const token = document.getElementsByName('csrf_token')?[0]?.value;
-    const inputField = document.getElementById('siteId');
-    const newSiteUUID = document.getElementById("newSiteUUID");
-    const givenId = inputField.value;
-    const a = document.createElement("a");
-    console.log(document.getElementsByName('csrf_token')[0].value)
-
-    const updateCartridgePath = async () => {
+  const updateCartridgePath = () => {
+    setTimeout(async () => {
       const siteId = inputField.value;
       const formData = new FormData();
-      formData.append("RepositoryUUID", newSiteUUID);
+      formData.append("RepositoryUUID", "8827ae2f19571182f41cc29c1e");
       formData.append("update", "");
-      formData.append("csrf_token", token);
-      formData.append("UpdateSite_Cartridges", "test");
+      formData.append("csrf_token", token[0].value);
+      formData.append("UpdateSite_Cartridges", "test:app_BS");
+      formData.append("instType", "sandbox");
+      formData.append("UpdateSite_InsecureHost", "");
+      formData.append("UpdateSite_SecureHost", "");
+      console.log(siteId,"///" ,newSiteUUID.value,"///", token[0].value,"///",sandboxUrl);
+      const url = "https://" + sandboxUrl + "/on/demandware.store/Sites-Site/default/ViewChannelDetails-Dispatch?csrf_token=" + token[0].value;
+      const response = await fetch(url, {
+        method: "POST",
+        body: formData
+      })
+      }, 1000);
     }
 
-    updateCartridgePath();
+    const getOS = () => {
+    const platform = window.navigator.platform;
+    let os = null;
 
+    if (platform.indexOf("Mac") !== -1) {
+        os = "Mac";
+    } else if (platform.indexOf("Win") !== -1) {
+        os = "Windows";
+    } else if (platform.indexOf("Linux") !== -1) {
+        os = "Linux";
+    }
+    return os;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    const downloadFile = () => {
+      const form = document.querySelector('form');
+    const curOS = getOS();
+    const givenId = inputField.value;
+    const a = document.createElement("a");
+  
     if (curOS === "Mac") {
-      data = 
+      data =
             'mkdir ' + givenId + '\n' +
             'cd ' + givenId + '\n' +
             'npm install -g sgmf-scripts --save-dev\n' +
@@ -125,21 +128,12 @@
     var fileUrl = URL.createObjectURL(file);
     a.href = fileUrl;
     a.click();
-});
-
-const getOS = () => {
-    const platform = window.navigator.platform;
-    let os = null;
-
-    if (platform.indexOf("Mac") !== -1) {
-        os = "Mac";
-    } else if (platform.indexOf("Win") !== -1) {
-        os = "Windows";
-    } else if (platform.indexOf("Linux") !== -1) {
-        os = "Linux";
     }
-    return os;
-}
+
+  document.addEventListener("DOMContentLoaded", function() {
+    updateCartridgePath();
+    downloadFile();
+});
 
 </script>
 </isdecorate>

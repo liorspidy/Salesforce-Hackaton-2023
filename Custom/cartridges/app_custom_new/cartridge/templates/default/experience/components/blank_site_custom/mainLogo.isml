@@ -6,6 +6,8 @@
 
 <div>
     <div class="logoContent">
-        <img class="logo" src="${pdict.imgUrl}" alt="${pdict.imgAlt}">
+        <a href="${URLUtils.url('Home-Show')}">
+            <img class="logo" src="${pdict.imgUrl}" alt="${pdict.imgAlt}">
+        </a>
     </div>
 </div>
