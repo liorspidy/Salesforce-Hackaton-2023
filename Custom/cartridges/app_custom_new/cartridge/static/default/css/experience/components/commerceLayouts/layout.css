@@ -38,12 +38,21 @@ div.sf-interactions-proxyHoverContainer a {
 }
 
 .experience-component.experience-blank_site_custom-colorBox,
-.experience-component.experience-blank_site_custom-mainLogo {
+.experience-component.experience-blank_site_custom-mainLogo,
+.experience-component.experience-blank_site_custom-headerMenuComp {
   height: 100%;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.experience-component.experience-blank_site_custom-searchComp {
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
   -ms-flex-align: center;
       align-items: center;
 }

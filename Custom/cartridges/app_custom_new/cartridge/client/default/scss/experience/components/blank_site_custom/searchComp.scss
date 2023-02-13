@@ -1,28 +1,31 @@
-
-
-
-.mainBox{
+.mainBox {
     display: flex;
     // flex-direction: row;
     align-items: center;
-
+    margin: 0.5rem 0.6rem;
 }
 
-
-.form-control{
+.form-control {
     border-radius: 1rem;
 }
-.leftCart{ flex-direction: row;}
-.rightCart{ flex-direction: row-reverse;}
- 
+.Left {
+    flex-direction: row-reverse;
+}
+.Right {
+    flex-direction: row;
+}
+
+.site-search form {
+    display: contents;
+}
 
 .site-search {
     width: 100%;
+    align-items: center;
+    display: grid;
 }
 
-.cart{
-   padding: 0.2rem;
-   padding-top: 1.2rem;
-   padding-left: 1rem;
-   
+.cart {
+    height: 40px;
+    margin: 0 1rem;
 }
