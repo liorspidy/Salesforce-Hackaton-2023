@@ -106,7 +106,7 @@
                 </iscomment>
                 <div class="input-container">
                     <label for="siteName">Site Name</label>
-                    <input id="siteName" class="site-name" name="siteName" type="text" required />
+                    <input maxlength="32" id="siteName" class="site-name" name="siteName" type="text" required />
                 </div>
                 <iscomment>
                     <div class="input-container">
@@ -154,14 +154,14 @@
         const formData = new FormData();
         const siteName = form.siteName.value;
         const siteId = convertNameToId(siteName);
-        formData.append("ChannelForm_RepositoryID",siteId);
-        formData.append("ChannelForm_DisplayName",siteName);
-        formData.append("ChannelForm_SiteTimeZone","Etc/UTC");
-        formData.append("ChannelForm_CurrencyCode","USD");
-        formData.append("ChannelForm_Taxation","net");
-        formData.append("ChannelForm_CustomerListID","CreateNewCustomerList");
-        formData.append("webform-id","ChannelForm");
-        formData.append("create","");
+        formData.append("ChannelForm_RepositoryID", siteId);
+        formData.append("ChannelForm_DisplayName", siteName);
+        formData.append("ChannelForm_SiteTimeZone", "Etc/UTC");
+        formData.append("ChannelForm_CurrencyCode", "USD");
+        formData.append("ChannelForm_Taxation", "net");
+        formData.append("ChannelForm_CustomerListID", "CreateNewCustomerList");
+        formData.append("webform-id", "ChannelForm");
+        formData.append("create", "");
         const createSite = async () => {
             if(siteName === "") return;
             const url = "https://" + sandboxUrl + "/on/demandware.store/Sites-Site/default/ViewChannel-Dispatch?csrf_token=" + token[0].value;
@@ -169,8 +169,7 @@
                 method:"POST",
                 body: formData
             });
-            console.log(siteId);
-            form.submit();
+            await form.submit();
         }
         if(sites.some((name) => {
            return convertNameToId(name) === siteId
