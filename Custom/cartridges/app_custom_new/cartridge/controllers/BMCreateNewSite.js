@@ -9,6 +9,7 @@ var ISML = require("dw/template/ISML");
 var Response = require("*/cartridge/scripts/util/Response");
 var CSRFProtection = require("dw/web/CSRFProtection");
 var Site = require("dw/system/Site");
+const sandboxUrl = request.httpHost;
 
 function start() {
   const sites = Site.getAllSites();
@@ -17,7 +18,6 @@ function start() {
     sitesArr[i] = sites[i].name;
   }
   const sitesJson = JSON.stringify(sitesArr);
-  const sandboxUrl = request.httpHost;
   const a = "";
   ISML.renderTemplate("feeds/newSite.isml", {
     sandboxUrl: sandboxUrl,
@@ -44,6 +44,7 @@ function handle() {
   ISML.renderTemplate("feeds/siteCreated", {
     siteId: siteId,
     newSiteUUID: newSiteUUID,
+    sandboxUrl: sandboxUrl,
   });
   // Response.renderJSON({ siteData });
 }

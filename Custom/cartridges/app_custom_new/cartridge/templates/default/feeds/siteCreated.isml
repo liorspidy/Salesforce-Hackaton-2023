@@ -1,86 +1,43 @@
 <isdecorate template="application/MenuFrame">
-  <style>
-    .heading {
-      color: #698269;
-      font-size: 40px;
-      text-align: center;
-    }
 
-    .btn {
-      margin: auto;
-      display: block;
-      width: fit-content;
-      color: #3a96d0;
-      text-decoration: none;
-      background-color: #fff;
-      border-radius: 20px;
-      padding: 20px 40px;
-      font-weight: 600;
-      font-size: 20px;
-      border: 1px solid #3a96d0;
-      transition: all ease-in 0.2s;
-      text-align: center;
-    }
+  <link rel="stylesheet" href="${URLUtils.staticURL('/css/siteCreated.css')}">
 
-    .btn:hover {
-      color: #fff;
-      background-color: #3a96d0;
-    }
-  </style>
 
   <h1 class="heading">Site created successfully</h1>
-  <isinclude template="components/newSiteTutorial" />
   <input type="hidden" id="siteId" value="${pdict.siteId}">
   <input type="hidden" id="newSiteUUID" value="${pdict.newSiteUUID}">
+  <input type="hidden" id="sandboxUrl" value="${pdict.sandboxUrl}">
+  <isinclude template="components/newSiteTutorial" />
   <a class="btn" href="${URLUtils.url('BMCustomFeeds-Start')}">See all sites</a>
 
-  <script>
-    const token = document.getElementsByName("csrf_token");
-    console.log(token[0]?.value);
 
 
-  document.addEventListener("DOMContentLoaded", function() {
+    <script defer src="${URLUtils.staticURL('/js/siteCreated.js')}"></script>
+
+    <script>
+
+    const getOS = () => {
+    const platform = window.navigator.platform;
+    let os = null;
+
+    if (platform.indexOf("Mac") !== -1) {
+        os = "Mac";
+    } else if (platform.indexOf("Win") !== -1) {
+        os = "Windows";
+    } else if (platform.indexOf("Linux") !== -1) {
+        os = "Linux";
+    }
+    return os;
+}
+
+    const downloadFile = () => {
     const form = document.querySelector('form');
     const curOS = getOS();
-    const inputField = document.getElementById('siteId');
-    const newSiteUUID = document.getElementById("newSiteUUID");
     const givenId = inputField.value;
     const a = document.createElement("a");
-
-
-    const updateCartridgePath = async () => {
-      const siteId = inputField.value;
-      const formData = new FormData();
-      formData.append("RepositoryUUID", newSiteUUID);
-      formData.append("update", "");
-      formData.append("csrf_token", token);
-      formData.append("UpdateSite_Cartridges", "test");
-      console.log(siteId,"///" ,newSiteUUID.value,"///", token[0]);
-    }
-
-    updateCartridgePath();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  
     if (curOS === "Mac") {
-      data = 
+      data =
             'mkdir ' + givenId + '\n' +
             'cd ' + givenId + '\n' +
             'npm install -g sgmf-scripts --save-dev\n' +
@@ -126,21 +83,14 @@
     var fileUrl = URL.createObjectURL(file);
     a.href = fileUrl;
     a.click();
+    }
+
+  document.addEventListener("DOMContentLoaded", function() {
+    
+    downloadFile();
 });
 
-const getOS = () => {
-    const platform = window.navigator.platform;
-    let os = null;
+    </script>
 
-    if (platform.indexOf("Mac") !== -1) {
-        os = "Mac";
-    } else if (platform.indexOf("Win") !== -1) {
-        os = "Windows";
-    } else if (platform.indexOf("Linux") !== -1) {
-        os = "Linux";
-    }
-    return os;
-}
 
-</script>
 </isdecorate>
