@@ -8,16 +8,11 @@
         assets.addCss('/css/experience/components/blank_site_custom/mainLogo.css');
         assets.addCss('/css/experience/components/blank_site_custom/colorBox.css');
         assets.addCss('/css/experience/components/commerceLayouts/layout.css');
-         assets.addCss('/css/experience/components/blank_site_custom/loginComponent.css');
+        assets.addCss('/css/experience/components/blank_site_custom/loginComponent.css');
     </isscript>
 
     <div class="storepage" id="${pdict.page.ID}">
         <div class="container">
-            <iscomment>
-                <div class="row">
-                    <isprint value="${pdict.regions.mainHeader.setClassName(" col-12").render()}" encoding="off" />
-                </div>
-            </iscomment>
             <div class="row">
                 <isprint value="${pdict.regions.main.setClassName(" col-12").render()}" encoding="off" />
             </div>
