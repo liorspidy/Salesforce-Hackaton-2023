@@ -2,7 +2,7 @@
 <extensions xmlns="http://www.demandware.com/xml/bmmodules/2007-12-11"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.demandware.com/xml/bmmodules/2007-12-11 bmext.xsd">
 	<menuitem id="custom-integration" position="99999" site="false">
-		<name xml:lang="x-default">Stupid Merchant</name>
+		<name xml:lang="x-default">Easy 4 Merchant</name>
 		<short_description xml:lang="x-default">
 			Create a site shortly
 		</short_description>
@@ -61,7 +61,7 @@
 		<exec pipeline="BMEditFooter" node="Start" />
 		<sub-pipelines>
 			<pipeline name="BMEditFooter-Start" />
-		 	<pipeline name="BMEditFooter-HandleForm" /> 
+			<pipeline name="BMEditFooter-HandleForm" />
 		</sub-pipelines>
 		<icon>icons/createAsite.gif</icon>
 	</menuaction>
