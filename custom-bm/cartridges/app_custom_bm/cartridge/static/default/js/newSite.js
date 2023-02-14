@@ -24,7 +24,6 @@ submitBtn.addEventListener("click", (e) => {
     createSite(siteId, siteName);
   }
 });
-/////////////// Functions
 
 const createSite = async (siteId, siteName) => {
   const formData = new FormData();
@@ -48,8 +47,6 @@ const createSite = async (siteId, siteName) => {
   });
   await form.submit();
 };
-
-//////////////////////////////////////////////////////////////////////////////////
 
 const convertNameToId = (str) => {
   str = str.trim();

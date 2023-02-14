@@ -2,6 +2,15 @@
     var assets = require('*/cartridge/scripts/assets.js');
     assets.addCss('/css/experience/components/blank_site_custom/searchComp.css');
 </isscript>
+
+<style>
+    .mainBox {
+        background-color: rgb(<isprint value="${pdict.bgred}"/>,
+            <isprint value="${pdict.bggreen}"/>,
+            <isprint value="${pdict.bgblue}"/>);
+    }
+</style>
+
 <div class="mainBox  ${pdict.leftOrRight}">
 
     <div class="site-search">

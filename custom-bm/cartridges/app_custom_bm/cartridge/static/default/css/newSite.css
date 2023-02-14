@@ -1,84 +1,88 @@
-
 html {
-    font-family: sans-serif;
+  font-family: sans-serif;
 }
 
 .main-container h1 {
-    text-align: center;
-    margin-top: 1.5rem;
-    font-size: 40px;
-    font-weight: bold;
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 40px;
+  font-weight: bold;
 }
 
 .form-container {
-    margin: auto;
-    width: fit-content;
+  margin: auto;
+  width: fit-content;
 }
 
 .input-container {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 15px;
-    margin: auto;
-    width: fit-content;
-    margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  margin: auto;
+  width: fit-content;
+  margin-bottom: 20px;
 }
 
 .input-container label {
-    text-align: center;
+  text-align: center;
 }
 
 .manual-link {
-    text-decoration: none;
-    background-color: #3F979B;
-    color: #fff;
-    padding: 5px 7px;
-    border-radius: 10px;
-    margin: auto;
-    text-align: center;
-    display: block;
-    width: fit-content;
-    margin: 10px auto 40px auto;
-    cursor: pointer;
-    border: 1px solid #000;
+  text-decoration: none;
+  background-color: #3f979b;
+  color: #fff;
+  padding: 5px 7px;
+  border-radius: 10px;
+  margin: auto;
+  text-align: center;
+  display: block;
+  width: fit-content;
+  margin: 10px auto 40px auto;
+  cursor: pointer;
+  border: 1px solid #000;
 }
 
 .manual-link:visited,
 .manual-link:active {
-    color: #fff;
+  color: #fff;
 }
 
 .btn-container {
-    text-align: center;
-    margin-top: 30px;
+  text-align: center;
+  margin-top: 30px;
 }
 
 .btn-container button {
-    padding: 20px;
-    border-radius: 20px;
-    background-color: black;
-    color: white;
-    font-size: 20px;
-    cursor: pointer;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-container button:hover {
+  transform: scale(1.08);
 }
 
 .site-name {
-    width: 200px;
-    text-align: center;
-    padding: 10px;
-    border-radius: 20px;
-    border: 0.5px solid #000;
-    font-size: 20px;
-    box-shadow: 5px 4px 7px 0px #00000063;
+  width: 200px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 20px;
+  border: 0.5px solid #000;
+  font-size: 20px;
+  box-shadow: 5px 4px 7px 0px #00000063;
 }
 
 .site-name:focus-visible {
-    outline: none;
+  outline: none;
 }
 
 .error-message {
-    color: red;
-    font-size: 20px;
-    font-weight: 600;
-    display: none;
+  color: red;
+  font-size: 20px;
+  font-weight: 600;
+  display: none;
 }
