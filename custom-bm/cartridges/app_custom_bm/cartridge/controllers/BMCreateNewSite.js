@@ -36,17 +36,13 @@ function handle() {
   const siteId = convertNameToId(body.siteName.value);
   const sites = Site.getAllSites();
   const current = Site.current;
-  const newSiteUUID = sites.toArray().filter((site) => site.ID === siteId)[0]
-    .preferences.UUID;
   const sandboxUrl = request.httpHost;
   const siteData = {
     siteId: siteId,
     siteName: body.siteName.value,
   };
-  const a = "";
   ISML.renderTemplate("feeds/siteCreated", {
     siteId: siteId,
-    newSiteUUID: newSiteUUID,
     sandboxUrl: sandboxUrl,
   });
   // Response.renderJSON({ siteData });
