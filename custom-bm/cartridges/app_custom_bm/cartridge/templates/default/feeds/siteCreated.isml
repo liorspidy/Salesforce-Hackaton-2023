@@ -3,7 +3,7 @@
   <link rel="stylesheet" href="${URLUtils.staticURL('/css/siteCreated.css')}">
 
 
-    <h1 class="heading">Site created successfully</h1>
+    <h1 class="heading">Instructions:</h1>
 
     <input type="hidden" id="siteId" value="${pdict.siteId}">
     <input type="hidden" id="newSiteUUID" value="${pdict.newSiteUUID}">
