@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<extensions xmlns="http://www.demandware.com/xml/bmmodules/2007-12-11"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.demandware.com/xml/bmmodules/2007-12-11 bmext.xsd">
+	<menuitem id="custom-integration" position="99999" site="false">
+		<name xml:lang="x-default">Stupid Merchant</name>
+		<short_description xml:lang="x-default">
+			Create a site shortly
+		</short_description>
+		<description xml:lang="x-default">
+			Creating a site for idiots
+		</description>
+		<icon>icons/integration_ico.gif</icon>
+	</menuitem>
+
+	<menuaction id="siteForIdiots" menupath="custom-integration" position="100" site="false">
+		<name xml:lang="x-default">Show Me My Sites</name>
+		<short_description xml:lang="x-default">
+			Showing my sites
+		</short_description>
+		<description xml:lang="x-default">
+			Click here to show your sites
+		</description>
+		<exec pipeline="BMCustomFeeds" node="Start" />
+		<icon>icons/createAsite.gif</icon>
+	</menuaction>
+
+
+	<menuaction id="createSite" menupath="custom-integration" position="101" site="false">
+		<name xml:lang="x-default">Create a new site</name>
+		<short_description xml:lang="x-default">
+			Create a new site
+		</short_description>
+		<description xml:lang="x-default">
+			Click here to create a new site
+		</description>
+		<exec pipeline="BMCreateNewSite" node="Start" />
+		<sub-pipelines>
+			<pipeline name="BMCreateNewSite-Start" />
+			<pipeline name="BMCreateNewSite-Handle" />
+		</sub-pipelines>
+		<parameters>
+			<parameter name="menuname" value="Custom Feeds" />
+			<parameter name="mainmenuname" value="Integration" />
+			<parameter name="test" value="222" />
+		</parameters>
+		<icon>icons/createAsite.gif</icon>
+	</menuaction>
+
+
+
+
+
+	<menuaction id="editFooter" menupath="custom-integration" position="102" site="false">
+		<name xml:lang="x-default">Edit Footer</name>
+		<short_description xml:lang="x-default">
+			Edit Footer
+		</short_description>
+		<description xml:lang="x-default">
+			Click here to Edit the Footer
+		</description>
+		<exec pipeline="BMEditFooter" node="Start" />
+		<sub-pipelines>
+			<pipeline name="BMEditFooter-Start" />
+		 	<pipeline name="BMEditFooter-HandleForm" /> 
+		</sub-pipelines>
+		<icon>icons/createAsite.gif</icon>
+	</menuaction>
+</extensions>
