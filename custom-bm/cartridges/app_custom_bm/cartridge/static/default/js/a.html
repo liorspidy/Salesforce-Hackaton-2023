@@ -1,0 +1,5944 @@
+
+
+
+<!DOCTYPE html>
+
+<!-- Template Name :  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="/on/demandware.static/Sites-Site/-/default/vafac256fc623099215d4afb16a74bb175c7bc1d9/slds/styles/slds-ccbm.css" />
+<link rel="stylesheet" type="text/css" href="/on/demandware.static/Sites-Site/-/default/vafac256fc623099215d4afb16a74bb175c7bc1d9/css/enterprisesite.css" />
+<link rel="stylesheet" type="text/css" href="/on/demandware.static/Sites-Site/-/default/vafac256fc623099215d4afb16a74bb175c7bc1d9/css/print.css" media="print" />
+<link rel="stylesheet" type="text/css" href="/on/demandware.static/Sites-Site/-/default/vafac256fc623099215d4afb16a74bb175c7bc1d9/css/lightbox.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="/on/demandware.static/Sites-Site/-/default/vafac256fc623099215d4afb16a74bb175c7bc1d9/css/calendar-blue.css" />
+<link rel="stylesheet" type="text/css" href="/on/demandware.static/Sites-Site/-/default/vafac256fc623099215d4afb16a74bb175c7bc1d9/jscript/prototype_window/themes/default.css" />
+<link rel="stylesheet" type="text/css" href="/on/demandware.static/Sites-Site/-/default/vafac256fc623099215d4afb16a74bb175c7bc1d9/jscript/prototype_window/themes/demandware.css" />
+
+
+<link rel="stylesheet" type="text/css" href="/on/demandware.static/Sites-Site/-/default/vafac256fc623099215d4afb16a74bb175c7bc1d9/css/enterprisesite2.css?v23.2.1.19" />
+<link rel="stylesheet" type="text/css" href="/on/demandware.static/Sites-Site/-/default/vafac256fc623099215d4afb16a74bb175c7bc1d9/css/dw-ui-no-conflict.min.css" />
+<link rel="stylesheet" type="text/css" href="/on/demandware.static/Sites-Site/-/default/vafac256fc623099215d4afb16a74bb175c7bc1d9/css/enterprisesite_lds_fix.css" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+window.name = 'business manaager';
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src='/on/demandware.static/Sites-Site/-/default/vafac256fc623099215d4afb16a74bb175c7bc1d9/jscript/csrf/csrf.js'></script>
+<script type="text/javascript">
+var BMCSRFInjector = new CSRFInjector(
+'csrf_token',
+'zLqjUruHCYxImQTjAvlmUeZd8Ymg_6gJ910ffzqRlxP2MTXjoPKmoGAGZVB0EtXoc0T8u-rKGosy3dU5Dw_1TG53bBcmN8VlnxvwtbDpnOSRifDiOF85slFEA_3C6SSPLVasqynf5PK67hMRGLK4gjRlETxs84t11RiMpMRiD5MTkA7yu3M=',
+'zztr-022.dx.commercecloud.salesforce.com'.split(":")[0]);
+BMCSRFInjector.inject();
+setInterval(function() {
+BMCSRFInjector.injectInDoc(document);
+}, 500);
+</script>
+
+
+<script type="text/javascript" src="/on/demandware.static/Sites-Site/-/default/vafac256fc623099215d4afb16a74bb175c7bc1d9/jscript/calendar.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+// ** I18N
+// Calendar EN language
+// Author: Mihai Bazon, <mihai_bazon@yahoo.com>
+// Encoding: any
+// Distributed under the same terms as the calendar itself.
+// For translators: please use UTF-8 if possible. We strongly believe that
+// Unicode is the answer to a real internationalized world. Also please
+// include your contact information in the header, as can be seen above.
+// full day names
+Calendar._DN = new Array
+("Sunday",
+"Monday",
+"Tuesday",
+"Wednesday",
+"Thursday",
+"Friday",
+"Saturday",
+"Sunday");
+// Please note that the following array of short day names (and the same goes
+// for short month names, _SMN) isn't absolutely necessary. We give it here
+// for exemplification on how one can customize the short day names, but if
+// they are simply the first N letters of the full name you can simply say:
+//
+// Calendar._SDN_len = N; // short day name length
+// Calendar._SMN_len = N; // short month name length
+//
+// If N = 3 then this is not needed either since we assume a value of 3 if not
+// present, to be compatible with translation files that were written before
+// this feature.
+// short day names
+Calendar._SDN = new Array
+("Sun",
+"Mon",
+"Tue",
+"Wed",
+"Thu",
+"Fri",
+"Sat",
+"Sun");
+// First day of the week. "0" means display Sunday first, "1" means display
+// Monday first, etc.
+
+
+
+Calendar._FD = 0;
+// full month names
+Calendar._MN = new Array
+("January",
+"February",
+"March",
+"April",
+"May",
+"June",
+"July",
+"August",
+"September",
+"October",
+"November",
+"December");
+// short month names
+Calendar._SMN = new Array
+("Jan",
+"Feb",
+"Mar",
+"Apr",
+"May",
+"Jun",
+"Jul",
+"Aug",
+"Sep",
+"Oct",
+"Nov",
+"Dec");
+// tooltips
+Calendar._TT = {};
+Calendar._TT["INFO"] = "About the Calendar";
+Calendar._TT["ABOUT"] =
+"DHTML Date/Time Selector\n" +
+"(c) dynarch.com 2002-2005 / Author: Mihai Bazon\n" + // don't translate this this ;-)
+"For latest version visit: http://www.dynarch.com/projects/calendar/\n" +
+"Distributed under GNU LGPL. See http://gnu.org/licenses/lgpl.html for details." +
+"\n\n" +
+"Date selection:\n- Use the «, » buttons to select the year.\n- Use the \u2039, \u203a buttons to select the month.\n- Hold the mouse button on any of the above buttons for faster selection.";
+Calendar._TT["ABOUT_TIME"] = "\n\nTime selection:\n- Click on any of the time increments to increase it,\n- or Shift-click to decrease it,\n- or click and drag for faster selection.";
+Calendar._TT["PREV_YEAR"] = "Prev. year (hold for menu).";
+Calendar._TT["PREV_MONTH"] = "Prev. month (hold for menu).";
+Calendar._TT["GO_TODAY"] = "Go to today.";
+Calendar._TT["NEXT_MONTH"] = "Next month (hold for menu)."
+Calendar._TT["NEXT_YEAR"] = "Next year (hold for menu).";
+Calendar._TT["SEL_DATE"] = "Select date.";
+Calendar._TT["DRAG_TO_MOVE"] = "Drag to move.";
+Calendar._TT["PART_TODAY"] = " (today)";
+// the following is to inform that "%s" is to be the first day of week
+// %s will be replaced with the day name.
+Calendar._TT["DAY_FIRST"] = "Start week with %s";
+// This may be locale-dependent. It specifies the week-end days, as an array
+// of comma-separated numbers. The numbers are from 0 to 6: 0 means Sunday, 1
+// means Monday, etc.
+Calendar._TT["WEEKEND"] = "0,6";
+Calendar._TT["CLOSE"] = "Close";
+Calendar._TT["TODAY"] = "Today";
+Calendar._TT["TIME_PART"] = "(Shift-)Click or drag to change value.";
+// date formats
+Calendar._TT["DEF_DATE_FORMAT"] = "%Y-%m-%d";
+Calendar._TT["TT_DATE_FORMAT"] = "%a, %b %e";
+Calendar._TT["WK"] = "wk";
+Calendar._TT["TIME"] = "Time:";
+</script>
+<script type="text/javascript" src="/on/demandware.static/Sites-Site/-/default/vafac256fc623099215d4afb16a74bb175c7bc1d9/jscript/calendar-setup.js"></script>
+
+<script type="text/javascript">
+// Set urls for the lightbox images
+var loadingImage = "/on/demandware.static/Sites-Site/-/default/vafac256fc623099215d4afb16a74bb175c7bc1d9/images/lightbox-loading.gif";
+var closeButton = "/on/demandware.static/Sites-Site/-/default/vafac256fc623099215d4afb16a74bb175c7bc1d9/images/lightbox-close.gif";
+</script>
+<script type="text/javascript" src="/on/demandware.static/Sites-Site/-/default/vafac256fc623099215d4afb16a74bb175c7bc1d9/jscript/prototype.js"></script>
+<script type="text/javascript" src="/on/demandware.static/Sites-Site/-/default/vafac256fc623099215d4afb16a74bb175c7bc1d9/jscript/lightbox.js"></script>
+
+
+
+<script>window.jQuery || document.write('<script src="/on/demandware.static/Sites-Site/-/default/vafac256fc623099215d4afb16a74bb175c7bc1d9/jscript/sfquery.min.js">\x3C/script>')</script>
+<script>jQuery.noConflict();</script>
+
+<!-- Prototype Windows (www.prototype-window.com) -->
+<script type="text/javascript" src="/on/demandware.static/Sites-Site/-/default/vafac256fc623099215d4afb16a74bb175c7bc1d9/jscript/prototype_window/window.js"></script>
+<!-- Popup to display a versioned page of the documentation. -->
+<script type="text/javascript" src="/on/demandware.static/Sites-Site/-/default/vafac256fc623099215d4afb16a74bb175c7bc1d9/jscript/OnlineHelpPopup.js"></script>
+<!-- Used to ensure the site the user is looking at is set in the session when switching between multiple tabs -->
+<script type="text/javascript" src="/on/demandware.static/Sites-Site/-/default/vafac256fc623099215d4afb16a74bb175c7bc1d9/jscript/update-site.js"></script>
+
+
+<script type="text/javascript">
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    if (window.jQuery) {
+        (function ($) {
+            $(function () {
+                var bmAlertIcon = $('.icon-menu-bm_alert_icon');
+                function hideNoAdvertorialContent() {
+                    $(".bm-advertorial-no-content").removeClass("show-advertorial");
+                };
+                if (bmAlertIcon) {
+                    bmAlertIcon.click( function(e) {
+                        $(".bm-advertorial-no-content" ).addClass("show-advertorial");
+                        e.stopPropagation();
+                        return false;
+                    });
+                    var body = $("body");
+                    body.click( hideNoAdvertorialContent );
+
+                    body.keyup = ( function(e) {
+                        if( e.which === 27 ) {
+                            hideNoAdvertorialContent();
+                        }
+                    });
+                }
+            });
+        })(jQuery);
+    }
+</script>
+
+
+	<script>
+	    // convert comma-separated roles to array (Pendo "role" visitor attribute can be an array)
+		var roleList = 'customer user'.split(',');
+
+		// PENDO INITIALIZATION
+		(function(p,e,n,d,o){var v,w,x,y,z;o=p[d]=p[d]||{};o._q=[];
+			v=['initialize','identify','updateOptions','pageLoad'];for(w=0,x=v.length;w<x;++w)(function(m){
+				o[m]=o[m]||function(){o._q[m===v[0]?'unshift':'push']([m].concat([].slice.call(arguments,0)));};})(v[w]);
+			//This is the remote CDN: https://cdn.pendo.io/agent/static/377b5d99-1622-400f-5015-ab9941477791/pendo.js
+			y=e.createElement(n);y.async=!0;y.src='/on/demandware.static/Sites-Site/-/default/vafac256fc623099215d4afb16a74bb175c7bc1d9/jscript/pendo/pendo.js ';
+			z=e.getElementsByTagName(n)[0];z.parentNode.insertBefore(y,z);})(window,document,'script','pendo');
+
+		// Call this whenever information about your visitors becomes available
+		// Please use Strings, Numbers, or Bools for value types.
+		pendo.initialize({
+			sanitizeUrl: function (url){
+				var instanceRole = 'LIVE';
+				var replaceHostName = instanceRole === 'LIVE' ? 'private_host' : 'internal_host';
+				return url.replace(/\/\/(.*?\/)/, '//'+ replaceHostName +'/');
+			},
+
+			excludeAllText: true,
+			excludeTitle: true,
+
+			apiKey: '377b5d99-1622-400f-5015-ab9941477791',
+
+			visitor: {
+				id: 'wK+5Mh0ZaiFzJi5HiOD4lHcK96paYkzN1Zpeeuwg4JQ=',
+				uiLocale: 'en',
+				dataLocale: 'en',
+				internal: false,
+				role: roleList
+			},
+
+			account: {
+				id: 'ZZTR_022',
+				instanceRole: 'LIVE',
+                version: '23.2',
+                application: 'Business Manager'
+			},
+
+			events: {
+			    guidesLoaded: function() {
+			        var bmAlertIcon = document.querySelector('.icon-menu-bm_alert_icon');
+			        if (bmAlertIcon) {
+                         bmAlertIcon.addClassName('pendo_message_center_target');
+                         document.querySelector('.bm-advertorial-no-content').remove();
+                     }
+			    }
+			}
+		});
+	</script>
+
+
+
+
+
+    <!-- Add client metrics javascript library here (W-5655594) -->
+
+
+<script type="text/javascript">
+<!-- We want to stop propagation for unsaved changes browser dialog in cases of site selection due to the cancel action having the same behavior as the continue action -->
+var shouldStopImmediatePropagation = false;
+window.addEventListener("beforeunload", function(event) {
+if(shouldStopImmediatePropagation) {
+shouldStopImmediatePropagation = false;
+event.stopImmediatePropagation();
+}
+return event.returnValue;
+});
+<!--
+function flipCheckboxes(formName, groupName, groupID, checked)
+{
+var isInsideSourceID = false;
+for( var i=0; i<document[formName].elements.length; i++ )
+{
+var input = document[formName].elements[i];
+if ( input.nodeName == 'INPUT' && input.type == 'checkbox' && !input.disabled)
+{
+if (isInsideSourceID)
+{
+if (input.name == groupName)
+{
+isInsideSourceID = false;
+}
+else if (!input.disabled)
+{
+input.checked = checked;
+}
+}
+else if (input.name == groupName && input.value == groupID)
+{
+isInsideSourceID = true;
+}
+}
+}
+}
+var state = 0;
+function selectAll(formName,elementName){
+var cbTotal = document[formName].elements.length;
+for (var i=0;i<cbTotal;i++)
+{
+var elm = document[formName].elements[i];
+// never toggle the state of radio boxes
+if(elm.type == "radio") continue;
+// never toggle the state of disabled elements
+if(elm.disabled == true) continue;
+if((elementName != undefined) && (elementName != elm.name)) continue;
+if (state == 0){
+elm.checked = true;
+}
+else{
+elm.checked = false;
+}
+}
+if (state == 0){
+state = 1;
+document.getElementById('A').style.display="none";
+document.getElementById('B').style.display="block";
+}
+else{
+state = 0;
+document.getElementById('A').style.display="block";
+document.getElementById('B').style.display="none";
+}
+}
+function selectAllFormElements(formName, divIdSelect, divIdClear){
+var cbTotal = document[formName].elements.length;
+for (var i=0;i<cbTotal;i++)
+{
+if (document.getElementById(divIdClear).style.display == "none"
+&& document[formName].elements[i].disabled != true)
+{
+document[formName].elements[i].checked = true;
+}
+else
+{
+document[formName].elements[i].checked = false;
+}
+}
+if (document.getElementById(divIdClear).style.display == "none")
+{
+document.getElementById(divIdSelect).style.display = "none";
+document.getElementById(divIdClear).style.display = "block";
+}
+else
+{
+document.getElementById(divIdSelect).style.display = "block";
+document.getElementById(divIdClear).style.display = "none";
+}
+}
+function selectAllFormElementsFiltered(formName, divIdSelect, divIdClear, elementName){
+var cbTotal = document[formName].elements.length;
+for (var i=0;i<cbTotal;i++)
+{
+if(document[formName].elements[i].name == elementName) {
+if (document.getElementById(divIdClear).style.display == "none"
+&& document[formName].elements[i].disabled != true)
+{
+document[formName].elements[i].checked = true;
+}
+else
+{
+document[formName].elements[i].checked = false;
+}
+}
+}
+if (document.getElementById(divIdClear).style.display == "none")
+{
+document.getElementById(divIdSelect).style.display = "none";
+document.getElementById(divIdClear).style.display = "block";
+}
+else
+{
+document.getElementById(divIdSelect).style.display = "block";
+document.getElementById(divIdClear).style.display = "none";
+}
+}
+function selectAllFiltered(formName, elementName){
+var cbTotal = document[formName].elements.length;
+for (var i=0;i<cbTotal;i++) {
+if(document[formName].elements[i].name == elementName) {
+if (state == 0){
+document[formName].elements[i].checked = true;
+}
+else{
+document[formName].elements[i].checked = false;
+}
+}
+}
+if (state == 0){
+state = 1;
+document.getElementById('A').style.display="none";
+document.getElementById('B').style.display="block";
+}
+else{
+state = 0;
+document.getElementById('A').style.display="block";
+document.getElementById('B').style.display="none";
+}
+}
+function selectAllPrefix(formName, prefix){
+var cbTotal = document[formName].elements.length;
+for (var i=0;i<cbTotal;i++) {
+if (state == 0 & document[formName].elements[i].disabled != true){
+if(!prefix || document[formName].elements[i].name.indexOf(prefix)==0){
+document[formName].elements[i].checked = true;
+}
+}
+else{
+if(!prefix || document[formName].elements[i].name.indexOf(prefix)==0){
+document[formName].elements[i].checked = false;
+}
+}
+}
+if (state == 0){
+state = 1;
+document.getElementById('A').style.display="none";
+document.getElementById('B').style.display="block";
+}
+else{
+state = 0;
+document.getElementById('A').style.display="block";
+document.getElementById('B').style.display="none";
+}
+}
+function showSection2(elementid)
+{
+if (elementid.style.display == "none")
+{
+elementid.style.display = "";
+}
+else
+{
+elementid.style.display = "none";
+}
+}
+function showSection(elementid)
+{
+if (document.getElementById(elementid).style.display == "none")
+{
+document.getElementById(elementid).style.display = "";
+}
+else
+{
+document.getElementById(elementid).style.display = "none";
+}
+}
+function popup(url,args)
+{
+w = window.open(url,"",args);
+if(w.scrollbars) w.scrollbars.visible = true;
+w.focus();
+}
+function clearFormField(fieldID)
+{
+if(document.all[fieldID] != null)
+{
+document.all[fieldID].value = "";
+}
+}
+function clickOnLink(linkId) {
+var link = document.getElementById(linkId);
+if (link) {
+link.click();
+return false;
+}
+return true;
+}
+-->
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+<title>Sandbox &bull; Home &bull; Business Manager</title>
+<link rel="shortcut icon" href="/on/demandware.static/Sites-Site/-/default/vafac256fc623099215d4afb16a74bb175c7bc1d9/images/favicon_sbx.ico" />
+
+
+</head>
+<body style="margin: 0px;">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>window.jQuery || document.write('<script src="/on/demandware.static/Sites-Site/-/default/vafac256fc623099215d4afb16a74bb175c7bc1d9/jscript/sfquery.min.js">\x3C/script>')</script>
+<script>jQuery.noConflict();</script>
+
+
+<script type="text/javascript" src="/on/demandware.static/Sites-Site/-/default/vafac256fc623099215d4afb16a74bb175c7bc1d9/jscript/bm-lock-screen.js"></script>
+
+<!-- screen locking scripts -->
+<script type="text/javascript">
+	DW.ScreenSaver.start({
+		defaultTimeout: 30000,
+		sessionCheckUrl: "https://zztr-022.dx.commercecloud.salesforce.com/on/demandware.servlet/BMSessionManagementServlet/",
+		logoutUrl: "https://zztr-022.dx.commercecloud.salesforce.com/on/demandware.store/Sites-Site/default/ViewApplication-Logout",
+        isExternalUser: true,
+        amUrl: "https://zztr-022.dx.commercecloud.salesforce.com/on/demandware.servlet/dw/oidc/openid_connect_startlogin",
+		loginFormUrl: "https://zztr-022.dx.commercecloud.salesforce.com/on/demandware.servlet/BMSessionManagementServlet/",
+		domainId: "01c189a7d0746561baaf2b17c0",
+		messages: {
+			"sessionTimeout": "Your session has timed out, please log in again.",
+			"networkProblem": "Communication with the network/server isn\'t possible.",
+			"AccountLocked": "This user account is currently locked. Please contact the administrator.",
+			"UserDisabled": "This user is currently inactive. Please contact the administrator.",
+			"PasswordExpired": "The password has expired. Please contact the administrator.",
+			"IncorrectPassword": "The password is invalid. Please remember that passwords are case-sensitive. Please try again.",
+			"MissingPassword": "No password was submitted.",
+			"InvalidCredentials": "The credentials are invalid. Please log out.",
+			"SessionExpired": "Your session has expired. Please log out.",
+			"unknownError": "An internal error occurred. Please log out."
+		}
+	});
+</script>
+
+<link rel="stylesheet" type="text/css" href="/on/demandware.static/Sites-Site/-/default/vafac256fc623099215d4afb16a74bb175c7bc1d9/css/lock-screen.css" />
+
+<div id="login" class="lock-screen" style="display:none" >
+    <img class="lock-screen__logo" src="/on/demandware.static/Sites-Site/-/default/vafac256fc623099215d4afb16a74bb175c7bc1d9/images/salesforce-commerce-cloud-logo.svg" />
+	<div id="login_name" class="lock-screen__login-name">
+		Or
+	</div><!-- END: login_name -->
+	<div id="login_error_msg" class="lock-screen__login-message">
+		Your session has timed out. Please log in again.
+	</div><!-- END: login_failed -->
+	<div id="loginform" class="lock-screen__loginform">
+        <form name="LoginForm" autocomplete="off">
+            <label for="LoginForm_Password">Password:</label>
+            <input type="password" autocomplete="off" value="" id="LoginForm_Password" name="LoginForm_Password" size="32" class="lock-screen__password-input perm_not_disabled" />
+            
+            <button type="submit" id="LoginForm_Submit" name="LoginForm_Submit" class="lock-screen__login-button perm_not_disabled" >Log In</button>
+            <input type="hidden" name="LoginForm_SiteID" value="01c189a7d0746561baaf2b17c0">
+            <input type="hidden" name="method" value="ReloginUser">
+        </form>
+    </div><!-- END: loginform -->
+    <div id="amform" class="lock-screen__loginform">
+        <form autocomplete="off">
+            <button type="button" id="Login_Button_AM" name="Login_Button_AM" class="lock-screen__login-button perm_not_disabled" >Log In</button>
+        </form>
+    </div>
+	<div id="login_switchuser" class="lock-screen__switchuser">
+		<a href="javascript:DW.ScreenSaver.logout()">Log In as Different User</a>
+	</div><!-- END: login_switchuser -->
+</div><!-- END: login -->
+
+
+<div class="slds-layout-frame">
+<div class="slds-layout">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>window.jQuery || document.write('<script src="/on/demandware.static/Sites-Site/-/default/vafac256fc623099215d4afb16a74bb175c7bc1d9/jscript/sfquery.min.js">\x3C/script>')</script>
+<script>jQuery.noConflict();</script>
+
+
+
+<script type="text/javascript">
+    if (typeof Tether === 'undefined') {
+        var tether = document.createElement('script');
+        tether.setAttribute("type","text/javascript");
+        tether.setAttribute("src", '/on/demandware.static/Sites-Site/-/default/vafac256fc623099215d4afb16a74bb175c7bc1d9/application/bm/lib/tether/tether.min.js');
+        document.getElementsByTagName("head")[0].appendChild(tether);
+    }
+</script>
+
+<script type="text/javascript" src="/on/demandware.static/Sites-Site/-/default/vafac256fc623099215d4afb16a74bb175c7bc1d9/jscript/bm-site-nav.js"></script>
+
+<script type="text/javascript">
+window.addEventListener('load', function(){
+    loadHeaderNotifications();
+});
+
+// make sure that String.format is defined
+var stringFormat = String.format ||
+    function() {
+        var src = arguments[0];
+        var args = Array.prototype.slice.call(arguments, 1);
+        return src.replace(/\{\{|\}\}|\{(\d+)\}/g, function (m, n) {
+            if (m == "{{") {
+                return "{";
+            }
+            if (m == "}}") {
+                return "}";
+            }
+            return args[n];
+        });
+    };
+
+if(typeof l10n === 'undefined')
+{
+    var l10n=function(bundle,key,def)
+    {
+        return def;
+    };
+}
+
+function loadHeaderNotifications() {
+    jQuery.ajax({
+        dataType: "json",
+        url: 'https://zztr-022.dx.commercecloud.salesforce.com/on/demandware.store/Sites-Site/default/ViewSystemNotifications-GetHeaderSystemNotificationsJSON',
+        type: 'GET',
+        success: function(result){
+            if(!result || result.error){
+                console.error("Could not load System Notification for header");
+            } else {
+                renderHeaderNotifications(result);
+            }
+        },
+        error: function(xhr, status, error){
+            console.error("Could not load System Notification for header");
+            console.log(xhr, status, error);
+        }
+    });
+}
+
+function renderHeaderNotifications(result) {
+    var list = document.getElementById('NotificationListHeader');
+    if (hasNotifications(result)) {
+        renderNotificationsForPriority(list, result.ACTION_REQUIRED, stringFormat('Action Required ({0})', result.ACTION_REQUIRED_count ? result.ACTION_REQUIRED_count : 0), 'dw-bma-nc-list-block-item-danger', 'dw-bma-nc-text-danger');
+        renderNotificationsForPriority(list, result.WARNING, stringFormat('Warning ({0})', result.WARNING_count ? result.WARNING_count : 0), 'dw-bma-nc-list-block-item-warning', 'dw-bma-nc-text-warning');
+        renderNotificationsForPriority(list, result.INFORMATIONAL, stringFormat('Informational ({0})', result.INFORMATIONAL_count ? result.INFORMATIONAL_count : 0), 'dw-bma-nc-list-block-item-info', 'dw-bma-nc-text-info');
+    }
+    else {
+        var li = document.createElement('li');
+        li.className = 'dw-bma-nc-list-block-item notification_area';
+        li.style.textAlign = 'center';
+        list.appendChild(li);
+
+        var ul = document.createElement('ul');
+        ul.className = 'dw-bma-nc-list-blank notification_list_entry notification_area';
+        li.appendChild(ul);
+        var innerLi = document.createElement('li');
+        innerLi.textContent = 'No alerts.';
+        ul.appendChild(innerLi);
+    }
+
+    setHeaderNotificationCount(result);
+}
+
+function hasNotifications(result) {
+    return (result.ACTION_REQUIRED && result.ACTION_REQUIRED.length > 0) || (result.WARNING && result.WARNING.length > 0) || (result.INFORMATIONAL && result.INFORMATIONAL.length > 0);
+}
+
+function renderNotificationsForPriority(target, notificationList, title, headerClassName, notificationClassName) {
+    if (notificationList && notificationList.length > 0) {
+        // render title
+        var li = document.createElement('li');
+        li.className = 'dw-bma-nc-list-block-item notification_list_title notification_area ' + headerClassName;
+        li.textContent = title;
+        target.appendChild(li);
+
+        // render notifications
+        for (var i = 0; i < notificationList.length; i++) {
+            if (i > 4) {
+                // show at most 5 notifications per priority
+                return true;
+            }
+
+            var notification = notificationList[i];
+
+            li = document.createElement('li');
+            li.className = 'dw-bma-nc-list-block-item notification_area';
+            target.appendChild(li);
+
+            var ul = document.createElement('ul');
+            ul.className = 'dw-bma-nc-list-blank notification_list_entry notification_area';
+            ul.style.marginBottom = '0px';
+            li.appendChild(ul);
+
+            var innerLi = document.createElement('li');
+            ul.appendChild(innerLi);
+
+            var table = document.createElement('table');
+            table.style.width='auto';
+            innerLi.appendChild(table);
+
+            var tr = document.createElement('tr');
+            tr.style.verticalAlign = 'top';
+            table.appendChild(tr);
+
+            var td = document.createElement('td');
+            tr.appendChild(td);
+
+            var span = document.createElement('span');
+            span.className = 'fa fa-bell notification_icon notification_area ' + notificationClassName;
+            if (!notification.validForCurrentSiteSelection) {
+                span.title = stringFormat('Please select site {0} to act upon this notification.', notification.contextObjectSite);
+
+            }
+
+            td.appendChild(span);
+            td = document.createElement('td');
+            tr.appendChild(td);
+
+            if (notification.validForCurrentSiteSelection) {
+                var link = document.createElement('a');
+                link.className = 'notification_link';
+                link.href = notification.remediationURL;
+                link.textContent = notification.displayMessage;
+                td.appendChild(link);
+            }
+            else {
+                var message = document.createElement('div');
+                message.style.color = '#333';
+                message.textContent = notification.displayMessage;
+                message.title = stringFormat('Please select site {0} to act upon this notification.', notification.contextObjectSite);
+                td.appendChild(message);
+            }
+        }
+    }
+    return false;
+}
+
+function setHeaderNotificationCount(result) {
+    var count = 0;
+    var color = '';
+    if (result.ACTION_REQUIRED_count && result.ACTION_REQUIRED_count > 0) {
+        count = result.ACTION_REQUIRED_count;
+        color = '#c23934';
+    } else if (result.WARNING_count && result.WARNING.length > 0) {
+        count = result.WARNING_count;
+        color = '#f0ad4e';
+    } else if (result.INFORMATIONAL_count && result.INFORMATIONAL_count > 0) {
+        count = result.INFORMATIONAL_count;
+        color = '#5bc0de';
+    }
+
+    document.getElementById('NotificationsHeaderLink').setAttribute('data-badge', count);
+
+    var styleElem = document.head.appendChild(document.createElement("style"));
+    if (count === 0) {
+        styleElem.textContent = '.notification_badge[data-badge]:after{display: none}';
+    }
+    else {
+        styleElem.textContent = '.notification_badge[data-badge]:after {background: ' + color + ';}';
+    }
+}
+</script>
+
+<link rel="stylesheet" type="text/css" href="/on/demandware.static/Sites-Site/-/default/vafac256fc623099215d4afb16a74bb175c7bc1d9/css/bm-site-nav.css" />
+<link rel="stylesheet" type="text/css" href="/on/demandware.static/Sites-Site/-/default/vafac256fc623099215d4afb16a74bb175c7bc1d9/css/header.css" />
+<link rel="stylesheet" type="text/css" href="/on/demandware.static/Sites-Site/-/default/vafac256fc623099215d4afb16a74bb175c7bc1d9/css/sf_overrides.css" />
+
+
+  
+    <ccbm class="cc-Sandbox">
+  
+    <div id="NotificationPopoverHeader" class="dw-bma-nc-popover dw-bma-nc-arrow-top-right" role="dialog" style="max-width: 500px; display: none; position: absolute; top: 55px; right:13px">
+		<div class="dw-bma-nc-popover-body">
+			<ul class="dw-bma-nc-popover-list" id="NotificationListHeader">
+			</ul>
+		</div>
+		<div class="dw-bma-nc-popover-footer">
+			<button class="dw-bma-nc-button dw-bma-nc-button-link dw-bma-nc-button-block" onclick="window.location='https://zztr-022.dx.commercecloud.salesforce.com/on/demandware.store/Sites-Site/default/ViewSystemNotifications-GetSystemNotifications'">Show All</button>
+		</div>
+	</div>
+		<div class="slds-layout-header bm-site-navigation-menus">
+			<header class="slds-global-header_container">
+			  <div class="slds-global-header slds-grid slds-grid_align-spread">  	
+			    <div class="slds-global-header__item"><ul class="slds-global-actions">
+    <li class="slds-global-actions__item">
+        <a href="https://zztr-022.dx.commercecloud.salesforce.com/on/demandware.store/Sites-Site/default/ViewApplication-DisplayWelcomePage"
+            title="Business Manager start page.">
+            <img class="header__logo-image" src="/on/demandware.static/Sites-Site/-/default/vafac256fc623099215d4afb16a74bb175c7bc1d9/slds/images/logo-noname.svg" />
+            <span class="slds-assistive-text">Salesforce</span>
+        </a>
+    </li>
+    
+    
+    
+        
+    
+    
+    <li class="" style="margin-left:12px">
+        <div class="header__site-switcher__instance">
+            
+            
+            <span class="slds-badge cc-instance"><span title="zztr-022.dx.commercecloud.salesforce.com">Sandbox - zztr
+                            </span></span>
+            
+        </div>
+    </li>
+</ul>
+</div>
+			    <!-- div class="slds-global-header__item slds-global-header__item_search">...</div-->
+			    <div class="slds-global-header__item">
+ <link rel="stylesheet" type="text/css" href="/on/demandware.static/Sites-Site/-/default/vafac256fc623099215d4afb16a74bb175c7bc1d9/css/globalnavigationbar_override.css" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Global Navigation Area -->
+
+<ul class="slds-global-actions">
+
+
+<li class="slds-global-actions__item">
+<div id="NotificationsHeaderLink" class="headermenu notification_badge">
+<button id="NotificationsIcon" onclick="toggleHeaderNotifications()"
+class="slds-button slds-button_icon-container" data-automation="[BMGlobalNavigation] alertsButton"
+title="Alerts"
+aria-live="assertive" aria-atomic="true">
+<svg class=" slds-icon_small slds-icon-text-light slds-button__icon " aria-hidden="true">
+<use xlink:href="/on/demandware.static/Sites-Site/-/default/vafac256fc623099215d4afb16a74bb175c7bc1d9/slds/icons/utility-sprite/svg/symbols.svg#notification"></use>
+</svg>
+<span class="slds-assistive-text">no new notifications</span>
+</button>
+</div>
+</li>
+<li class="slds-global-actions__item">
+<button class="slds-button slds-button_icon-container" data-automation="[BMGlobalNavigation] messageCenterButton" aria-haspopup="true" title="Message Center">
+<span class="slds-icon-text-light icon-menu-bm_alert_icon">
+<svg class="slds-icon_small " default="Message Center" aria-hidden="true">
+<use xlink:href="/on/demandware.static/Sites-Site/-/default/vafac256fc623099215d4afb16a74bb175c7bc1d9/slds/icons/utility-sprite/svg/symbols.svg#announcement"></use>
+</svg>
+</span>
+<span class="slds-assistive-text">Message Center</span>
+</button>
+</li>
+<li class="slds-global-actions__item">
+<div>
+<button onclick="javascript:window.open('https://documentation.b2c.commercecloud.salesforce.com/DOC2/index.jsp', '_blank');"
+class="slds-button slds-button_icon-container" data-automation="[BMGlobalNavigation] documentationButton" aria-haspopup="true" title="Open the documentation.">
+<svg class="slds-icon_small slds-icon-text-light" default="Open the documentation" aria-hidden="true">
+<use xlink:href="/on/demandware.static/Sites-Site/-/default/vafac256fc623099215d4afb16a74bb175c7bc1d9/slds/icons/utility-sprite/svg/symbols.svg#question"></use>
+</svg>
+<span class="slds-assistive-text">Help and Training</span>
+</button>
+</div>
+</li>
+
+<li class="slds-global-actions__item">
+<div>
+<button onclick="location.href='https://zztr-022.dx.commercecloud.salesforce.com/on/demandware.store/Sites-Site/default/ViewApplication-DisplayWelcomePage'"
+class="slds-button slds-button_icon slds-button_icon-container slds-global-actions__home"
+data-automation="[BMGlobalNavigation] homeButton" aria-haspopup="true"
+title="Business Manager Home">
+<svg class="slds-icon_small slds-icon-text-light" default="Business Manager Home" aria-hidden="true">
+<use xlink:href="/on/demandware.static/Sites-Site/-/default/vafac256fc623099215d4afb16a74bb175c7bc1d9/slds/icons/utility-sprite/svg/symbols.svg#home"></use>
+</svg>
+<span class="slds-assistive-text">Business Manager Home</span>
+</button>
+</div>
+</li>
+<li class="slds-global-actions__item">
+<div>
+<button onclick="location.href='https://zztr-022.dx.commercecloud.salesforce.com/on/demandware.store/Sites-Site/default/ViewAccount-Show'"
+class="slds-button slds-button_icon-container" data-automation="[BMGlobalNavigation] userProfileButton" title="User Profile"
+aria-haspopup="true">
+<svg class="slds-icon_small slds-icon-text-light" default="User Profile" aria-hidden="true">
+<use xlink:href="/on/demandware.static/Sites-Site/-/default/vafac256fc623099215d4afb16a74bb175c7bc1d9/slds/icons/action-sprite/svg/symbols-rtl.svg#user"></use>
+</svg>
+<span class="slds-assistive-text">User Profile</span>
+</button>
+</div>
+</li>
+<li class="slds-global-actions__item">
+<div>
+<button onclick="location.href='https://zztr-022.dx.commercecloud.salesforce.com/on/demandware.store/Sites-Site/default/ViewApplication-Logout'"
+class="slds-button slds-button_icon slds-button_icon-container" data-automation="[BMGlobalNavigation] logOffButton" aria-haspopup="true" title="Log off.">
+<svg class="slds-icon_small slds-icon-text-light" aria-hidden="true">
+<use xlink:href="/on/demandware.static/Sites-Site/-/default/vafac256fc623099215d4afb16a74bb175c7bc1d9/slds/icons/utility-sprite/svg/symbols.svg#logout"></use>
+</svg>
+<span class="slds-assistive-text">Log off</span>
+</button>
+</div>
+</li>
+</ul>
+<div class="bm-advertorial-no-content"
+style="border-width: 7px 0px 0px; border-radius: 3px; border-top-color: rgb(3, 161, 224); text-align: center; color: rgb(106, 108, 117); font-size: 14px; padding: 36px 24px;">
+<span>
+There are no messages at this time.</span>
+</div>
+<div class="clear">
+<!-- FLOAT CLEAR -->
+</div>
+<script>
+window.addEventListener('click', function(ev){
+if (ev.target.id !== 'NotificationsIcon' && typeof ev.target.className !== 'undefined' && typeof ev.target.className.indexOf === 'function' && ev.target.className.indexOf("notification_area") === -1) {
+// don't hide the notification if list elements are clicked
+hideHeaderNotifications();
+}
+});
+var popover = document.getElementById('NotificationPopoverHeader'); // defined in Header.isml
+function toggleHeaderNotifications() {
+var currentDisplay = popover.style.display;
+if (currentDisplay === 'none') {
+popover.style.display = '';
+}
+else {
+hideHeaderNotifications();
+}
+new Tether({
+element: '#NotificationPopoverHeader',
+target: '#NotificationsIcon',
+attachment: 'top right',
+targetAttachment: 'bottom center',
+targetOffset: '20px 25px',
+constraints: [{
+to: 'window',
+attachment: 'target',
+pin: true
+}]
+});
+}
+function hideHeaderNotifications() {
+if (popover)
+popover.style.display = 'none';
+}
+</script>
+
+<!-- EO Global Navigation Area -->
+</div>
+			  </div>
+	  		  <div class="slds-context-bar">
+			    
+	  		  <nav class="slds-context-bar__secondary" role="navigation">
+			    <ul class="slds-grid bm-site-navigation-menus">
+	  		  
+			      
+	<div class="slds-context-bar__item slds-context-bar__object-switcher slds-context-bar__dropdown-trigger slds-dropdown-trigger slds-dropdown-trigger_click slds-no-hover">
+  <!-- slds-is-active -->
+      <script type="text/javascript" src="/on/demandware.static/Sites-Site/-/default/vafac256fc623099215d4afb16a74bb175c7bc1d9/jscript/navigation/selectordie.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="/on/demandware.static/Sites-Site/-/default/vafac256fc623099215d4afb16a74bb175c7bc1d9/css/site-selection.css" />
+<link rel="stylesheet" type="text/css" href="/on/demandware.static/Sites-Site/-/default/vafac256fc623099215d4afb16a74bb175c7bc1d9/css/selectordie.css" />
+
+<!-- Site Selection Area -->
+<div id="headerNav" class="site-selection">
+	
+		<span id="mainNav">
+			
+				<div>
+					<form action="https://zztr-022.dx.commercecloud.salesforce.com/on/demandware.store/Sites-Site/default/ViewApplication-SelectSite?MenuGroupID=ChannelMenu&amp;ChannelID=&amp;SelectedSiteRedirect=DisplayWelcomePage" method="post" name="SiteSelectionForm">
+						<script>
+							if ( !!localStorage === true ) {
+								/* need to initalize this on page load - rather than page visibility change */
+								localStorage.setItem("bm-last-site-id", "" );
+							}
+
+							let SiteSelectionAction = {
+                                submit: function() {
+                                    shouldStopImmediatePropagation = true;
+                                    document.SiteSelectionForm.submit();
+                                }
+                            };
+						</script>
+						<div id="SelectedSiteID-wrap" data-automation="select-site-dropdown">
+						<select name="SelectedSiteID" id="SelectedSiteID"
+								class="perm_not_disabled dropdown inputfield_en"
+								onchange="SiteSelectionAction.submit();"
+								x-bm-site-url="https://zztr-022.dx.commercecloud.salesforce.com/on/demandware.store/Sites-Site/default/ViewApplication-SelectSite?MenuGroupID=ChannelMenu&amp;ChannelID=&amp;csrf_token=srb0PRpqY3XNTyAC4soaeoUqAi8_2kJgp0fvv76fdPLFaE_z0gppcdwqaQx29ju9zvwhhjS08NOGLOvevnJRSsnnEVnRO55hDCerpBkPQXqsyq6EcjPfZplY7avWS0zb8tabtXtRPEtbIbUzoyR0kEWQfjja7DYMzsLFmDIZGDy7K4FOuRU%3d"  >
+							<option value="" selected="selected">Select a Site</option>
+							
+								<option value="35ca50d27fdee2679448cf12e3" >RefArch</option>
+							
+								<option value="30087912a25e215d5085cbc7b9" >RefArchGlobal</option>
+							
+								<option value="3b79736bdbbc034d738f712e7c" >Maytronics</option>
+							
+						</select>
+						</div>
+					</form>
+				</div>
+			
+		</span>
+	
+	<div class="clear"><!-- FLOAT CLEAR --></div>
+</div>
+<!-- EO Site Selection Area -->
+
+<script type="text/javascript" src="/on/demandware.static/Sites-Site/-/default/vafac256fc623099215d4afb16a74bb175c7bc1d9/jscript/navigation/site-selection.js"></script>
+
+      <div class="slds-context-bar__icon-action">
+        <button class="slds-button slds-button_icon slds-button_icon-container slds-button_icon-x-small" aria-haspopup="true" title="Select Site">
+          <svg class="slds-button__icon" aria-hidden="true">
+            <use xlink:href="/on/demandware.static/Sites-Site/-/default/vafac256fc623099215d4afb16a74bb175c7bc1d9/slds/icons/utility-sprite/svg/symbols.svg#chevrondown"></use>
+          </svg>
+          <!-- Global Navigation Area &amp; Channel Selection Area -->
+          <!-- EO Global Navigation Area &amp; Channel Selection Area -->
+          <span class="slds-assistive-text">Site Selection</span>
+        </button>
+      </div>
+      </div>
+                  
+
+
+
+
+
+
+
+<link rel="stylesheet" type="text/css" href="/on/demandware.static/Sites-Site/-/default/vafac256fc623099215d4afb16a74bb175c7bc1d9/css/font-awesome/css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="/on/demandware.static/Sites-Site/-/default/vafac256fc623099215d4afb16a74bb175c7bc1d9/css/slds_global_overrides.css" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+// Fix Linux Top Menu Navigation styles
+if (/\blinux\b/i.test(navigator.userAgent)) {
+document.body.className += " linux";
+}
+// Safely Initialize a namespace to hold BMSiteNavigation variables
+if ( !!window.BMSiteNavigation === false ) {
+window.BMSiteNavigation = {};
+}
+BMSiteNavigation.bmHomeURL = "https://zztr-022.dx.commercecloud.salesforce.com/on/demandware.store/Sites-Site/default/ViewApplication-DisplayWelcomePage?csrf_token=SDkzmhuMhqUSq-ZON_rOsSGONSCYt1kyL33tXMZu8nU5UVDyxhjsle3u-BFYesvER67wTezdt3Vhbp6kDT_h9LByZEhQjdPCyzM1xO1asLxvcsH3blonj4-hjTAYw0VVcACErI3EhrJoRUn6It8NpaSdmbgr-Nh2BGqqfMEuOqbRG7FneNs%3d";
+BMSiteNavigation.bmMenuSiteSelectionURL = "https://zztr-022.dx.commercecloud.salesforce.com/on/demandware.store/Sites-Site/default/ViewApplication-SelectSite?csrf_token=SUJGSJmztWflFPhGovkelspzN1Tcz_jp8PDEI_scdOLfuKPXWPP6H_FfhZ77thljLdgMxYViax8ML0668F7_cO4a1kvjuQQ2HITlsY7A0AVL43hHxm_wfwIST2UO4dZ5vjtua5bTvvrXM-K97tkezMuzvB6FbWlAGLA7GTsUr4BdqbLRanY%3d";
+BMSiteNavigation.bmMenuStorefrontURL = "https://zztr-022.dx.commercecloud.salesforce.com/on/demandware.store/Sites-Site/default/SiteNavigationBar-StoreFront?csrf_token=B_0V3efjCLScXiBSEtV4Mgu0I54apwyJ6NtbUFsi35xiujCR_GwTKGcklycEqC0IHQfoOhnDawIDDar-qfv3vARqClzjIFOBX35Ooiso-kJy_ifnLhv1qtwPaOAtQJxASgUjvd5RqJqeVp9eJONenaLiKLTxD6rcZKKzlEIRaPBWcue1qqM%3d";
+BMSiteNavigation.menuURLStart = "https://zztr-022.dx.commercecloud.salesforce.com/on/demandware.store/Sites-Site/default/SiteNavigationBar-___StartNode___?csrf_token=J5txzJ8dPQObzVpWouvpzVSDFChUFkQYWx1vaOwuUZCwoIT_2AQ9oIXBh6h7xveFdFM6oEV1TLipM25ye-8O5v-cbfd-qI62ZHeCn9jXLlv9OpLvLYgj_XyhxptXYy5PtX38EHIe2IPglTeN5a3tSmg7S4_CxriLIOvzWNqVA3Dj5YZ8TIg%3d";
+</script>
+<!-- --------------------------------------------------------------------------------------------- -->
+<!-- Merchant Tools Menu -->
+<!-- --------------------------------------------------------------------------------------------- -->
+<li class="slds-context-bar__item slds-context-bar__dropdown-trigger slds-dropdown-trigger_click table-action-menu">
+<div class="slds-context-bar__icon-action slds-p-left_none menu bm-dropdown-menu merchant-tools">
+
+<a href="https://zztr-022.dx.commercecloud.salesforce.com/on/demandware.store/Sites-Site/default/ViewApplication-SelectSite" class="slds-context-bar__label-action nav-tab-link" data-automation="[BMGlobalNavigation] merchantToolsTabLink">
+Merchant Tools
+</a>
+<button class="slds-button slds-button_icon slds-button_icon slds-context-bar__button menu-overview-link-icon chevron-site-selection" data-automation="[BMGlobalNavigation] merchantToolsDropdownButton" aria-haspopup="true" title="Open menu item submenu">
+<svg class="slds-button__icon" aria-hidden="true">
+<use xlink:href="/on/demandware.static/Sites-Site/-/default/vafac256fc623099215d4afb16a74bb175c7bc1d9/slds/icons/utility-sprite/svg/symbols.svg#chevrondown"></use>
+</svg>
+<span class="slds-assistive-text">Open menu item submenu</span>
+</button>
+
+<div class="merchant-tool-menu the-menu slds-dropdown__list" role="menu">
+
+<div class="bm-menu-search-bar">
+<input id="bm-menu-merch-search" class="slds-input bm-menu-search perm_not_disabled" data-automation="[BMGlobalNavigation] merchantToolsSearch" type="text" placeholder="Merchant Tools feature lookup..." ng-model="none" />
+<span class="icon-menu-bm_search_icon"></span>
+</div>
+<div class="bm-menu-columns">
+<!-- column 1 -->
+<div class="bm-menu-column"></div>
+<!-- column 2 -->
+<div class="bm-menu-column"></div>
+<!-- column 3 -->
+<div class="bm-menu-column"></div>
+<!-- column 4 -->
+<div class="bm-menu-column"></div>
+<!-- column 5 -->
+<div class="bm-menu-column"></div>
+<!-- column 6 -->
+<div class="bm-menu-column"></div>
+</div>
+</div>
+</div>
+</li>
+<!-- --------------------------------------------------------------------------------------------- -->
+<!-- Admin Menu -->
+<!-- --------------------------------------------------------------------------------------------- -->
+<li class="slds-context-bar__item slds-context-bar__dropdown-trigger slds-dropdown-trigger_click table-action-menu">
+<div class="slds-context-bar__icon-action slds-p-left_none menu bm-dropdown-menu admin">
+<a href="https://zztr-022.dx.commercecloud.salesforce.com/on/demandware.store/Sites-Site/default/ViewApplication-CompressMenuGroup?MenuGroupID=&amp;OverviewPage=SiteNavigationBar-ShowAdministrationOverview" class="slds-context-bar__label-action nav-tab-link" data-automation="[BMGlobalNavigation] administrationTabLink">
+Administration
+</a>
+<button class="slds-button slds-button_icon slds-button_icon slds-context-bar__button menu-overview-link-icon" data-automation="[BMGlobalNavigation] administrationDropdownButton" aria-haspopup="true" title="Open menu item submenu">
+<svg class="slds-button__icon" aria-hidden="true">
+<use xlink:href="/on/demandware.static/Sites-Site/-/default/vafac256fc623099215d4afb16a74bb175c7bc1d9/slds/icons/utility-sprite/svg/symbols.svg#chevrondown"></use>
+</svg>
+<span class="slds-assistive-text">Open menu item submenu</span>
+</button>
+<div class="administration-menu the-menu slds-dropdown__list admin">
+
+<div class="bm-menu-search-bar">
+<input id="bm-menu-admin-search" class="slds-input bm-menu-search perm_not_disabled" data-automation="[BMGlobalNavigation] administrationSearch" type="text" placeholder="Administration feature lookup..." ng-model="none" />
+<span class="icon-menu-bm_search_icon"></span>
+</div>
+<div class="bm-menu-columns">
+<!-- column 1 -->
+<div class="bm-menu-column"></div>
+<!-- column 2 -->
+<div class="bm-menu-column"></div>
+<!-- column 3 -->
+<div class="bm-menu-column"></div>
+<!-- column 4 -->
+<div class="bm-menu-column"></div>
+<!-- column 5 -->
+<div class="bm-menu-column"></div>
+</div>
+</div>
+</div>
+</li>
+<!-- --------------------------------------------------------------------------------------------- -->
+<!-- Storefront Menu Link -->
+<!-- --------------------------------------------------------------------------------------------- -->
+<li class="slds-context-bar__item slds-no-hover">
+<a class="slds-context-bar__label-action with-button" >
+<button class="slds-button slds-button_neutral goto-storefront" data-automation="[BMGlobalNavigation] storefrontButton" title="Open the Storefront in a new window.">
+Storefront&nbsp;&nbsp;
+<svg class="slds-button__icon" aria-hidden="true">
+<use xlink:href="/on/demandware.static/Sites-Site/-/default/vafac256fc623099215d4afb16a74bb175c7bc1d9/slds/icons/utility-sprite/svg/symbols.svg#new_window"></use>
+</svg>
+</button>
+</a>
+</li>
+
+<!-- --------------------------------------------------------------------------------------------- -->
+<!-- Storefront Toolkit Menu Link -->
+<!-- --------------------------------------------------------------------------------------------- -->
+
+<li class="slds-context-bar__item slds-no-hover">
+<a href="https://zztr-022.dx.commercecloud.salesforce.com/on/demandware.store/Sites-Site/default/ViewStorefrontToolkit" class="slds-context-bar__label-action with-button"
+target="_blank"
+title="Open the Toolkit in a new window."
+>
+<button class="slds-button slds-button_neutral goto-toolkit" data-automation="[BMGlobalNavigation] toolkitButton">
+Toolkit&nbsp;&nbsp;
+<svg class="slds-button__icon" aria-hidden="true">
+<use xlink:href="/on/demandware.static/Sites-Site/-/default/vafac256fc623099215d4afb16a74bb175c7bc1d9/slds/icons/utility-sprite/svg/symbols.svg#new_window"></use>
+</svg>
+</button>
+</a>
+</li>
+<li class="slds-context-bar__item">
+</li>
+
+
+
+				</ul>
+			  </nav>
+			</div>
+
+			  </div>
+			</header>
+		</div>
+      </ccbm>
+
+<div class="slds-grid slds-grid_vertical slds-brand-band slds-brand-band_medium slds-template_default slds-template_bottom-magnet" style="padding-top:4.5rem">
+<!-- Start Main Content Table-->
+<table class="main" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="100%" class="top" id="bm_content_column" colspan="2">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tr>
+<td>
+<!-- global spacer table -->
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td><img src="/on/demandware.static/Sites-Site/-/default/vafac256fc623099215d4afb16a74bb175c7bc1d9/images/space.gif" width="12" height="1" alt="" border="0"/></td>
+<td width="100%" class="top">
+<div><img src="/on/demandware.static/Sites-Site/-/default/vafac256fc623099215d4afb16a74bb175c7bc1d9/images/space.gif" width="1" height="600" alt="" border="0"/></div>
+<!-- Working Area -->
+
+
+
+
+
+
+
+<script type="text/javascript" src="/on/demandware.static/Sites-Site/-/default/vafac256fc623099215d4afb16a74bb175c7bc1d9/jscript/framework/l10n/l10n-support.js"></script>
+<script type="text/javascript">
+(function() {
+var l10nSupport = Dw.framework.l10n.L10nSupport.singleton;
+l10nSupport.init(0);
+
+l10nSupport.addOne("js.searchableattributes.meta_data.msg.type.text", "Text");
+
+l10nSupport.addOne("js.product_dynamic_sorting.msg.error.dynamic_attr.weight_too_large", "An attribute has a weight greater than 100. Please correct the weight.");
+
+l10nSupport.addOne("js.customer.undo_move.confirmation.title", "Undo Move of Unique Customers Merged from Customer List '{0}'");
+
+l10nSupport.addOne("js.promotion_utils.promotion_enabled.title.enable", "Enable Promotion");
+
+l10nSupport.addOne("js.sortingrules.grid.rule_attributes.column.relevancy", "Text Relevancy");
+
+l10nSupport.addOne("js.shipping.grid.msg.no_coupons", "No coupons are available in the system.");
+
+l10nSupport.addOne("js.returnableattributes.meta_data.msg.type.integer", "Integer");
+
+l10nSupport.addOne("js.promotion_utils.promotion_enabled.wait_msg.title", "Updating...");
+
+l10nSupport.addOne("js.paymentcards.dialog_card.button.delete", "Delete");
+
+l10nSupport.addOne("js.customer.adjust_and_move.append_number.confirmation.msg", "Are you sure that you want to append '{0}' to customer numbers and move customers from customer list '{1}' to '{2}'?");
+
+l10nSupport.addOne("js.paymentmethods.error.remove-all_paymentmethods", "The payment methods couldn\'t be removed.");
+
+l10nSupport.addOne("js.paymentcards.dialog_card.field.verification.value.yes", "Yes");
+
+l10nSupport.addOne("js.coupon.error.updatecouponcode", "An error occured while saving your changes.");
+
+l10nSupport.addOne("js.paymentcards.dialog_card.lose_changes.confirm.button.cancel", "Cancel");
+
+l10nSupport.addOne("js.paymentmethods.paymentmethod.dialog.text.cards.drag_and_drop_multi.msg", "Drop the selected credit/debit cards to reorder.");
+
+l10nSupport.addOne("js.sortingrules.grid.rule_attributes.column.direction", "Direction");
+
+l10nSupport.addOne("js.link.conflict_type_category", "Category");
+
+l10nSupport.addOne("js.customer.move_customer.confirmation.msg", "Are you sure that you want to move all unique customers from '{0}' to '{1}'?");
+
+l10nSupport.addOne("js.promotion_project_filter.select.yes", "Yes");
+
+l10nSupport.addOne("js.returnableattributes.object_type.msg.category.name", "Category");
+
+l10nSupport.addOne("js.link.details_table.header.id", "ID");
+
+l10nSupport.addOne("js.order_list.button.search_details.close", "Close");
+
+l10nSupport.addOne("js.searchableattributes.grid.column.boost_factor", "Boost Factor");
+
+l10nSupport.addOne("js.bonus_product.bonus_product.button.assign", "Assign");
+
+l10nSupport.addOne("js.returnableattributes.meta_data.msg.type.integer_set", "Set of Integer");
+
+l10nSupport.addOne("js.imagemanager.variation_attribute_panel.field.language.label", "Select Language:");
+
+l10nSupport.addOne("js.shipping.button.edit.tooltip", "Click &quot;Edit&quot; to define a product group.");
+
+l10nSupport.addOne("js.promotion_utils.promotion_schedule.button.cancel", "Cancel");
+
+l10nSupport.addOne("js.searchableattributes.msg.applying", "Applying changes...");
+
+l10nSupport.addOne("js.shipping.error.invalid_values", "The update failed: Please provide valid values.");
+
+l10nSupport.addOne("js.channel.pagecache.error.pipeline_name.in_use", "The pipeline '{0}' is already used in partition '{1}'. Partitions must contain unique pipelines.");
+
+l10nSupport.addOne("js.channel.pagecache.dialog.field.pipeline", "Pipeline");
+
+l10nSupport.addOne("js.channel.pagecache.button.remove_partition.tooltip", "Remove a page cache partition.");
+
+l10nSupport.addOne("js.framework.confirmation_dialog.title", "Confirm");
+
+l10nSupport.addOne("js.assign_widget.button.save", "Save");
+
+l10nSupport.addOne("js.permissions_filter.field.assigned_permissions_bmorg", "{0} of {1} assigned");
+
+l10nSupport.addOne("js.coupon.title.coupon", "Coupons");
+
+l10nSupport.addOne("js.slot_list.folder_tree.column.slot_configuration", "Slot Configurations");
+
+l10nSupport.addOne("js.promotion_utils.copy_promotion.field.promotion_id.label", "Promotion ID");
+
+l10nSupport.addOne("js.catalog.categorytree.grid.title.empty", "empty");
+
+l10nSupport.addOne("js.channel.pagecache.error.pipeline_name.max_length", "The pipeline name '{0}' isn't valid. The maximum length for a pipeline name is {1}.");
+
+l10nSupport.addOne("js.promotion_utils.promotion_enabled.msg.status.disabled", "The promotion is currently disabled.");
+
+l10nSupport.addOne("js.imagemanager.image_manager.warn_msg.server.msg", "The server is unreachable : {0}.");
+
+l10nSupport.addOne("js.slot_general_section.grid.slot_config_assignments.header.customer_groups", "Customer Groups");
+
+l10nSupport.addOne("js.paymentcards.dialog_card.attributes.field.countries.label", "Countries:");
+
+l10nSupport.addOne("js.category.categorysearchrefinement.buckettype.select.values", "Values");
+
+l10nSupport.addOne("js.sortingrules.msg.confirmation.cancel.pending_changes", "There are pending changes to be applied that\'ll be lost if you continue. Do you want to apply these changes first?");
+
+l10nSupport.addOne("js.imagemanager.image_manager.save_msg.title", "Saving Image Specification");
+
+l10nSupport.addOne("js.priceadjustmentlimits.table.message.success.discard", "Your changes have been discarded.");
+
+l10nSupport.addOne("js.returnableattributes.meta_data.msg.type.integer_enum", "Enum of Integer");
+
+l10nSupport.addOne("js.coupon.dialog.confirm.delete.msg", "Are you sure that you want to delete the selected coupons?");
+
+l10nSupport.addOne("js.searchableattributes.error.loading.content_index_attributes", "The searchable content attributes couldn\'t be loaded.");
+
+l10nSupport.addOne("js.link.action.cancel_save", "Cancel (manually resolve conflicts)");
+
+l10nSupport.addOne("js.promotion_utils.promotion_schedule.schedule_dow.msg.day.firday", "Friday");
+
+l10nSupport.addOne("js.paymentmethods.paymentmethod.error.apply_changes.error_with_code", "The changes couldn\'t be applied.");
+
+l10nSupport.addOne("js.slot_general_section.field.enabled.label", "Enabled:");
+
+l10nSupport.addOne("js.promotion_utils.promotion_schedule.schedule_dow.msg.day.thursday", "Thursday");
+
+l10nSupport.addOne("js.product_dynamic_sorting.msg.error.dynamic_attr.replacement_missing", "Please select a default value for all attributes.");
+
+l10nSupport.addOne("js.slot_list.menu.search.category_id", "Category ID");
+
+l10nSupport.addOne("js.audit.audithistory.action.object_creation", "Object Creation");
+
+l10nSupport.addOne("js.product_dynamic_sorting.field.replacement.value.in", "Minimum");
+
+l10nSupport.addOne("js.channel.pagecache.button.save", "Save");
+
+l10nSupport.addOne("js.paymentcards.dialog_card.attributes.field.description.label", "Description:");
+
+l10nSupport.addOne("js.searchableattributes.error.product_attribute.boost_factor_negative", "The current product index attribute has a boost factor less than 0. Please correct the boost factor.");
+
+l10nSupport.addOne("js.channel.pagecache.button.invalidate.tooltip", "Invalidate the selected cache.");
+
+l10nSupport.addOne("js.coupon.form.coupon.field.redemptions_per_timeperiod.days.label", "Days");
+
+l10nSupport.addOne("js.overlay.link.overlay.bmsite.assigned", "({0})");
+
+l10nSupport.addOne("js.order_list.button.delete_orders.confirm", "Confirm");
+
+l10nSupport.addOne("js.channel.pagecache.title", "Page Partitions");
+
+l10nSupport.addOne("js.product_dynamic_sorting.msg.error.sava_dynamic_attr", "The dynamic attribute couldn't be saved because there are errors.");
+
+l10nSupport.addOne("js.product_dynamic_sorting.pagingbar_dynamic.msg", "Displaying {0} - {1} of {2} dynamic attributes");
+
+l10nSupport.addOne("js.link.sf_url_conflicts.column.details_table.error_type_same_id", "Product SKU and Content ID Conflict");
+
+l10nSupport.addOne("js.sortingrules.button.add", "Add");
+
+l10nSupport.addOne("js.slot_general_section.error.update_slot_failed", "The slot configuration couldn\'t be updated: {0}");
+
+l10nSupport.addOne("js.slot_dialog.slot_dialog.msg.copy_slot_config_success_multiple_slots", "The slot configurations {0} were successfully copied.");
+
+l10nSupport.addOne("js.overlay.link.overlay.funcorg.unassigned", "({0})");
+
+l10nSupport.addOne("js.channel.pagecache.dialog.title", "Configure Page Cache Partition");
+
+l10nSupport.addOne("js.searchableattributes.attribute.error.doesnt_exist", "The attribute no longer exists.");
+
+l10nSupport.addOne("js.product_dynamic_sorting.msg.error.system", "An unexpected system error occurred.");
+
+l10nSupport.addOne("js.coupon.form.coupon.field.coupon_code.error.invalid", "The coupon code that you provided is invalid.");
+
+l10nSupport.addOne("js.searchableattributes.product_attribute_config.description.empty", "No product index attributes are defined.");
+
+l10nSupport.addOne("js.framework.msg.no_sites", "No sites available");
+
+l10nSupport.addOne("js.lightbox.msg.close", "Click to close");
+
+l10nSupport.addOne("js.searchableattributes.grid.column.object_type", "Object Type");
+
+l10nSupport.addOne("js.prototype_window.dialog.button.ok", "OK");
+
+l10nSupport.addOne("js.slot_list.menu.search.folder_id", "Folder ID");
+
+l10nSupport.addOne("js.product_dynamic_sorting.msg.error.dynamic_attr.direction_missing", "Please select a direction for all attributes.");
+
+l10nSupport.addOne("js.sortingrules.field.relevance.value.yes", "Yes");
+
+l10nSupport.addOne("js.channel.pagecache.error.pipeline_name.invalid", "The pipeline name '{0}' isn't valid. Pipelines must be of the form [PipelineName]-[StartNode].");
+
+l10nSupport.addOne("js.promotion_utils.promotion_schedule.schedule_period.field.end_date.label", "Campaign End Date:");
+
+l10nSupport.addOne("js.slot_general_section.field_set.content.label", "Content:");
+
+l10nSupport.addOne("js.imagemanager.label.remove.attribute", "Remove {0}");
+
+l10nSupport.addOne("js.audit.audithistory.action.object_deletion", "Object Deletion");
+
+l10nSupport.addOne("js.slot_list.tooltip.slot_storefront", "View the content slot in the Storefront.");
+
+l10nSupport.addOne("js.paymentcards.dialog_card.select.3.chars", "3 characters");
+
+l10nSupport.addOne("js.sortingrules.msg.conformation.apply_preview", "There are pending changes to the selected sorting rule that must be applied in order to preview. Do you want to apply these changes first?");
+
+l10nSupport.addOne("js.slot_general_section.label.content", "Content:");
+
+l10nSupport.addOne("js.sortingrules.grid.rules.header.id", "ID");
+
+l10nSupport.addOne("js.paymentmethods.paymentmethod.dialog.button.impex.submenu.import", "Go to Import");
+
+l10nSupport.addOne("js.returnableattributes.grid.action.remove_product_attribute.confirmation.msg", "Are you sure that you want to remove this returnable product attribute?");
+
+l10nSupport.addOne("js.coupon.form.coupon.field.limit_per_time.msg.empty", "Unlimited");
+
+l10nSupport.addOne("js.permissions_filter.link.assigned_permissions_bmorg", "{0} of {1} assigned");
+
+l10nSupport.addOne("js.lightbox.msg.close.with_x", "press {0} to close");
+
+l10nSupport.addOne("js.slot_general_section.grid.slots.column.id", "ID");
+
+l10nSupport.addOne("js.promotion_utils.promotion_schedule.schedule_dow.msg.day.wednesday", "Wednesday");
+
+l10nSupport.addOne("js.bonus_product.bonus_products.grid.msg.empty", "In this view, you can search for products of the site.");
+
+l10nSupport.addOne("js.promotion_utils.copy_promotion.warn.server_unreachable", "The server is unreachable : {0}");
+
+l10nSupport.addOne("js.product_dynamic_sorting.field.replacement.value.max", "Maximum");
+
+l10nSupport.addOne("js.slot_dialog.slot_dialog.msg.copy_slot_config_failed", "The slot configuration {0} couldn\'t be copied.");
+
+l10nSupport.addOne("js.slot_general_section.table.field.defaultAssignment.type", "Site");
+
+l10nSupport.addOne("js.returnableattributes.button.cancel", "Cancel");
+
+l10nSupport.addOne("js.coupon.couponcode_list.header.redemptions", "Redemptions");
+
+l10nSupport.addOne("js.paymentmethods.paymentmethod.dialog.text.methods.drag_and_drop.single.msg", "Drop the selected payment method to reorder.");
+
+l10nSupport.addOne("js.shipping.shipping.delete_conformation.title", "Delete?");
+
+l10nSupport.addOne("js.sortingrules.button.cancel", "Cancel");
+
+l10nSupport.addOne("js.content_assets.button.save", "Save");
+
+l10nSupport.addOne("js.paymentmethods.sorting.apply_changes.msg", "Applying changes...");
+
+l10nSupport.addOne("js.product_dynamic_sorting.msg.load_dynamic_sortings", "Loading dynamic attributes...");
+
+l10nSupport.addOne("js.promotion_product_filter.error.title", "Error");
+
+l10nSupport.addOne("js.product_dynamic_sorting.field.context.value.n_a", "N/A");
+
+l10nSupport.addOne("js.product_dynamic_sorting.msg.error.removing_dynamic_attr", "The dynamic attribute couldn\'t be removed.");
+
+l10nSupport.addOne("js.returnableattributes.grid.paging.msg", "Displaying {0} - {1} of {2} attributes");
+
+l10nSupport.addOne("js.sortingrules.grid.rule_attributes.column.attribute", "Attribute");
+
+l10nSupport.addOne("js.paymentcards.error.system", "An unexpected system error occurred.");
+
+l10nSupport.addOne("js.slot_general_section.grid.slots.column.default", "Default");
+
+l10nSupport.addOne("js.paymentmethods.paymentmethod.dialog.column.name", "Name");
+
+l10nSupport.addOne("js.slot_general_section.error.id_too_long", "&nbsp;Please provide an ID shorter than 256 characters.");
+
+l10nSupport.addOne("js.paymentcards.button.manage_cards", "Manage Credit/Debit Cards");
+
+l10nSupport.addOne("js.permissions_filter.field.assigned_permissions_bmsite", "{0} of {1} assigned");
+
+l10nSupport.addOne("js.slot_general_section.grid.slot_config_assignments.header.rank", "Rank");
+
+l10nSupport.addOne("js.returnableattributes.object_type.msg.category_assignment.name", "Category Assignment");
+
+l10nSupport.addOne("js.bonus_product.dialog_choice.list.button.save", "Save");
+
+l10nSupport.addOne("js.paymentmethods.paymentmethod.dialog.field.enabled.yes", "Yes");
+
+l10nSupport.addOne("js.paymentmethods.panel.empty.msg", "Please select a payment method to view its details.");
+
+l10nSupport.addOne("js.coupon.form.general.title", "General");
+
+l10nSupport.addOne("js.order_list.button.delete_orders.cancel", "Cancel");
+
+l10nSupport.addOne("js.slot_dialog.msg.wait.copy_slot", "Copying slot configuration...");
+
+l10nSupport.addOne("js.slot_general_section.error.field_value_invalid", "The provided value for {0} is invalid.");
+
+l10nSupport.addOne("js.channel.pagecache.button.remove_partition", "Remove Partition");
+
+l10nSupport.addOne("js.slot_schedule.button.clear", "Clear");
+
+l10nSupport.addOne("js.sortingrules.msg.error.add_new_rule", "The new sorting rule couldn\'t be added.");
+
+l10nSupport.addOne("js.promotion_list.price_books_dialog.grid.column.currency", "Currency");
+
+l10nSupport.addOne("js.sortingrules.grid.rules.msg.loading", "Loading sorting rules...");
+
+l10nSupport.addOne("js.imagemanager.variation_attribute_panel.tooltip.text.localized", "Localized");
+
+l10nSupport.addOne("js.coupon.redemption_list.msg.empty", "No redemptions are available in the system.");
+
+l10nSupport.addOne("js.product_dynamic_sorting.button.apply", "Apply");
+
+l10nSupport.addOne("js.searchableattributes.meta_data.msg.type.integer", "Integer");
+
+l10nSupport.addOne("js.promotion_utils.promotion_enabled.button.cancel", "Cancel");
+
+l10nSupport.addOne("js.product_dynamic_sorting.button.new", "New");
+
+l10nSupport.addOne("js.slot_general_section.menu.scheduled.default", "Default Schedule");
+
+l10nSupport.addOne("js.paymentcards.dialog_card.table.column.type", "Type");
+
+l10nSupport.addOne("js.product_dynamic_sorting.grid.sort_dynamic.msg.empty", "No dynamic attributes are defined.");
+
+l10nSupport.addOne("js.paymentmethods.paymentmethod.dialog.assignedcards.column.type", "Type");
+
+l10nSupport.addOne("js.bonus_product.bonus_products.grid.column.type", "Type");
+
+l10nSupport.addOne("js.slot_general_section.error.js_in_html_custom", "JavaScript isn't allowed as a value for {0}.");
+
+l10nSupport.addOne("js.coupon.list.field.status.deleting", "Deleting");
+
+l10nSupport.addOne("js.imagemanager.action.remove.tooltip", "Remove qualifier.");
+
+l10nSupport.addOne("js.searchableattributes.error.product_attribute.boost_factor_invalid", "The current product index attribute has an invalid boost factor. Please correct the boost factor.");
+
+l10nSupport.addOne("js.category.categorysearchrefinement.buckettype.select.thresholds", "Thresholds");
+
+l10nSupport.addOne("js.paymentmethods.paymentmethod.dialog.button.impex.tooltip", "Go to payment method import/export.");
+
+l10nSupport.addOne("js.sortingrules.msg.confirmation.remove.title", "Remove {0}");
+
+l10nSupport.addOne("js.sortingrules.msg.confirmation.remove", "Are you sure you would like to remove this rule?");
+
+l10nSupport.addOne("js.coupon.msg.delete.confirm", "Are you sure you want to delete this coupon?");
+
+l10nSupport.addOne("js.product_dialog.column.type", "Type");
+
+l10nSupport.addOne("js.coupon.redemption_list.header.code", "Code");
+
+l10nSupport.addOne("js.searchableattributes.error.content_attribute.name_missing", "Please select an attribute name for the current content index attribute.");
+
+l10nSupport.addOne("js.link.details_table.header.conflict_url", "Conflicting URL");
+
+l10nSupport.addOne("js.paymentmethods.paymentmethod.dialog.text.cards.drag_and_drop.single.msg", "Drop the selected credit/debit card to reorder.");
+
+l10nSupport.addOne("js.paymentmethods.paymentmethod.dialog.text.methods.drag_and_drop.multi.msg", "Drop the selected payment methods to reorder.");
+
+l10nSupport.addOne("js.overlay.link.overlay.bmsite.unassigned", "({0})");
+
+l10nSupport.addOne("js.paymentmethods.paymentmethod.remove_confirm.msg", "Are you sure that you want to remove this payment method?");
+
+l10nSupport.addOne("js.slot_general_section.field.id.label", "ID:");
+
+l10nSupport.addOne("js.slot_advanced_search.menu.status.inactive", "Inactive");
+
+l10nSupport.addOne("js.promotion_utils.copy_promotion.title", "Copy Promotion");
+
+l10nSupport.addOne("js.shipping.grid.column.shipping_cost", "Shipping Cost");
+
+l10nSupport.addOne("js.priceadjustmentlimits.table.msg.type.shipping", "Shipping");
+
+l10nSupport.addOne("js.returnableattributes.grid.column.attribute_type", "Attribute Type");
+
+l10nSupport.addOne("js.product_dynamic_sorting.field.direction.value.asc", "Ascending");
+
+l10nSupport.addOne("js.assign_widget.button.remove.tooltip", "Select an item from the assigned groups to remove it.");
+
+l10nSupport.addOne("js.sortingrules.field.direction.value.asc", "Ascending");
+
+l10nSupport.addOne("js.promotion_utils.copy_promotion.button.copy", "Copy");
+
+l10nSupport.addOne("js.coupon.dialog.delete.warning.failed", "Warning!");
+
+l10nSupport.addOne("js.customer.merge_duplicate_logins.confirmation.title", "Merge Direction: '{0}' into '{1}' Merge Target: take customers of '{2}' Merge Mode: merge {3} Merge Options: merge {4}");
+
+l10nSupport.addOne("js.paymentcards.remove_card.confirmation.msg", "Are you sure that you want to remove this payment card?");
+
+l10nSupport.addOne("js.sortingrules.grid.rules.msg.empty", "No attributes are defined for the selected rule.");
+
+l10nSupport.addOne("js.sortingrules.msg.remove_rule", "Removing sorting rule...");
+
+l10nSupport.addOne("js.slot_list.category_tree.title", "Category Slots");
+
+l10nSupport.addOne("js.coupon.couponcode_list.dialog_new.field.empty_msg", "Enter new coupon code...");
+
+l10nSupport.addOne("js.coupon.redemption_list.search.tooltip", "Search is case-insensitive and all search terms must be contained in the coupon ID, coupon code, or customer email.");
+
+l10nSupport.addOne("js.slot_dialog.button.ApplyButton", "Apply");
+
+l10nSupport.addOne("js.returnableattributes.grid.column.object_type", "Object Type");
+
+l10nSupport.addOne("js.slot_general_section.field.content_type.recommendation", "Recommendation");
+
+l10nSupport.addOne("js.product_dynamic_sorting.field.context.value.global", "Global");
+
+l10nSupport.addOne("js.coupon.warn.delete_failed", "The coupon couldn\'t be deleted.");
+
+l10nSupport.addOne("js.overlay.link.overlay.locale.assigned", "({0})");
+
+l10nSupport.addOne("js.promotion_utils.promotion_enabled.msg.status.inactive", "Inactive");
+
+l10nSupport.addOne("js.slot_general_section.field.active.value.active", "Active");
+
+l10nSupport.addOne("js.paymentcards.dialog_card.table.remove_all.confirmation.msg", "Are you sure that you want to remove all payment cards?");
+
+l10nSupport.addOne("js.paymentcards.dialog_card.lose_changes.confirm.button.dont_apply", "Don't Apply");
+
+l10nSupport.addOne("js.sortingrules.button.copy.tooltip", "Copy.");
+
+l10nSupport.addOne("js.coupon.couponcode_list.title", "Coupon Codes");
+
+l10nSupport.addOne("js.bonus_product.dialog_choice.button.remove", "Remove Bonus Product");
+
+l10nSupport.addOne("js.order_list.title.delete_orders", "Delete Orders");
+
+l10nSupport.addOne("js.prototype_window.dialog.button.cancel", "Cancel");
+
+l10nSupport.addOne("js.coupon.warn.session_hijack", "Your session may have been hijacked! You\'ll be redirected to the Login Page in 3 seconds.");
+
+l10nSupport.addOne("js.searchableattributes.content_attribute_config.description.empty", "No content index attributes have been defined.");
+
+l10nSupport.addOne("js.order_list.title.set_export_status", "Set Export Status");
+
+l10nSupport.addOne("js.product_dynamic_sorting.confirmation.lose_changes.title", "Lose Changes?");
+
+l10nSupport.addOne("js.product_dynamic_sorting.msg.applying.changes", "Applying changes...");
+
+l10nSupport.addOne("js.slot_general_section.error.js_in_html_callout", "JavaScript isn't allowed as a value for Callout.");
+
+l10nSupport.addOne("js.product_dynamic_sorting.grid.dynamic_sort_attr.title", "Attributes");
+
+l10nSupport.addOne("js.paymentcards.dialog_card.attributes.field.number_length.hint", "Example: 16-19 (range) or 16,18,21 (individual values)");
+
+l10nSupport.addOne("js.imagemanager.message.folder.limit.reached", "This folder contains more than {0} items. Please use the filters above.");
+
+l10nSupport.addOne("js.coupon.list.header.coupon", "Coupon");
+
+l10nSupport.addOne("js.overlay.heading.overlay.webdav", "WebDAV Permissions");
+
+l10nSupport.addOne("js.sortingrules.grid.rule_attributes.msg.drag_drop", "Drop the selected attribute to reorder.");
+
+l10nSupport.addOne("js.paymentcards.dialog_card.attributes.field.customer_groups.label", "Customer Groups:");
+
+l10nSupport.addOne("js.slot_list.grid.slots.column.type", "Type");
+
+l10nSupport.addOne("js.paymentcards.dialog_card.field.enabled.value.no", "No");
+
+l10nSupport.addOne("js.slot_schedule.checkbox.dow.saturday", "Saturday");
+
+l10nSupport.addOne("js.returnableattributes.tooltip.attribute.type", "Some types of attributes aren't available because they're not suitable for returning.");
+
+l10nSupport.addOne("js.slot_general_section.msg.wait.updating_slot", "Updating slot configuration...");
+
+l10nSupport.addOne("js.searchableattributes.error.content_attribute.boost_factor_missing", "Please select a boost factor for the current content index attribute.");
+
+l10nSupport.addOne("js.coupon.form.general.msg.wait_title", "Updating ...");
+
+l10nSupport.addOne("js.framework.msg.server_failed", "Saving failed: {0}");
+
+l10nSupport.addOne("js.deployment.submit_api_version.confirmation.msg", "Updating the active code version to compatibility mode {0} could adversely affect your sites. Please test this change before rolling it out to your production environment. Are you sure you want to continue?");
+
+l10nSupport.addOne("js.promotion_utils.promotion_schedule.schedule_period.field.start_date.label", "Campaign Start Date:");
+
+l10nSupport.addOne("js.order_list.button.delete_orders.close", "Close");
+
+l10nSupport.addOne("js.bonus_product.dialog_choice.confirmation.remove.title", "Confirm");
+
+l10nSupport.addOne("js.slot_list.button.search.advanced", "Advanced");
+
+l10nSupport.addOne("js.link.sf_url_conflicts.column.details_table.error_type_product_id", "Product SKU with Dashes");
+
+l10nSupport.addOne("js.sortingrules.preview_pagingbar.msg", "Products {0} - {1} of {2}");
+
+l10nSupport.addOne("js.priceadjustmentlimits.details.description", "Details of the price adjustment limit <b>{0}</b> for the selected context:");
+
+l10nSupport.addOne("js.slot_general_section.panel.slot_configuration.title", "Slot Configuration");
+
+l10nSupport.addOne("js.slot_general_section.error.no_locale_read_permision", "You don't have permission to read data in this locale.");
+
+l10nSupport.addOne("js.product_dynamic_sorting.grid.sort_dynamic.column.context", "Context");
+
+l10nSupport.addOne("js.paymentmethods.paymentmethod.dialog.column.sort_order", "Sort Order");
+
+l10nSupport.addOne("js.shipping.error.negative_costs", "The update failed: Shipment costs can\'t be negative.");
+
+l10nSupport.addOne("js.imagemanager.error.loading", "The image data from the server couldn\'t be loaded.");
+
+l10nSupport.addOne("js.slot_list.grid.slots.column.category_folder_name", "Category/Folder Name");
+
+l10nSupport.addOne("js.framework.warning_dialog.title", "Warning");
+
+l10nSupport.addOne("js.returnableattributes.meta_data.msg.type.number_set", "Set of Number");
+
+l10nSupport.addOne("js.sortingrules.grid.rules_preview.msg.searching", "Searching...");
+
+l10nSupport.addOne("js.promotion_product_filter.error.loading", "The promotion attributes couldn\'t be loaded.");
+
+l10nSupport.addOne("js.paymentmethods.paymentmethod.dialog.remove-all_confirm.msg", "Are you sure that you want to remove all payment methods?");
+
+l10nSupport.addOne("js.slot_list.msg.warn.nothing_to_delete", "There\'s no slot to delete. Please select a content slot to delete.");
+
+l10nSupport.addOne("js.catalog.categorytree.catalogview.button.next", "Next");
+
+l10nSupport.addOne("js.product_dynamic_sorting.button.new.tooltip", "New.");
+
+l10nSupport.addOne("js.product_dynamic_sorting.grid.dynamic_sort_attr.column.default_value", "Default Value");
+
+l10nSupport.addOne("js.slot_advanced_search.menu.scheduled.time", "Time");
+
+l10nSupport.addOne("js.promotion_utils.promotion_schedule.schedule_time_of_day.msg.help", "The promotion is active 24 hours per day unless restricted to a specific time period of the day. Outside this period the promotion is inactive.");
+
+l10nSupport.addOne("js.promotion_utils.promotion_enabled.warn.title", "Warning");
+
+l10nSupport.addOne("js.promotion_utils.promotion_schedule.schedule_dow.msg.day.tuesday", "Tuesday");
+
+l10nSupport.addOne("js.promotion_utils.promotion_enabled.msg.action.disable", "Click \"Disable\" to disable the promotion or \"Cancel\" to keep it enabled.");
+
+l10nSupport.addOne("js.bonus_product.dialog_choice.msg.status.none_selected", "No bonus product is selected.");
+
+l10nSupport.addOne("js.product_dynamic_sorting.msg.removing_dynamic_attr", "Removing dynamic attribute...");
+
+l10nSupport.addOne("js.slot_general_section.error.content_type_missing", "Please provide a content type.");
+
+l10nSupport.addOne("js.slot_advanced_search.menu.scheduled.end", "End");
+
+l10nSupport.addOne("js.channel.pagecache.field.other_pipelines", "Other Pipelines");
+
+l10nSupport.addOne("js.promotion_list.add_product_options.description", "Select the product options below to add to the global exclusion list and click <b>OK</b>.");
+
+l10nSupport.addOne("js.permissions_filter.link.assigned_permissions_funcorg", "{0} of {1} assigned");
+
+l10nSupport.addOne("js.category_dialog.dialog.title", "Categories");
+
+l10nSupport.addOne("js.imagemanager.title.remove.images", "Confirm");
+
+l10nSupport.addOne("js.slot_general_section.panel.slot_config.title", "Slot Configuration(s)");
+
+l10nSupport.addOne("js.coupon.redemption_list.header.coupon", "Coupon");
+
+l10nSupport.addOne("js.slot_general_section.field.active.value.inactive", "Inactive");
+
+l10nSupport.addOne("js.slot_dialog.slot_dialog.msg.copy_slot_config_success", "The slot configuration {0} was successfully copied.");
+
+l10nSupport.addOne("js.overlay.link.overlay.webdav.assigned", "({0})");
+
+l10nSupport.addOne("js.paymentmethods.paymentmethod.dialog.msg.no_drag_and_drop", "Click the \"Sort Order\" button to reorder the payment methods.");
+
+l10nSupport.addOne("js.imagemanager.variation_attribute_panel.label.title", "Title");
+
+l10nSupport.addOne("js.bonus_product.dialog_choice.list.column.price", "Price");
+
+l10nSupport.addOne("js.sortingrules.button.new", "New");
+
+l10nSupport.addOne("js.paymentcards.dialog_card.error.invalid_cvc", "The card number verification must contain only numbers separated by &quot;-&quot; or &quot;,&quot; characters.");
+
+l10nSupport.addOne("js.framework.select_sites.list.header.id", "ID");
+
+l10nSupport.addOne("js.coupon.form.coupon.field.limit_per_customer.label", "Per Customer:");
+
+l10nSupport.addOne("js.slot_list.grid.slots.column.slot_id", "Slot ID/Description");
+
+l10nSupport.addOne("js.searchableattributes.button.new", "New");
+
+l10nSupport.addOne("js.channel.pagecache.error.max_partitions", "The maximum number of partitions allowed per site is {0}.");
+
+l10nSupport.addOne("js.coupon.form.coupon.field.limit_per_customer.msg.empty", "Unlimited");
+
+l10nSupport.addOne("js.sortingrules.msg.confirmation.change_context.global_to_site", "Are you sure that you want to change the context of this rule? It\'ll be only available in the current site and any assignments of this rule in other sites will be lost.");
+
+l10nSupport.addOne("js.promotion_list.product_options_grid.column.scope", "Scope");
+
+l10nSupport.addOne("js.searchableattributes.meta_data.msg.type.string_set", "Set of String");
+
+l10nSupport.addOne("js.link.details_table.header.locale", "Locale");
+
+l10nSupport.addOne("js.sortingrules.msg.search_term_field.empty", "Enter a search term...");
+
+l10nSupport.addOne("js.slot_general_section.msg.wait.loading_slots", "Please wait, loading slot configurations...");
+
+l10nSupport.addOne("js.deployment.submit_api_version.error.unknown_version", "The submitted API version '{0}' is unknown. Note that manipulating API versions can damage the system.");
+
+l10nSupport.addOne("js.returnableattributes.confirmation.cancel_changes.title", "Lose Changes?");
+
+l10nSupport.addOne("js.coupon.couponcode_list.toolbar.button.add", "Add Coupon Code");
+
+l10nSupport.addOne("js.inventory_record_list.button.delete_records.cancel", "Cancel");
+
+l10nSupport.addOne("js.exportunittree.tree.column.description", "Description");
+
+l10nSupport.addOne("js.shipping.grid.column.shipment_value", "Shipment Value");
+
+l10nSupport.addOne("js.sortingrules.msg.confirmation.change_context.site_to_global", "Are you sure that you want to change the context of this rule? It\'ll become available in all sites. To edit this rule further you\'ll need permissions to edit global sorting rules.");
+
+l10nSupport.addOne("js.imagemanager.message.cannot.delete", "The root node of the file browser can't be deleted.");
+
+l10nSupport.addOne("js.shipping.shipping.delete_all_confirmation.title", "Delete?");
+
+l10nSupport.addOne("js.slot_general_section.msg.confirmation.title", "Confirm");
+
+l10nSupport.addOne("js.promotion_utils.promotion_enabled.button.disable", "Disable");
+
+l10nSupport.addOne("js.imagemanager.paging_bar.msg.empty", "No items to display");
+
+l10nSupport.addOne("js.bonus_product.bonus_products.paging.msg.empty", "No items to display");
+
+l10nSupport.addOne("js.operations.quota.msg.level_near_limit", "Near Quota Limit");
+
+l10nSupport.addOne("js.searchableattributes.grid.column.attribute", "Attribute");
+
+l10nSupport.addOne("js.slot_general_section.field.content.value.category", "Category");
+
+l10nSupport.addOne("js.slot_schedule.checkbox.dow.friday", "Friday");
+
+l10nSupport.addOne("js.imagemanager.paging_bar.msg", "Displaying items {0} - {1} of {2}");
+
+l10nSupport.addOne("js.imagemanager.button.edit", "Edit");
+
+l10nSupport.addOne("js.searchableattributes.content_attribute_config.title", "Content Index Attributes");
+
+l10nSupport.addOne("js.searchableattributes.error.product_attribute.boost_factor_too_large", "The current product index attribute has a boost factor greater than 100. Please correct the boost factor.");
+
+l10nSupport.addOne("js.channel.pagecache.error.partition_id.in_use", "The partition ID is already in use. Please select another ID.");
+
+l10nSupport.addOne("js.paymentcards.msg.create_new_card", "Creating new payment card...");
+
+l10nSupport.addOne("js.paymentmethods.error.payment_method_id_missing", "Please enter an ID for the payment method.");
+
+l10nSupport.addOne("js.slot_general_section.grid.slots.column.description", "Description");
+
+l10nSupport.addOne("js.coupon.form.coupon.field.coupon_code.msg.empty", "Please enter a coupon code.");
+
+l10nSupport.addOne("js.channel.pagecache.button.add_partition.tooltip", "Add a page cache partition.");
+
+l10nSupport.addOne("js.slot_list.button.delete_all", "Delete All");
+
+l10nSupport.addOne("js.sortingrules.label.attributes", "Attributes");
+
+l10nSupport.addOne("js.paymentmethods.sorting.apply_changes.error", "The changes couldn\'t be applied.");
+
+l10nSupport.addOne("js.paymentmethods.paymentprocessor.msg.name_missing", "{0} (missing)");
+
+l10nSupport.addOne("js.paymentcards.dialog_card.title", "Payment Card Details");
+
+l10nSupport.addOne("js.content.sharedlibrary.description", "Select a set of sites below and click <b>OK</b>. This library will be used for the selected sites.");
+
+l10nSupport.addOne("js.imagemanager.image_manager.warn_msg.save_with_error.msg", "Saving failed: {0}.");
+
+l10nSupport.addOne("js.product_dynamic_sorting.msg.confirmation.change_context.site_to_global", "Are you sure that you want to change the context of this dynamic attribute? It\'ll become available in all sites. Further editing of the dynamic attribute will require permissions to edit global sorting rules.");
+
+l10nSupport.addOne("js.slot_list.folder_tree.root.title", "Preview");
+
+l10nSupport.addOne("js.slot_general_section.error.id_not_unique", "&nbsp;The provided slot configuration ID isn't unique.");
+
+l10nSupport.addOne("js.slot_general_section.field.default.value.true", "True");
+
+l10nSupport.addOne("js.imagemanager.variation_attribute_window.button.ok", "OK");
+
+l10nSupport.addOne("js.slot_general_section.menu.scheduled.campaign", "Campaign Schedule");
+
+l10nSupport.addOne("js.slot_list.menu.slottype.folder", "Folder");
+
+l10nSupport.addOne("js.paymentmethods.title.error", "Error");
+
+l10nSupport.addOne("js.sortingrules.msg.confirmation.cancel.title", "Lose Changes?");
+
+l10nSupport.addOne("js.overlay.link.overlay.bmorg.unassigned", "({0})");
+
+l10nSupport.addOne("js.paymentmethods.paymentmethod.apply_changes.msg", "Applying changes...");
+
+l10nSupport.addOne("js.imagemanager.variation_attribute_window.button.cancel", "Cancel");
+
+l10nSupport.addOne("js.paymentcards.dialog_card.button.apply", "Apply");
+
+l10nSupport.addOne("js.coupon.warn.save_failed", "The coupon data couldn\'t be saved.");
+
+l10nSupport.addOne("js.slot_general_section.field.content_type.category", "Category");
+
+l10nSupport.addOne("js.product_dynamic_sorting.field.replacement.value.avg", "Average");
+
+l10nSupport.addOne("js.paymentcards.title.error", "Error");
+
+l10nSupport.addOne("js.slot_general_section.field.content_type.label", "Content Type:");
+
+l10nSupport.addOne("js.product_dynamic_sorting.confirmation.remove_attr.title", "Remove {0}");
+
+l10nSupport.addOne("js.template_dialog.msg.tree.empty", "No templates are available.");
+
+l10nSupport.addOne("js.imagemanager.label.remove.entire.level", "Remove Entire Level");
+
+l10nSupport.addOne("js.product_dialog.button.save", "Save");
+
+l10nSupport.addOne("js.inventory_list.msg.delete_list", "Delete inventory list?");
+
+l10nSupport.addOne("js.operations.error.configuration", "Property configuration error.");
+
+l10nSupport.addOne("js.imagemanager.title.variation.attrs", "Variation Attributes");
+
+l10nSupport.addOne("js.framework.warn.msg", "The server returned a failure: {0}.");
+
+l10nSupport.addOne("js.paymentmethods.panel.details.title", "Payment Method Details");
+
+l10nSupport.addOne("js.slot_general_section.msg.error.create_slot_config_failed", "The slot configuration couldn\'t be created.");
+
+l10nSupport.addOne("js.customer.adjust_and_move.prefix_number.confirmation.title", "Prefix Customer Numbers with '{0}' and Move Customers from Customer List '{1}' to '{2}'");
+
+l10nSupport.addOne("js.sortingrules.grid.rules_preview.title", "Preview");
+
+l10nSupport.addOne("js.slot_general_section.grid.slot_config_assignments.header.schedule", "Schedule");
+
+l10nSupport.addOne("js.catalog.categorytree.grid.header.id", "ID");
+
+l10nSupport.addOne("js.paymentmethods.paymentmethod.dialog.button.impex", "Import/Export");
+
+l10nSupport.addOne("js.paymentcards.dialog_card.attributes.field.currencies.label", "Currencies:");
+
+l10nSupport.addOne("js.promotion_utils.promotion_schedule.schedule_period.field.end_date.date_and_time", "{0} {1}");
+
+l10nSupport.addOne("js.promotion_utils.promotion_schedule.schedule_period.field.start_date.date_and_time", "{0} {1}");
+
+l10nSupport.addOne("js.product_dynamic_sorting.grid.dynamic_sort_attr.msg.empty", "Select a dynamic attribute to see its attributes.");
+
+l10nSupport.addOne("js.assign_widget.button.assign", "Assign");
+
+l10nSupport.addOne("js.returnableattributes.object_type.msg.content.name", "Content");
+
+l10nSupport.addOne("js.slot_advanced_search.toolbar.action.date_time", "Date & Time");
+
+l10nSupport.addOne("js.imagemanager.image_manager.button.save", "Save");
+
+l10nSupport.addOne("js.searchableattributes.grid.column.attribute_type", "Attribute Type");
+
+l10nSupport.addOne("js.coupon.redemption_list.title", "Redemptions");
+
+l10nSupport.addOne("js.searchableattributes.error.product_attribute.boost_factor_missing", "Please select a boost factor for the current product index attribute.");
+
+l10nSupport.addOne("js.channel.pagecache.msg.invalidate_partition_cache", "{0} invalidation was successfully initiated.");
+
+l10nSupport.addOne("js.paymentmethods.paymentmethod.loading.error", "The payment methods couldn\'t be loaded.");
+
+l10nSupport.addOne("js.product_dialog.column.name", "Name");
+
+l10nSupport.addOne("js.slot_general_section.msg.wait.loading_slog_config", "Getting slot configuration...");
+
+l10nSupport.addOne("js.slot_list.menu.slottype.category", "Category");
+
+l10nSupport.addOne("js.coupon.form.coupon.msg.saved", "The coupon was successfully saved.");
+
+l10nSupport.addOne("js.channel.pagecache.error.partition_name.invalid", "The partition name isn't valid. Please enter a valid name.");
+
+l10nSupport.addOne("js.slot_general_section.field.content.value.content_asset", "Content Asset");
+
+l10nSupport.addOne("js.imagemanager.delete.confirmation.title", "Delete");
+
+l10nSupport.addOne("js.coupon.form.general.msg.loading", "Loading coupon data ...");
+
+l10nSupport.addOne("js.channel.pagecache.dialog.field.tasks", "Replication Tasks");
+
+l10nSupport.addOne("js.searchableattributes.confirmation.cancel_changes.msg", "Are you sure that you want to cancel without applying your changes?");
+
+l10nSupport.addOne("js.imagemanager.variation_attribute_window.error.loading", "The variation attribute data from the server couldn\'t be loaded.");
+
+l10nSupport.addOne("js.coupon.form.coupon.field.typecode.msg.empty", "Please select...");
+
+l10nSupport.addOne("js.searchableattributes.content_attribute_config.error.loading", "The searchable content attributes couldn\'t be loaded.");
+
+l10nSupport.addOne("js.promotion_project_filter.msg.loading", "Loading...");
+
+l10nSupport.addOne("js.order_list.button.set_ready_to_push.close", "Close");
+
+l10nSupport.addOne("js.product_dynamic_sorting.msg.error.dynamic_attr.weight_too_low", "An attribute has a weight less than 1. Please correct the weight.");
+
+l10nSupport.addOne("js.promotion_utils.promotion_schedule.msg.saving.title", "Saving Promotion Schedule");
+
+l10nSupport.addOne("js.searchableattributes.meta_data.msg.type.html", "HTML");
+
+l10nSupport.addOne("js.operations.quota.msg.level.action_required", "Action Required");
+
+l10nSupport.addOne("js.sortingrules.msg.confirmation.apply_preview.button.apply", "Apply");
+
+l10nSupport.addOne("js.channel.pagecache.list.header.last_invalidated", "Last Invalidated");
+
+l10nSupport.addOne("js.sortingrules.msg.error.attributes_missing", "Please add one or more sorting attributes for the rule.");
+
+l10nSupport.addOne("js.promotion_list.price_books_dialog.grid.paging.msg.empty", "No items to display");
+
+l10nSupport.addOne("js.searchableattributes.meta_data.msg.type.integer_set", "Set of Integer");
+
+l10nSupport.addOne("js.returnableattributes.grid.loading_product.msg", "Loading returnable product attribute...");
+
+l10nSupport.addOne("js.product_dynamic_sorting.button.cancel", "Cancel");
+
+l10nSupport.addOne("js.overlay.link.overlay.webdav.unassigned", "({0})");
+
+l10nSupport.addOne("js.searchableattributes.meta_data.msg.type.integer_enum", "Enum of Integer");
+
+l10nSupport.addOne("js.paymentcards.dialog_card.cancel.confirm.title", "Lose Changes?");
+
+l10nSupport.addOne("js.coupon.dialog.confirm.title", "Confirm");
+
+l10nSupport.addOne("js.overlay.heading.overlay.locale", "Locale Permissions");
+
+l10nSupport.addOne("js.audit.audithistory.msg.event_details.loading", "Retrieving details for event {0} ...");
+
+l10nSupport.addOne("js.link.sf_url_conflicts.column.details_table.error_type_content_id", "Content ID with Dashes");
+
+l10nSupport.addOne("js.bonus_product.dialog_choice.list.warn.none_selected", "No bonus products are selected. Click \"Add Bonus Product\" to start.");
+
+l10nSupport.addOne("js.slot_general_section.table.field.defaultAssignment.schedule", "Continuously");
+
+l10nSupport.addOne("js.inventory_record_list.msg.delete_records.one", "Delete 1 selected inventory record?");
+
+l10nSupport.addOne("js.customer.merge_duplicate_logins.confirmation.msg", "You're about to merge data of potentially different customers. This can result in privacy violations.<br/>Are you really sure?");
+
+l10nSupport.addOne("js.returnableattributes.product_attribute_config.error.loading", "The returnable product attributes couldn\'t be loaded.");
+
+l10nSupport.addOne("js.coupon.form.coupon.field.assignments.label", "Assignments");
+
+l10nSupport.addOne("js.paymentcards.dialog_card.table.column.enabled", "Enabled");
+
+l10nSupport.addOne("js.paymentcards.error.removing_all_cards", "The payment cards couldn\'t be removed.");
+
+l10nSupport.addOne("js.link.conflict_type_pipeline", "Pipeline");
+
+l10nSupport.addOne("js.coupon.list.header.container_type", "Container Type");
+
+l10nSupport.addOne("js.channel.pagecache.error.partition_tasks.max_length", "The partition replication tasks aren't valid. The maximum length for the value is {0}.");
+
+l10nSupport.addOne("js.framework.error_dialog.title", "Error");
+
+l10nSupport.addOne("js.searchableattributes.attribute.error.duplicate", "Please enter a unique attribute definition for the searchable attribute.");
+
+l10nSupport.addOne("js.slot_advanced_search.toolbar.action.all", "All");
+
+l10nSupport.addOne("js.promotion_utils.title.effective_period", "Effective Period");
+
+l10nSupport.addOne("js.coupon.list.header.status", "Status");
+
+l10nSupport.addOne("js.promotion_list.price_books_dialog.button.cancel", "Cancel");
+
+l10nSupport.addOne("js.slot_list.menu.search.description", "Description");
+
+l10nSupport.addOne("js.channel.pagecache.msg.last_invalidated", "Last Invalidated: {0}.");
+
+l10nSupport.addOne("js.product_dynamic_sorting.button.dont_apply", "Don't Apply");
+
+l10nSupport.addOne("js.paymentmethods.paymentmethod.dialog.attributes.field.customer_groups.label", "Customer Groups:");
+
+l10nSupport.addOne("js.channel.pagecache.list.header.id", "ID");
+
+l10nSupport.addOne("js.permissions_filter.link.assigned_permissions_locale", "{0} of {1} assigned");
+
+l10nSupport.addOne("js.coupon.form.coupon.select.typecode.multiple", "Merchant-Defined Multiple Codes");
+
+l10nSupport.addOne("js.coupon.list.header.container", "Container");
+
+l10nSupport.addOne("js.slot_advanced_search.schedule.msg.all", "All");
+
+l10nSupport.addOne("js.imagemanager.grid.images.msg.empty", "No files available");
+
+l10nSupport.addOne("js.inventory.allocation.confirm.title", "Reset Allocation");
+
+l10nSupport.addOne("js.promotion_utils.promotion_enabled.action.enable", "Click \"Enable\" to enable the promotion or \"Cancel\" to keep it disabled.");
+
+l10nSupport.addOne("js.slot_list.msg.loading.global_slots", "Please wait, loading global slots...");
+
+l10nSupport.addOne("js.paymentmethods.paymentmethod.confirm_lose_changes.msg", "There are pending changes to be applied that\'ll be lost if you continue. Do you want to apply these changes first?");
+
+l10nSupport.addOne("js.promotion_utils.promotion_enabled.msg.status.active", "Active");
+
+l10nSupport.addOne("js.slot_list.menu.customergroups.all", "All");
+
+l10nSupport.addOne("js.paymentmethods.paymentmethod.dialog.locale.label", "Language:");
+
+l10nSupport.addOne("js.paymentmethods.paymentmethod.confirm_cancel.msg", "Are you sure that you want to cancel without applying your changes?");
+
+l10nSupport.addOne("js.product_dynamic_sorting.msg.error.copy_dynamic_sorting", "The dynamic sorting couldn\'t be copied.");
+
+l10nSupport.addOne("js.paymentcards.dialog_card.msg.apply", "Applying changes...");
+
+l10nSupport.addOne("js.sortingrules.grid.rules.msg.no.sorting.rules", "No sorting rules are defined.");
+
+l10nSupport.addOne("js.searchableattributes.error.unknown", "An unexpected system error occurred.");
+
+l10nSupport.addOne("js.customer.undo_merge_by_login.confirmation.title", "Undo Merge of Customers with Duplicate Customer Logins");
+
+l10nSupport.addOne("js.customer.merge_duplicate_logins.error.customerlist", "You haven't chosen the customer list to take the customers from.<br/>Use the radio button to select a customer list, then click &quot;Merge&quot; again.");
+
+l10nSupport.addOne("js.coupon.msg.delete.wait", "Deleting the coupon ...");
+
+l10nSupport.addOne("js.slot_general_section.field.default.label", "Default");
+
+l10nSupport.addOne("js.slot_general_section.grid.slots.column.status", "Status");
+
+l10nSupport.addOne("js.sortingrules.msg.confirmation.apply_preview.title", "Apply Changes?");
+
+l10nSupport.addOne("js.coupon.form.general.button.apply", "Apply");
+
+l10nSupport.addOne("js.searchableattributes.meta_data.msg.type.number", "Number");
+
+l10nSupport.addOne("js.slot_schedule.window.schedule.title", "Slot Configuration Schedule");
+
+l10nSupport.addOne("js.paymentcards.error.create_new", "The new payment card couldn\'t be added.");
+
+l10nSupport.addOne("js.coupon.list.promotions.title", "Promotions");
+
+l10nSupport.addOne("js.sortingrules.grid.rules_preview.msg.empty", "Select a sorting rule to preview.");
+
+l10nSupport.addOne("js.promotion_utils.promotion_schedule.warn.save_failed.title", "Warning");
+
+l10nSupport.addOne("js.paymentmethods.paymentmethod.dialog.button.new", "New");
+
+l10nSupport.addOne("js.searchableattributes.object_type.msg.category.name", "Category");
+
+l10nSupport.addOne("js.slot_general_section.field.callout.label", "Callout");
+
+l10nSupport.addOne("js.customer.report_duplicate_customer.error.prefix_suffix", "You haven't configured a prefix/suffix.<br/>Use the radio button to select the merge option and enter a prefix/suffix, then click &quot;Change Customer No. & Move&quot; again.");
+
+l10nSupport.addOne("js.slot_general_section.panel.assignments.title", "Schedule/Qualifiers/Compatibility");
+
+l10nSupport.addOne("js.returnableattributes.grid.column.attribute", "Attribute");
+
+l10nSupport.addOne("js.channel.pagecache.msg.invalidate_page_cache", "The page cache invalidation was successfully initiated.");
+
+l10nSupport.addOne("js.searchableattributes.error.attribute.duplicate", "The attribute definition '{0}' is already in use. Please select a unique attribute definition.");
+
+l10nSupport.addOne("js.searchableattributes.error.content_attribute.boost_factor_invalid", "The current content index attribute has an invalid boost factor. Please correct the boost factor.");
+
+l10nSupport.addOne("js.priceadjustmentlimits.table.msg.type.order", "Order");
+
+l10nSupport.addOne("js.promotion_utils.promotion_schedule.msg.overwrite", "Overwrites date/time of the campaign.");
+
+l10nSupport.addOne("js.imagemanager.button.add", "Add");
+
+l10nSupport.addOne("js.paymentmethods.paymentmethod.dialog.button.sort_order", "Sort Order");
+
+l10nSupport.addOne("js.searchableattributes.meta_data.msg.type.string_enum", "Enum of String");
+
+l10nSupport.addOne("js.imagemanager.image_manager.validation.error.no_path", "Image number {0}: No image path was configured.");
+
+l10nSupport.addOne("js.paymentmethods.msg.remove_all_paymentmethods", "Removing all payment methods...");
+
+l10nSupport.addOne("js.coupon.redemption_list.header.order_no", "Order Number");
+
+l10nSupport.addOne("js.promotion_utils.copy_promotion.warn.title", "Warning");
+
+l10nSupport.addOne("js.slot_list.folder_tree.title", "Folder Slots");
+
+l10nSupport.addOne("js.sortingrules.grid.rules.title", "{0} Attributes");
+
+l10nSupport.addOne("js.sortingrules.button.preview", "Preview");
+
+l10nSupport.addOne("js.link.sf_url_conflicts.column.details_table.error_type_limited_display", "(showing the first {0} of {1} items)");
+
+l10nSupport.addOne("js.sortingrules.field.context.value.global", "Global");
+
+l10nSupport.addOne("js.slot_general_section.field.template.label", "Template");
+
+l10nSupport.addOne("js.coupon.dialog.warning.session_hijacked", "Warning!");
+
+l10nSupport.addOne("js.catalog.categorytree.select.catalog.empty.msg", "Select a storefront catalog...");
+
+l10nSupport.addOne("js.catalog.categorytree.catalogview.button.treeview", "Tree View");
+
+l10nSupport.addOne("js.bonus_product.dialog_choose.title", "Bonus Products");
+
+l10nSupport.addOne("js.slot_advanced_search.menu.scheduled.to", "To");
+
+l10nSupport.addOne("js.imagemanager.image_manager.validation.error.path_too_long", "Image number {0}: The image path is too long. A maximum of 1800 characters is allowed.");
+
+l10nSupport.addOne("js.coupon.form.coupon.field.limit_per_code.msg.empty", "Unlimited");
+
+l10nSupport.addOne("js.returnableattributes.meta_data.msg.type.text", "Text");
+
+l10nSupport.addOne("js.slot_general_section.msg.confirmation.slot.new_default", "You selected this slot configuration as the default. This will override the previous default. Continue?");
+
+l10nSupport.addOne("js.priceadjustmentlimits.table.message.nolimits", "There are no price adjustment limits defined for the selected context. This allows unlimited discounts.");
+
+l10nSupport.addOne("js.coupon.form.general.msg.saving", "Saving coupon data...");
+
+l10nSupport.addOne("js.slot_general_section.field.content.label", "Content");
+
+l10nSupport.addOne("js.slot_schedule.button.ok", "OK");
+
+l10nSupport.addOne("js.searchableattributes.error.loading.product_index_attributes", "The searchable product attributes couldn\'t be loaded.");
+
+l10nSupport.addOne("js.assign_widget.paging.msg.empty", "No items to display");
+
+l10nSupport.addOne("js.coupon.list.field.status.unknown", "Unknown");
+
+l10nSupport.addOne("js.product_dynamic_sorting.grid.sort_dynamic.column.id", "ID");
+
+l10nSupport.addOne("js.promotion_utils.promotion_schedule.msg.loading", "Loading...");
+
+l10nSupport.addOne("js.order_list.msg.delete_orders.one", "Delete 1 selected order?");
+
+l10nSupport.addOne("js.coupon.list.field.status.enabled", "Enabled");
+
+l10nSupport.addOne("js.paymentcards.error.saving", "The payment card couldn't be saved because there are errors.");
+
+l10nSupport.addOne("js.link.details_table.header.resolution", "Resolution");
+
+l10nSupport.addOne("js.promotion_utils.promotion_schedule.schedule_dow.msg.day.monday", "Monday");
+
+l10nSupport.addOne("js.product_dynamic_sorting.button.delete", "Delete");
+
+l10nSupport.addOne("js.product_dialog.msg.pagingbar", "Displaying items {0} - {1} of {2}");
+
+l10nSupport.addOne("js.paymentcards.dialog_card.error.apply", "The changes couldn\'t be applied.");
+
+l10nSupport.addOne("js.slot_general_section.field.content_type.msg.empty", "Select a content type...");
+
+l10nSupport.addOne("js.slot_general_section.label.category", "Category:");
+
+l10nSupport.addOne("js.content_assets.msg.grid.empty", "No content assets are available in the system.");
+
+l10nSupport.addOne("js.channel.pagecache.field.default_name", "Page Cache Partition");
+
+l10nSupport.addOne("js.channel.pagecache.error.max_pipelines", "The maximum number of pipelines allowed per partition is {0}.");
+
+l10nSupport.addOne("js.promotion_utils.promotion_enabled.msg.status.enabled", "The promotion is currently enabled.");
+
+l10nSupport.addOne("js.coupon.redemption_list.link.export", "Export Redemptions");
+
+l10nSupport.addOne("js.permissions_filter.link.assigned_permissions_bmsite", "{0} of {1} assigned");
+
+l10nSupport.addOne("js.returnableattributes.error_msg.title", "Error");
+
+l10nSupport.addOne("js.imagemanager.variation_attribute_panel.msg.empty", "No variation values or view types are available.");
+
+l10nSupport.addOne("js.order.button.order_history.lock_history.dialog.confirm", "Confirm");
+
+l10nSupport.addOne("js.audit.audithistory.action.all_updates", "All Updates");
+
+l10nSupport.addOne("js.shipping.grid.column.shipment_cost", "Shipment Cost");
+
+l10nSupport.addOne("js.inventory_list.button.delete_list.cancel", "Cancel");
+
+l10nSupport.addOne("js.catalog.categorytree.grid.content.empty.msg", "No categories were found.");
+
+l10nSupport.addOne("js.promotion_list.price_books_dialog.title", "Price Books");
+
+l10nSupport.addOne("js.sortingrules.field.direction.value.desc", "Descending");
+
+l10nSupport.addOne("js.coupon.form.coupon.field.code_count.msg.max_count", "The number of codes is limited to 2147483648.");
+
+l10nSupport.addOne("js.permissions_filter.field.assigned_permissions_locale", "{0} of {1} assigned");
+
+l10nSupport.addOne("js.slot_general_section.error.field_value_missing", "{0} is mandatory. Please provide a value.");
+
+l10nSupport.addOne("js.searchableattributes.grid.column.auto_correction", "Autocorrection");
+
+l10nSupport.addOne("js.paymentcards.dialog_card.cancel.confirm.msg", "Are you sure that you want to cancel without applying your changes?");
+
+l10nSupport.addOne("js.order_list.msg.set_export_status.one", "Set Export Status of 1 Order");
+
+l10nSupport.addOne("js.paymentcards.dialog_card.attributes.field.cvc_length.label", "Card Number Verification:");
+
+l10nSupport.addOne("js.deployment.activate_code_version.confirmation.msg", "Are you sure that you want to activate code version '{0}'?");
+
+l10nSupport.addOne("js.searchableattributes.error.product_attribute.type_not_support_autocorrection", "The current product index attribute is selected for autocorrection. This isn\'t supported for HTML attribute types. Please correct the autocorrection flag.");
+
+l10nSupport.addOne("js.sortingrules.button.dynamic_attributes.tooltip", "Dynamic attributes.");
+
+l10nSupport.addOne("js.searchableattributes.grid.loading_product.msg", "Loading searchable product attribute...");
+
+l10nSupport.addOne("js.catalog.categorytree.search.msg.no_results", "No matches for {0}");
+
+l10nSupport.addOne("js.paymentcards.dialog_card.lose_changes.confirm.title", "Lose Changes?");
+
+l10nSupport.addOne("js.imagemanager.image_manager.error.invalid_data.title", "Invalid Image Settings");
+
+l10nSupport.addOne("js.product_dynamic_sorting.grid.dynamic_sort_attr.column.weight", "Weight");
+
+l10nSupport.addOne("js.slot_general_section.field.content.value.product", "Product");
+
+l10nSupport.addOne("js.category_dialog.button.cancel", "Cancel");
+
+l10nSupport.addOne("js.paymentcards.dialog_card.attributes.field.number_prefixes.hint", "Example: 622126-622925 (range) or 5018,5020,5038 (individual values)");
+
+l10nSupport.addOne("js.bonus_product.dialog_choice.list.toolbar.add.tooltip", "Add a bonus product.");
+
+l10nSupport.addOne("js.searchableattributes.grid.auto_correction.value.yes", "Yes");
+
+l10nSupport.addOne("js.paymentmethods.paymentmethod.dialog.button.sort_order.tooltip", "Toggle payment method sorting mode.");
+
+l10nSupport.addOne("js.product_dynamic_sorting.grid.sorting_attr.msg.empty2", "Select a dynamic attribute to see its attributes.");
+
+l10nSupport.addOne("js.paymentmethods.paymentmethod.dialog.attributes.field.currencies.label", "Currencies:");
+
+l10nSupport.addOne("js.coupon.list.field.status.disabled", "Disabled");
+
+l10nSupport.addOne("js.coupon.form.coupon.field.coupon_code.label", "Coupon Code:");
+
+l10nSupport.addOne("js.operations.render.msg.quota_enforded.yes", "Yes");
+
+l10nSupport.addOne("js.coupon.form.coupon.field.coupon_code_prefix.msg.max_length", "The maximum length of coupon codes is 256 characters.");
+
+l10nSupport.addOne("js.coupon.form.coupon.description", "Fields with a red asterisk (<span class=\"star\">*</span>) are mandatory. You can change these settings (except ID and coupon type) at any time later on. Click <b>Apply</b> to save your data and continue, or click <b>Back to List</b> to start over again.");
+
+l10nSupport.addOne("js.product_dynamic_sorting.msg.error.dynamic_attr.sort_attr_missing", "Please select a sorting attribute for all attributes.");
+
+l10nSupport.addOne("js.searchableattributes.grid.auto_correction.value.no", "No");
+
+l10nSupport.addOne("js.order_list.button.set_ready_to_push.cancel", "Cancel");
+
+l10nSupport.addOne("js.paymentmethods.paymentmethod.confirm_cancel.title", "Lose Changes?");
+
+l10nSupport.addOne("js.sortingrules.msg.error.copy_rule", "The sorting rule couldn\'t be copied.");
+
+l10nSupport.addOne("js.slot_general_section.panel.slot.title.with_id", "Slot Configuration - {0}");
+
+l10nSupport.addOne("js.advancedsearchutil.select.sort_by", "{0}");
+
+l10nSupport.addOne("js.coupon.form.coupon.field.limit_per_code.label", "Per Coupon Code:");
+
+l10nSupport.addOne("js.returnableattributes.msg.applying", "Applying changes...");
+
+l10nSupport.addOne("js.product_dynamic_sorting.msg.create_new_dynamic_attr", "Creating new dynamic attribute...");
+
+l10nSupport.addOne("js.paymentmethods.loading.msg", "Loading payment methods...");
+
+l10nSupport.addOne("js.slot_general_section.table.field.defaultAssignment.ID", "Slot Default Schedule");
+
+l10nSupport.addOne("js.priceadjustmentlimits.table.msg.amount.percentage", "{0}%");
+
+l10nSupport.addOne("js.searchableattributes.grid.action.remove_content_attribute.confirmation.msg", "Are you sure that you want to remove this searchable content attribute?");
+
+l10nSupport.addOne("js.bonus_product.dialog_choice.msg.status.one_selected", "1 bonus product is selected.");
+
+l10nSupport.addOne("js.inventory_record_list.button.delete_records.confirm", "Confirm");
+
+l10nSupport.addOne("js.paymentmethods.paymentmethod.dialog.button.cards.tooltip", "Manage the credit/debit cards of the site.");
+
+l10nSupport.addOne("js.imagemanager.message.cannot.rename", "The root node of the file browser can't be renamed. Modify the Base Path in the Catalog's Image Settings if you wish to change this value.");
+
+l10nSupport.addOne("js.coupon.warn.server_unreachable.title", "Warning");
+
+l10nSupport.addOne("js.coupon.form.coupon.field.coupon_code.msg.max_length", "The maximum length of coupon codes is 256 characters.");
+
+l10nSupport.addOne("js.product_dynamic_sorting.msg.error.dynamic_attr.id_missing", "Please enter an ID for the dynamic attribute.");
+
+l10nSupport.addOne("js.paymentmethods.paymentmethod.dialog.button.apply", "Apply");
+
+l10nSupport.addOne("js.returnableattributes.meta_data.msg.type.string_set", "Set of String");
+
+l10nSupport.addOne("js.searchableattributes.grid.action.remove_product_attribute.confirmation.msg", "Are you sure that you want to remove this searchable product attribute?");
+
+l10nSupport.addOne("js.coupon.couponcode_list.pagingbar.msg.empty", "No items to display");
+
+l10nSupport.addOne("js.slot_general_section.grid.slot_config_assignments.header.type", "Type");
+
+l10nSupport.addOne("js.coupon.form.coupon.select.typecode.single", "Merchant-Defined Single Code");
+
+l10nSupport.addOne("js.returnableattributes.error.attribute.duplicate", "The attribute definition '{0}' is already in use. Please select a unique attribute definition.");
+
+l10nSupport.addOne("js.product_dynamic_sorting.button.copy.tooltip", "Copy.");
+
+l10nSupport.addOne("js.searchableattributes.error.saving", "The attributes couldn't be saved because there are errors.");
+
+l10nSupport.addOne("js.slot_general_section.error.delete_slot_failed", "The slot configuration couldn\'t be deleted.");
+
+l10nSupport.addOne("js.slot_list.menu.slottype.global", "Global");
+
+l10nSupport.addOne("js.paymentmethods.paymentmethod.confirm_lose_changes.button.dont_apply", "Don't Apply");
+
+l10nSupport.addOne("js.paymentmethods.error.add_paymentmethod", "The payment method couldn\'t be added.");
+
+l10nSupport.addOne("js.paymentcards.dialog_card.lose_changes.confirm.button.apply", "Apply");
+
+l10nSupport.addOne("js.product_dynamic_sorting.grid.sort_dynamic.column.description", "Description");
+
+l10nSupport.addOne("js.sortingrules.msg.create_new_rule", "Creating new sorting rule...");
+
+l10nSupport.addOne("js.promotion_list.product_options_grid.column.option_id", "Option ID");
+
+l10nSupport.addOne("js.paymentcards.msg.removing_card", "Removing payment card...");
+
+l10nSupport.addOne("js.channel.pagecache.msg.invalidate_static_cache", "The static content and page caches invalidation was successfully initiated.");
+
+l10nSupport.addOne("js.slot_general_section.error.template_missing", "Please provide a template.");
+
+l10nSupport.addOne("js.searchableattributes.error_msg.title", "Error");
+
+l10nSupport.addOne("js.returnableattributes.meta_data.msg.type.number", "Number");
+
+l10nSupport.addOne("js.product_dynamic_sorting.pagingbar.msg", "Displaying {0} - {1} of {2} dynamic attributes");
+
+l10nSupport.addOne("js.sortingrules.msg.error.remove_rule", "The sorting rule couldn\'t be removed.");
+
+l10nSupport.addOne("js.overlay.heading.overlay.funcsite", "Functional Permissions (Site-Specific)");
+
+l10nSupport.addOne("js.sortingrules.field.context.value.n_a", "N/A");
+
+l10nSupport.addOne("js.customer.check_customer_lists.error.no_list_for_delete", "You haven't selected any customer list.<br/>Use the checkboxes to select the customer lists you want to delete, then click &quot;Delete&quot; again.");
+
+l10nSupport.addOne("js.returnableattributes.confirmation.cancel_changes.msg", "Are you sure that you want to cancel without applying your changes?");
+
+l10nSupport.addOne("js.channel.pagecache.dialog.field.id", "ID");
+
+l10nSupport.addOne("js.bonus_product.dialog_choice.list.button.cancel", "Cancel");
+
+l10nSupport.addOne("js.product_dynamic_sorting.grid.dynamic_sort_attr.column.direction", "Direction");
+
+l10nSupport.addOne("js.slot_general_section.field.recommendation_rule.label", "Recommender:");
+
+l10nSupport.addOne("js.order_list.title.search_details", "Search Details");
+
+l10nSupport.addOne("js.slot_general_section.error.recommender_missing", "Please provide a recommender.");
+
+l10nSupport.addOne("js.product_dynamic_sorting.msg.error.dynamic_attr.sum_is_wrong", "The sum of the attribute weights is not 100. Please correct the weights.");
+
+l10nSupport.addOne("js.slot_schedule.field_set.label.timeoofday_disabled", "Time of Day (Disabled)");
+
+l10nSupport.addOne("js.paymentcards.dialog_card.attributes.field.number_length.label", "Card Number Length:");
+
+l10nSupport.addOne("js.content_assets.column.name", "Name");
+
+l10nSupport.addOne("js.paymentmethods.paymentmethod.dialog.button.cancel", "Cancel");
+
+l10nSupport.addOne("js.link.action.rename_save", "Save (auto-resolve conflicts)");
+
+l10nSupport.addOne("js.paymentcards.msg.removing_all_cards", "Removing all payment cards...");
+
+l10nSupport.addOne("js.paymentmethods.error.create_paymentmethod", "The payment method couldn\'t be created.");
+
+l10nSupport.addOne("js.shipping.grid.toolbar.button.add", "Add");
+
+l10nSupport.addOne("js.overlay.link.overlay.funcsite.unassigned", "({0})");
+
+l10nSupport.addOne("js.imagemanager.label.attributes", "Attributes:");
+
+l10nSupport.addOne("js.slot_general_section.label.product", "Product:");
+
+l10nSupport.addOne("js.customer.adjust_and_move.prefix_number.confirmation.msg", "Are you sure that you want to prefix customer numbers with '{0}' and move customers from customer list '{1}' to '{2}'?");
+
+l10nSupport.addOne("js.slot_dialog.dialog.title.slots", "Select Slots");
+
+l10nSupport.addOne("js.paymentmethods.msg.remove_paymentmethod", "Removing payment method...");
+
+l10nSupport.addOne("js.slot_general_section.grid.slot_config_assignments.header.id", "ID");
+
+l10nSupport.addOne("js.slot_list.msg.warn.session_hijacked", "Your session may have been hijacked! You\'ll be redirected to the Login Page in 3 seconds.");
+
+l10nSupport.addOne("js.shipping.shipping.delete_all_confirmation.msg", "Delete all shipping cost entries?");
+
+l10nSupport.addOne("js.order.title.order_history.lock_history.dialog", "Lock the order history to prevent any history entries from being added to this order.");
+
+l10nSupport.addOne("js.imagemanager.label.check.values.specify", "Check the values below for which you wish to specify images.");
+
+l10nSupport.addOne("js.sortingrules.msg.error.duplicate_attributes", "The rule has duplicate sorting attributes. Please remove one of the duplicates.");
+
+l10nSupport.addOne("js.promotion_list.price_books_dialog.grid.column.status", "Status");
+
+l10nSupport.addOne("js.searchableattributes.grid.action.remove_confirmation.title", "Remove {0}");
+
+l10nSupport.addOne("js.product_dynamic_sorting.confirmation.remove_attr.msg", "Are you sure that you want to remove this dynamic attribute?");
+
+l10nSupport.addOne("js.inventory_record_list.msg.delete_records.multiple", "Delete {0} selected inventory records?");
+
+l10nSupport.addOne("js.slot_general_section.field.recommendation_rule.msg.empty", "Select a recommender...");
+
+l10nSupport.addOne("js.customer.check_customer_lists.error.no_list", "You haven't selected any customer list.<br/>Use the checkboxes to select two or more customer lists you want to compare, then click &quot;Compare&quot; again.");
+
+l10nSupport.addOne("js.category_dialog.button.save", "Save");
+
+l10nSupport.addOne("js.order_list.title.om_integration_status", "Order Management Integration Status");
+
+l10nSupport.addOne("js.slot_list.menu.customergroups.all.tooltip", "All.");
+
+l10nSupport.addOne("js.paymentmethods.help.msg", "Payment methods are managed here. To create a new payment method, click the <b>New</b> button. To remove a payment method click the remove icon in the payment method row. The default payment methods can\'t be removed, and their IDs can\'t be changed. When you select the CREDIT_CARD payment method, credit/debit cards can be reordered through drag-and-drop.");
+
+l10nSupport.addOne("js.slot_list.warn.template_not_found", "The template couldn\'t be found: ");
+
+l10nSupport.addOne("js.paymentcards.dialog_details.title", "Payment Card Details");
+
+l10nSupport.addOne("js.coupon.redemption_list.header.customer", "Customer");
+
+l10nSupport.addOne("js.paymentcards.dialog_card.attributes.field.cvc.label", "Checksum Verification:");
+
+l10nSupport.addOne("js.slottree.slotTree.slotview.button.previous", "Previous");
+
+l10nSupport.addOne("js.imagemanager.variation_attribute_panel.alt.text.localized", "Localized");
+
+l10nSupport.addOne("js.promotion_utils.promotion_enabled.title.disable", "Disable Promotion");
+
+l10nSupport.addOne("js.searchableattributes.error.remove_content_attribute", "This searchable content attribute couldn\'t be removed.");
+
+l10nSupport.addOne("js.promotion_project_filter.select.no", "No");
+
+l10nSupport.addOne("js.searchableattributes.error.remove_product_attribute", "This searchable product attribute couldn\'t be saved.");
+
+l10nSupport.addOne("js.paymentcards.dialog_card.table.column.name", "Name");
+
+l10nSupport.addOne("js.searchableattributes.error.product_attribute.name_missing", "Please select an attribute name for the current product index attribute.");
+
+l10nSupport.addOne("js.assign_widget.button.assign.tooltip", "Select an item from above to add it to the assigned groups.");
+
+l10nSupport.addOne("js.slot_list.folder_tree.column.preview", "Preview");
+
+l10nSupport.addOne("js.returnableattributes.error.product_attribute.name_missing", "Please select an attribute name for the current product index attribute.");
+
+l10nSupport.addOne("js.searchableattributes.button.cancel", "Cancel");
+
+l10nSupport.addOne("js.order.button.order_history.lock_history.dialog.close", "Close");
+
+l10nSupport.addOne("js.customer.undo_merge_by_number.confirmation.msg", "Are you sure that you want to undo the merge?");
+
+l10nSupport.addOne("js.content.sharedlibrary.title", "Reassign Sites");
+
+l10nSupport.addOne("js.coupon.form.coupon.field.typecode.label", "Coupon Type:");
+
+l10nSupport.addOne("js.slot_schedule.button.cancel", "Cancel");
+
+l10nSupport.addOne("js.sortingrules.msg.error.dynamic_attribute_invalid", "The rule has an invalid dynamic sorting attribute.");
+
+l10nSupport.addOne("js.bonus_product.dialog_choice.list.column.name", "Name");
+
+l10nSupport.addOne("js.slot_general_section.field.content.html.label", "HTML");
+
+l10nSupport.addOne("js.sortingrules.grid.rules.msg.empty2", "Select a sorting rule to see its attributes.");
+
+l10nSupport.addOne("js.slot_general_section.table.field.defaultAssignment.description", "Default");
+
+l10nSupport.addOne("js.customer.undo_merge_by_login.confirmation.msg", "Are you sure that you want to undo the merge?");
+
+l10nSupport.addOne("js.promotion_list.product_options_grid.column.products", "Products");
+
+l10nSupport.addOne("js.searchableattributes.confirmation.navigate_away.msg", "There are pending changes that\'ll be lost if you navigate away. Do you want to apply these changes first?");
+
+l10nSupport.addOne("js.promotion_product_filter.product_exclusions.status.value.disabled", "Global product exclusions are disabled for the entire promotion.");
+
+l10nSupport.addOne("js.order_list.title.set_ready_to_push", "Send to Order Management");
+
+l10nSupport.addOne("js.channel.pagecache.dialog.field.name", "Name");
+
+l10nSupport.addOne("js.promotion_utils.promotion_enabled.msg.status.no", "No");
+
+l10nSupport.addOne("js.link.sf_url_conflicts.msg.too_many_conflicts", "Canceled (too many conflicts for {0})");
+
+l10nSupport.addOne("js.paymentmethods.paymentmethod.dialog.field.assigned_cards.label", "Credit/Debit Cards:");
+
+l10nSupport.addOne("js.slot_list.category_tree.column.slot_id", "Slot ID/Description");
+
+l10nSupport.addOne("js.slot_general_section.field_set.template.label", "Template:");
+
+l10nSupport.addOne("js.channel.pagecache.error.partition_name.max_length", "The partition name isn't valid. The maximum length for the name is {0}.");
+
+l10nSupport.addOne("js.sortingrules.button.dont_apply", "Don't Apply");
+
+l10nSupport.addOne("js.bonus_product.dialog.title", "Products");
+
+l10nSupport.addOne("js.paymentmethods.paymentmethod.dialog.assignedcards.column.name", "Name");
+
+l10nSupport.addOne("js.channel.pagecache.error.partition_name.in_use", "The partition name is already in use. Please select another name.");
+
+l10nSupport.addOne("js.shipping.shipping.delete_confirmation.msg", "Delete all shipping cost entries?");
+
+l10nSupport.addOne("js.paymentmethods.error.remove_paymentmethod", "The payment method couldn\'t be removed.");
+
+l10nSupport.addOne("js.paymentmethods.paymentmethod.dialog.remove_all_confirm.title", "Remove All Payment Methods");
+
+l10nSupport.addOne("js.sortingrules.button.preview.tooltip", "Preview search.");
+
+l10nSupport.addOne("js.sortingrules.field.attribute.context", "(Global)");
+
+l10nSupport.addOne("js.slot_general_section.field.rank.label", "Rank");
+
+l10nSupport.addOne("js.overlay.heading.overlay.funcorg", "Functional Permissions (Organization)");
+
+l10nSupport.addOne("js.catalog.categorytree.grid.header.categorypath", "Category Path");
+
+l10nSupport.addOne("js.searchableattributes.tooltip.button.remove", "Delete");
+
+l10nSupport.addOne("js.coupon.form.coupon.label.redemption_count", "Number of Redemptions");
+
+l10nSupport.addOne("js.shipping.grid.column.product_group", "Product Group");
+
+l10nSupport.addOne("js.paymentcards.dialog_card.table.remove_all.confirmation.title", "Remove All Payment Cards");
+
+l10nSupport.addOne("js.inventory_list.button.delete_list.confirm", "Confirm");
+
+l10nSupport.addOne("js.framework.error.unknown", "Unknown");
+
+l10nSupport.addOne("js.paymentmethods.panel.title", "Payment Methods");
+
+l10nSupport.addOne("js.paymentmethods.paymentmethod.dialog.attributes.field.processer.label", "Payment Processor:");
+
+l10nSupport.addOne("js.imagemanager.title.cannot.delete", "Can\'t Delete Root Node");
+
+l10nSupport.addOne("js.slot_general_section.warn.truncated_data", "Too many IDs were passed; a maximum of {0} is allowed, the rest of the content won\'t be saved.");
+
+l10nSupport.addOne("js.channel.pagecache.error.partition_id.max_length", "The partition ID isn't valid. The maximum length of the ID is {0}.");
+
+l10nSupport.addOne("js.slot_advanced_search.menu.scheduled.on", "On");
+
+l10nSupport.addOne("js.coupon.form.coupon.field.limit_per_time.label", "Per Time Period:");
+
+l10nSupport.addOne("js.paymentmethods.paymentmethod.dialog.attributes.field.image.label", "Image:");
+
+l10nSupport.addOne("js.slot_schedule.field.label.enddate", "To");
+
+l10nSupport.addOne("js.slot_advanced_search.menu.scheduled.start", "Start");
+
+l10nSupport.addOne("js.slot_general_section.grid.slot_config_assignments.msg.empty", "Click &quot;Add Schedule&quot; to create a schedule for this slot configuration. You can create a single default schedule or schedule the slot configuration to a campaign or A/B test. (Note that you must have proper permissions to create a schedule for a campaign or A/B test.)");
+
+l10nSupport.addOne("js.returnableattributes.tooltip.button.remove", "Delete");
+
+l10nSupport.addOne("js.searchableattributes.grid.remove_content_attribute.msg", "Removing searchable content attribute...");
+
+l10nSupport.addOne("js.slot_list.grid.slots.title", "Global Slots");
+
+l10nSupport.addOne("js.coupon.form.coupon.field.id.label", "ID:");
+
+l10nSupport.addOne("js.paymentcards.dialog_card.attributes.field.image.label", "Image:");
+
+l10nSupport.addOne("js.overlay.link.overlay.funcsite.assigned", "({0})");
+
+l10nSupport.addOne("js.coupon.form.coupon.label.exported_code_count", "Number of Exported Codes");
+
+l10nSupport.addOne("js.coupon.list.header.redemption_limits", "Redemption Limits");
+
+l10nSupport.addOne("js.paymentmethods.paymentmethod.confirm_lose_changes.button.cancel", "Cancel");
+
+l10nSupport.addOne("js.coupon.breadcrumb", "Coupons");
+
+l10nSupport.addOne("js.promotion_product_filter.product_exclusions.status.value.enabled", "Global product exclusions are enabled for the entire promotion.");
+
+l10nSupport.addOne("js.searchableattributes.meta_data.msg.type.string", "String");
+
+l10nSupport.addOne("js.coupon.msg.delete.confirm.title", "Confirm");
+
+l10nSupport.addOne("js.channel.pagecache.button.remove_pipeline", "Remove Pipeline");
+
+l10nSupport.addOne("js.promotion_list.price_books_dialog.grid.column.id", "ID");
+
+l10nSupport.addOne("js.coupon.couponcode_list.msg.empty", "No coupon codes are available in the system.");
+
+l10nSupport.addOne("js.bonus_product.bonus_product.button.cancel", "Cancel");
+
+l10nSupport.addOne("js.product_dynamic_sorting.field.context.value.site", "Site");
+
+l10nSupport.addOne("js.promotion_utils.promotion_enabled.warn.msg_unreachable", "The server is unreachable : {0}");
+
+l10nSupport.addOne("js.coupon.couponcode_list.header.code", "Code");
+
+l10nSupport.addOne("js.coupon.warn.delete_failed.title", "Warning");
+
+l10nSupport.addOne("js.advancedsearchutil.select.empty", "Select one");
+
+l10nSupport.addOne("js.paymentmethods.paymentmethod.dialog.attributes.field.description.label", "Description:");
+
+l10nSupport.addOne("js.coupon.title.error", "Error");
+
+l10nSupport.addOne("js.returnableattributes.meta_data.msg.type.string_enum", "Enum of String");
+
+l10nSupport.addOne("js.returnableattributes.meta_data.msg.type.boolean", "Boolean");
+
+l10nSupport.addOne("js.slot_list.button.search", "Search");
+
+l10nSupport.addOne("js.returnableattributes.meta_data.msg.type.date", "Date");
+
+l10nSupport.addOne("js.returnableattributes.meta_data.msg.type.html", "HTML");
+
+l10nSupport.addOne("js.paymentcards.dialog_card.table.empty.msg", "No payment cards have been defined.");
+
+l10nSupport.addOne("js.slot_general_section.grid.slots.column.type", "Type");
+
+l10nSupport.addOne("js.paymentcards.error.load", "The payment cards couldn\'t be loaded.");
+
+l10nSupport.addOne("js.slot_list.category_tree.root.title", "Preview");
+
+l10nSupport.addOne("js.product_dynamic_sorting.msg.error.load_dynamic_attrs", "The dynamic attributes couldn\'t be loaded.");
+
+l10nSupport.addOne("js.sortingrules.msg.error.title", "Error");
+
+l10nSupport.addOne("js.slot_list.msg.confirm.delete_all", "Are you sure that you want to delete all obsolete slots?");
+
+l10nSupport.addOne("js.sortingrules.button.apply", "Apply");
+
+l10nSupport.addOne("js.slot_general_section.field.rank.empty", "- None -");
+
+l10nSupport.addOne("js.imagemanager.select.attributes.empty", "<None Available>");
+
+l10nSupport.addOne("js.overlay.link.overlay.funcorg.assigned", "({0})");
+
+l10nSupport.addOne("js.slot_general_section.field.ranking.value.none", "-None-");
+
+l10nSupport.addOne("js.product_dynamic_sorting.confirmation.lose_changes.no_apply.msg", "Are you sure that you want to cancel without applying your changes?");
+
+l10nSupport.addOne("js.paymentcards.dialog_card.field.verification.value.no", "No");
+
+l10nSupport.addOne("js.slot_schedule.checkbox.dow.tuesday", "Tuesday");
+
+l10nSupport.addOne("js.audit.audithistory.action.attributes", "Attributes");
+
+l10nSupport.addOne("js.coupon.form.coupon.field.code_count.label", "No. of Codes:");
+
+l10nSupport.addOne("js.slot_advanced_search.panel.scheduled.title", "Scheduled");
+
+l10nSupport.addOne("js.sortingrules.render.product.field.relevance", "Text Relevance:");
+
+l10nSupport.addOne("js.slot_general_section.error.msg.delete_default_schedule_failed", "The slot default schedule couldn\'t be deleted.");
+
+l10nSupport.addOne("js.slot_schedule.checkbox.dow.sunday", "Sunday");
+
+l10nSupport.addOne("js.slot_general_section.warn.products_not_assigned", "The products aren\'t assigned to the site catalog: {0}");
+
+l10nSupport.addOne("js.imagemanager.error.show_image", "Error: {0}");
+
+l10nSupport.addOne("js.slot_dialog.button.cancelButton", "Cancel");
+
+l10nSupport.addOne("js.channel.pagecache.error.partition_name.empty", "The partition name can't be empty.");
+
+l10nSupport.addOne("js.sortingrules.grid.rules.title.empty", "Attributes");
+
+l10nSupport.addOne("js.sortingrules.msg.error.unexpected", "An unexpected system error occurred.");
+
+l10nSupport.addOne("js.order_list.button.set_export_status.confirm", "Confirm");
+
+l10nSupport.addOne("js.order_list.button.om_integration_status.close", "Close");
+
+l10nSupport.addOne("js.product_dynamic_sorting.msg.error.dynamic_attr.attr_missing", "Please add one or more attributes for the dynamic attribute.");
+
+l10nSupport.addOne("js.sortingrules.button.dynamic_attributes", "Dynamic Attributes");
+
+l10nSupport.addOne("js.priceadjustmentlimits.table.tooltip.access_details", "Show details per selected context.");
+
+l10nSupport.addOne("js.promotion_utils.promotion_schedule.msg.saving", "Sending data...");
+
+l10nSupport.addOne("js.slot_list.grid.slots.column.category_folder_id", "Category/Folder ID");
+
+l10nSupport.addOne("js.bonus_product.dialog_choice.confirmation.remove.msg", "Are you sure that you want to remove all bonus products?");
+
+l10nSupport.addOne("js.paymentcards.dialog_card.field.locale.label", "Language:");
+
+l10nSupport.addOne("js.sortingrules.msg.confirmation.navigate_away", "There are pending changes to the selected sorting rule that\'ll be lost if you leave this page. Do you want to apply these changes first?");
+
+l10nSupport.addOne("js.slot_list.grid.slots.pagingbar.msg.empty", "No items to display");
+
+l10nSupport.addOne("js.paymentmethods.paymentmethod.apply_changes.error", "The changes couldn\'t be applied.");
+
+l10nSupport.addOne("js.returnableattributes.error.applying", "The changes couldn\'t be applied.");
+
+l10nSupport.addOne("js.slot_general_section.field.content_type.content_asset", "Content Asset");
+
+l10nSupport.addOne("js.template_dialog.button.cancel", "Cancel");
+
+l10nSupport.addOne("js.product_dialog.record.msg.type.variation", "Variation Product");
+
+l10nSupport.addOne("js.slot_advanced_search.menu.status.active", "Active");
+
+l10nSupport.addOne("js.slot_general_section.menu.scheduled.ab_test", "A/B Test Schedule");
+
+l10nSupport.addOne("js.product_dynamic_sorting.msg.error.dynamic_attr.attribute_not_allowed", "Only numeric attributes are allowed. Please remove the invalid attributes.");
+
+l10nSupport.addOne("js.searchableattributes.object_type.msg.product.name", "Product");
+
+l10nSupport.addOne("js.paymentmethods.error.load_paymentmethod", "The payment method couldn\'t be loaded.");
+
+l10nSupport.addOne("js.template_dialog.title.templates", "Templates");
+
+l10nSupport.addOne("js.bonus_product.bonus_products.grid.column.id", "ID");
+
+l10nSupport.addOne("js.coupon.form.coupon.select.typecode.system", "System-Generated Codes");
+
+l10nSupport.addOne("js.sortingrules.msg.error.load_rules", "The sorting rules couldn\'t be loaded.");
+
+l10nSupport.addOne("js.slot_advanced_search.menu.scheduled.from", "From");
+
+l10nSupport.addOne("js.bonus_product.dialog_choice.msg.status.multiple_selected", "{0} bonus products are selected");
+
+l10nSupport.addOne("js.paymentcards.dialog_card.button.new", "New");
+
+l10nSupport.addOne("js.slot_advanced_search.menu.scheduled.date", "Date");
+
+l10nSupport.addOne("js.returnableattributes.meta_data.msg.type.na", "N/A");
+
+l10nSupport.addOne("js.searchableattributes.tooltip.attribute.type", "Attributes with Boolean, email, date, or date and time data types aren't available because they're not suitable for search queries.");
+
+l10nSupport.addOne("js.catalog.categorytree.catalogview.button.previous", "Previous");
+
+l10nSupport.addOne("js.sortingrules.msg.confirmation.cancel_no_apply", "Are you sure you want to cancel without applying your changes?");
+
+l10nSupport.addOne("js.paymentcards.dialog_card.navigate_away.confirm.msg", "There are pending changes to the selected payment card that\'ll be lost if you leave this page. Do you want to apply these changes first?");
+
+l10nSupport.addOne("js.returnableattributes.attribute.error.duplicate", "Please enter a unique attribute definition for the returnable attribute.");
+
+l10nSupport.addOne("js.imagemanager.title.error", "Error");
+
+l10nSupport.addOne("js.shipping.error.duplicate_values", "The update failed: Shipment values must be unique.");
+
+l10nSupport.addOne("js.overlay.link.overlay.bmorg.assigned", "({0})");
+
+l10nSupport.addOne("js.sortingrules.button.clear_preview.tooltip", "Clear preview.");
+
+l10nSupport.addOne("js.promotion_utils.promotion_enabled.msg.status.yes", "Yes");
+
+l10nSupport.addOne("js.sortingrules.grid.rules_preview.title.with.rule", "{0} Preview");
+
+l10nSupport.addOne("js.overlay.heading.overlay.bmsite", "Business Manager Modules (Site-Specific)");
+
+l10nSupport.addOne("js.customer.undo_merge_by_number.confirmation.title", "Undo Merge of Customers with Duplicate Customer Numbers Merged from Customer List '{0}'");
+
+l10nSupport.addOne("js.shipping.button.edit", "Edit");
+
+l10nSupport.addOne("js.coupon.list.header.codes", "Codes");
+
+l10nSupport.addOne("js.slot_general_section.grid.slots.column.preview", "Preview");
+
+l10nSupport.addOne("js.sortingrules.grid.rules_preview.msg.select.sorting.rule.preview", "Select a sorting rule to preview.");
+
+l10nSupport.addOne("js.channel.pagecache.error.invalidate", "The cache couldn't be invalidated.");
+
+l10nSupport.addOne("js.slot_general_section.field.description.label", "Description");
+
+l10nSupport.addOne("js.promotion_list.add_product_options.button.cancel", "Cancel");
+
+l10nSupport.addOne("js.paymentmethods.paymentmethod.remove_confirm.title", "Remove {0}");
+
+l10nSupport.addOne("js.slot_list.grid.slots.msg.empty", "No global slots are defined.");
+
+l10nSupport.addOne("js.searchableattributes.grid.paging.msg", "Displaying {0} - {1} of {2} attributes");
+
+l10nSupport.addOne("js.promotion_utils.promotion_enabled.wait_msg.msg", "Sending data...");
+
+l10nSupport.addOne("js.coupon.form.coupon.field.redemptions_per_timeperiod.prefix_label", "Redemptions per");
+
+l10nSupport.addOne("js.product_dynamic_sorting.msg.confirmation.change_context.global_to_site", "Are you sure that you want to change the context of this dynamic attribute? It\'ll be only available in the current site.");
+
+l10nSupport.addOne("js.inventory.allocation.confirm", "You\'ve modified the allocation. Are you sure that you want to reset the allocation for this record?");
+
+l10nSupport.addOne("js.link.error.technical", "A technical error occurred. Please inform your administrator.");
+
+l10nSupport.addOne("js.coupon.dialog.coupon_details.button.back", "<< Back to List");
+
+l10nSupport.addOne("js.coupon.list.promotions.msg.empty", "There are no assignments to this coupon.");
+
+l10nSupport.addOne("js.content_assets.button.cancel", "Cancel");
+
+l10nSupport.addOne("js.slot_list.search.date.format", "m/d/Y");
+
+l10nSupport.addOne("js.slot_list.msg.warn.delete_failed", "The slots couldn\'t be deleted.");
+
+l10nSupport.addOne("js.coupon.form.campaignset.field.campaign", "Campaigns:");
+
+l10nSupport.addOne("js.operations.warn.nothing_logged", "This action hasn't been logged within the last 24 hours.");
+
+l10nSupport.addOne("js.order_list.button.set_export_status.cancel", "Cancel");
+
+l10nSupport.addOne("js.framework.select_sites.list.header.name", "Name");
+
+l10nSupport.addOne("js.assign_widget.button.cancel", "Cancel");
+
+l10nSupport.addOne("js.channel.pagecache.button.add_pipeline", "Add Pipeline");
+
+l10nSupport.addOne("js.sortingrules.grid.rules_preview.msg.no.products.matched", "No products matched the search criteria.");
+
+l10nSupport.addOne("js.searchableattributes.button.apply", "Apply");
+
+l10nSupport.addOne("js.sortingrules.msg.warn.rebuild_index", "One or more of the attributes for this rule wasn\'t indexed. Please rebuild the necessary indexes to ensure correct results.");
+
+l10nSupport.addOne("js.coupon.form.campaignset.button.edit", "Edit");
+
+l10nSupport.addOne("js.promotion_utils.promotion_schedule.schedule_time_of_day.field.to_time", "To Time:");
+
+l10nSupport.addOne("js.searchableattributes.object_type.msg.content.name", "Content");
+
+l10nSupport.addOne("js.permissions_filter.field.empty_permission_filter", "none");
+
+l10nSupport.addOne("js.returnableattributes.error.saving", "The attributes couldn't be saved because there are errors.");
+
+l10nSupport.addOne("js.paymentmethods.paymentmethod.dialog.sort_order.button.apply", "Apply");
+
+l10nSupport.addOne("js.imagemanager.label.file_browser", "File Browser");
+
+l10nSupport.addOne("js.slot_general_section.error.product_id_too_long", "&nbsp;The maximum length for each product ID is 100 characters.");
+
+l10nSupport.addOne("js.sortingrules.grid.rules_preview.title.empty", "Preview");
+
+l10nSupport.addOne("js.link.conflict_type_folder", "Folder");
+
+l10nSupport.addOne("js.priceadjustmentlimits.table.msg.type.unknown", "-");
+
+l10nSupport.addOne("js.paymentmethods.paymentmethod.dialog.attributes.field.payment_ranges.label", "Min/Max Payment Ranges:");
+
+l10nSupport.addOne("js.product_dynamic_sorting.msg.error.apply_changes", "The changes couldn\'t be applied.");
+
+l10nSupport.addOne("js.slot_list.msg.warn.could_not_delete_all_obsolete_slots", "Not all obsolete content slots could be deleted.");
+
+l10nSupport.addOne("js.sortingrules.button.manage_index", "Manage Search Indexes");
+
+l10nSupport.addOne("js.assign_widget.button.remove", "Remove");
+
+l10nSupport.addOne("js.slot_list.grid.slots.msg.no_search_results", "No slots could be found.");
+
+l10nSupport.addOne("js.sortingrules.button.clear_preview", "Clear");
+
+l10nSupport.addOne("js.searchableattributes.product_attribute_config.error.loading", "The searchable product attributes couldn\'t be loaded.");
+
+l10nSupport.addOne("js.slot_list.msg.loading.folder_tree", "Please wait, loading folder tree...");
+
+l10nSupport.addOne("js.customer.check_customer_lists.error.only_single_list", "You've selected only one customer list.<br/>Use the checkboxes to select two or more customer lists you want to compare, then click &quot;Compare&quot; again.");
+
+l10nSupport.addOne("js.permisions.link_disabled.msg", "This link has been disabled. You need additional permissions to perform this action.");
+
+l10nSupport.addOne("js.product_dynamic_sorting.msg.error.apply_changed", "The changes couldn\'t be applied.");
+
+l10nSupport.addOne("js.returnableattributes.product_attribute_config.description.empty", "No product index attributes are defined.");
+
+l10nSupport.addOne("js.sortingrules.button.manage_index.tooltip", "Manage search indexes.");
+
+l10nSupport.addOne("js.product_dynamic_sorting.pagingbar_dynamic.msg.short", "Displaying {0} of {1} dynamic attributes");
+
+l10nSupport.addOne("js.promotion_utils.promotion_schedule.button.save", "Save");
+
+l10nSupport.addOne("js.permissions_filter.field.assigned_permissions_funcsite", "{0} of {1} assigned");
+
+l10nSupport.addOne("js.content_assets.column.id", "ID");
+
+l10nSupport.addOne("js.searchableattributes.grid.remove_product_attribute.msg", "Removing searchable product attribute...");
+
+l10nSupport.addOne("js.promotion_utils.copy_promotion.wait_msg.msg", "Sending data...");
+
+l10nSupport.addOne("js.product_dynamic_sorting.confirmation.lose_changes.pending_changes.msg", "There are pending changes to be applied that\'ll be lost if you continue. Do you want to apply these changes first?");
+
+l10nSupport.addOne("js.slot_general_section.error.id_missing", "&nbsp;Please provide a unique slot configuration ID.");
+
+l10nSupport.addOne("js.bonus_product.bonus_product.button.save", "Save");
+
+l10nSupport.addOne("js.product_dynamic_sorting.dialog.dynamic_attributes.title", "Dynamic Attributes");
+
+l10nSupport.addOne("js.sortingrules.grid.rules.header.context", "Context");
+
+l10nSupport.addOne("js.slot_list.grid.slots.column.preview", "Preview");
+
+l10nSupport.addOne("js.coupon.form.coupon.field.coupon_code_prefix.label", "Coupon Prefix:");
+
+l10nSupport.addOne("js.slot_list.menu.search.category_name", "Category Name");
+
+l10nSupport.addOne("js.imagemanager.image_manager.warn_msg.title", "Warning");
+
+l10nSupport.addOne("js.paymentcards.error.loading_card", "The payment card couldn\'t be loaded.");
+
+l10nSupport.addOne("js.imagemanager.image_manager.title", "Images");
+
+l10nSupport.addOne("js.sortingrules.grid.rules.header.description", "Description");
+
+l10nSupport.addOne("js.imagemanager.image_manager.button.cancel", "Cancel");
+
+l10nSupport.addOne("js.channel.pagecache.msg.confirm_delete", "Are you sure that you want to delete the selected page cache partition?");
+
+l10nSupport.addOne("js.returnableattributes.grid.action.remove_confirmation.title", "Remove {0}");
+
+l10nSupport.addOne("js.searchableattributes.product_attribute_config.title", "Product Index Attributes");
+
+l10nSupport.addOne("js.paymentmethods.warn.session_hijacked", "Your session may have been hijacked! You\'ll be redirected to the Login Page in 3 seconds.");
+
+l10nSupport.addOne("js.searchableattributes.error.content_attribute.boost_factor_negative", "The current content index attribute has a boost factor less than 0. Please correct the boost factor.");
+
+l10nSupport.addOne("js.sortingrules.field.relevance.value.no", "No");
+
+l10nSupport.addOne("js.imagemanager.variation_attribute_panel.label.alt", "Alt");
+
+l10nSupport.addOne("js.coupon.form.general.button.delete", "Delete");
+
+l10nSupport.addOne("js.slot_advanced_search.status.msg.all", "All");
+
+l10nSupport.addOne("js.slot_general_section.error.category_id_too_long", "&nbsp;The maximum length for each category ID is 256 characters.");
+
+l10nSupport.addOne("js.paymentcards.dialog_card.button.new.tooltip", "Create a new credit/debit card.");
+
+l10nSupport.addOne("js.paymentmethods.paymentmethod.dialog.attributes.field.countries.label", "Countries:");
+
+l10nSupport.addOne("js.returnableattributes.error.remove_product_attribute", "This returnable product attribute couldn\'t be saved.");
+
+l10nSupport.addOne("js.paymentcards.dialog_card.attributes.field.security_code_length.label", "Security Code Length:");
+
+l10nSupport.addOne("js.paymentcards.error.removing_card", "The payment card couldn\'t be removed.");
+
+l10nSupport.addOne("js.paymentcards.dialog_card.error.missing_type", "Please enter a type for the payment card.");
+
+l10nSupport.addOne("js.slot_general_section.error.content_id_too_long", "&nbsp;IDs exceed the maximum character limit.");
+
+l10nSupport.addOne("js.customer.merge_duplicate_logins.error.prefix_suffix", "You haven't configured a prefix/suffix.<br/>Use the radio button to select the merge option and enter a prefix/suffix, then click &quot;Merge&quot; again.");
+
+l10nSupport.addOne("js.coupon.redemption_list.pagingbar.msg.empty", "No items to display");
+
+l10nSupport.addOne("js.slot_general_section.error.content_asset_id_too_long", "&nbsp;The maximum length for each content asset ID is 256 characters.");
+
+l10nSupport.addOne("js.coupon.list.msg.empty", "No coupons are available in the system.");
+
+l10nSupport.addOne("js.sortingrules.msg.error.load_rule", "The sorting rule couldn\'t be loaded.");
+
+l10nSupport.addOne("js.slot_schedule.checkbox.dow.wednesday", "Wednesday");
+
+l10nSupport.addOne("js.slot_general_section.grid.slot_config_assignments.header.description", "Description");
+
+l10nSupport.addOne("js.order_list.msg.set_export_status.multiple", "Set Export Status of {0} Orders");
+
+l10nSupport.addOne("js.paymentcards.dialog_card.error.cvc_number_range", "The card number verification contains one or more invalid ranges. Please correct the value.");
+
+l10nSupport.addOne("js.customer.move_customer.confirmation.title", "Move Customers from Customer List '{0}' to '{1}'");
+
+l10nSupport.addOne("js.coupon.redemption_list.header.time", "Time");
+
+l10nSupport.addOne("js.sortingrules.field.context.value.site", "Site");
+
+l10nSupport.addOne("js.channel.pagecache.error.partition_id.empty", "The partition ID can't be empty.");
+
+l10nSupport.addOne("js.paymentcards.cards_table.msg.none_selected", "Please select a payment card to view its details.");
+
+l10nSupport.addOne("js.paymentmethods.error.unknown", "An unexpected system error occurred.");
+
+l10nSupport.addOne("js.catalog.categorytree.grid.pagingbar.empty.msg", "No items to display");
+
+l10nSupport.addOne("js.slot_schedule.checkbox.dow.thursday", "Thursday");
+
+l10nSupport.addOne("js.product_dynamic_sorting.msg.error.copy_dynamic_attr", "The dynamic attribute couldn\'t be copied.");
+
+l10nSupport.addOne("js.paymentmethods.paymentmethod.save.error", "The payment method couldn't be saved because there are errors.");
+
+l10nSupport.addOne("js.inventory_record_list.title.delete_records", "Delete Inventory Records");
+
+l10nSupport.addOne("js.product_dynamic_sorting.button.add", "Add");
+
+l10nSupport.addOne("js.slot_advanced_search.panel.customer_groups.title", "Customer Groups");
+
+l10nSupport.addOne("js.slot_general_section.field.default.value.false", "False");
+
+l10nSupport.addOne("js.coupon.couponcode_list.header.export_status", "Export Status");
+
+l10nSupport.addOne("js.paymentcards.dialog_card.lose_changes.confirm.msg", "There are pending changes to be applied that\'ll be lost if you continue. Do you want to apply these changes first?");
+
+l10nSupport.addOne("js.channel.pagecache.error.delete_partition", "The selected page cache partition couldn't be deleted.");
+
+l10nSupport.addOne("js.promotion_list.product_options_grid.column.scope.number", "Scope ({0})");
+
+l10nSupport.addOne("js.catalog.categorytree.grid.header.name", "Name");
+
+l10nSupport.addOne("js.slot_general_section.field.id.value.default", "{0} (default)");
+
+l10nSupport.addOne("js.sortingrules.grid.rule_attributes.msg.drag_drop.multiple", "Drop the selected attributes to reorder.");
+
+l10nSupport.addOne("js.paymentmethods.paymentmethod.dialog.button.impex.submenu.export", "Go to Export");
+
+l10nSupport.addOne("js.promotion_utils.copy_promotion.button.cancel", "Cancel");
+
+l10nSupport.addOne("js.channel.pagecache.button.cancel", "Cancel");
+
+l10nSupport.addOne("js.sortingrules.msg.error.rule_id_missing", "Please enter an ID for the rule.");
+
+l10nSupport.addOne("js.sortingrules.button.delete", "Delete");
+
+l10nSupport.addOne("js.coupon.list.button.new", "New");
+
+l10nSupport.addOne("js.slot_schedule.checkbox.dow.monday", "Monday");
+
+l10nSupport.addOne("js.content_assets.msg.pagingbar", "Displaying items {0} - {1} of {2}");
+
+l10nSupport.addOne("js.paymentmethods.paymentmethod.dialog.column.id", "ID");
+
+l10nSupport.addOne("js.coupon.list.button.delete", "Delete");
+
+l10nSupport.addOne("js.slot_list.folder_tree.column.slot_id", "Slot ID/Description");
+
+l10nSupport.addOne("js.searchableattributes.error.applying", "The changes couldn\'t be applied.");
+
+l10nSupport.addOne("js.categorysearch.refinement.sort.select.position", "Sort by Category Position");
+
+l10nSupport.addOne("js.coupon.form.coupon.field.description.label", "Description:");
+
+l10nSupport.addOne("js.paymentcards.dialog_card.error.card_number_ranges", "The card number length contains one or more invalid ranges. Please correct the value.");
+
+l10nSupport.addOne("js.framework.error.unexpected", "An unexpected error occurred:<br>{0}");
+
+l10nSupport.addOne("js.imagemanager.grid.images.column.preview", "Preview");
+
+l10nSupport.addOne("js.slot_list.category_tree.column.slot_configuration", "Slot Configurations");
+
+l10nSupport.addOne("js.catalog.categorytree.catalogview.button.listview", "List View");
+
+l10nSupport.addOne("js.slot_general_section.field.content.value.html", "HTML");
+
+l10nSupport.addOne("js.audit.audithistory.label.object_update", "Object Update");
+
+l10nSupport.addOne("js.inventory_list.button.delete_list.close", "Close");
+
+l10nSupport.addOne("js.promotion_utils.promotion_schedule.schedule_dow.title", "Day of Week");
+
+l10nSupport.addOne("js.slottree.slotTree.slotview.button.next", "Next");
+
+l10nSupport.addOne("js.product_dynamic_sorting.field.direction.value.desc", "Descending");
+
+l10nSupport.addOne("js.slot_general_section.wait.msg.adding_slot_configuration", "Adding new slot configuration...");
+
+l10nSupport.addOne("js.promotion_utils.promotion_enabled.button.enable", "Enable");
+
+l10nSupport.addOne("js.returnableattributes.meta_data.msg.type.string", "String");
+
+l10nSupport.addOne("js.imagemanager.title.cannot.rename", "Can\'t Rename Root Node");
+
+l10nSupport.addOne("js.searchableattributes.error.content_attribute.type_not_support_autocorrection", "The current content index attribute is selected for autocorrection. This isn\'t supported for HTML attribute types. Please correct the autocorrection flag.");
+
+l10nSupport.addOne("js.bonus_product.dialog_choice.list.msg.empty", "Enter a product ID or select a product.");
+
+l10nSupport.addOne("js.slot_general_section.field.enabled.value.yes", "Yes");
+
+l10nSupport.addOne("js.slot_general_section.button.add_schedule", "Add Schedule");
+
+l10nSupport.addOne("js.time_menu_item.msg.select_time.empty", "Select a time...");
+
+l10nSupport.addOne("js.returnableattributes.product_attribute_config.title", "Product Index Attributes");
+
+l10nSupport.addOne("js.paymentmethods.dialog_card.field.locale.readonly", "You don\'t have permission to edit data for this language.");
+
+l10nSupport.addOne("js.imagemanager.image_manager.warn_msg.save.msg", "Saving failed.");
+
+l10nSupport.addOne("js.order_list.button.set_ready_to_push.confirm", "Confirm");
+
+l10nSupport.addOne("js.channel.pagecache.error.retrieve_partition", "The page cache partition couldn't be retrieved.");
+
+l10nSupport.addOne("js.channel.pagecache.button.app_pipeline.tooltip", "Add a pipeline name to a cache partition.");
+
+l10nSupport.addOne("js.promotion_list.product_options_grid.column.products.number", "Products ({0})");
+
+l10nSupport.addOne("js.promotion_utils.promotion_schedule.field.startdate.label", "From:");
+
+l10nSupport.addOne("js.promotion_utils.promotion_schedule.schedule_period.description", "The promotion will use the date/time of the campaign unless a different effective period is specified for the promotion.");
+
+l10nSupport.addOne("js.slot_schedule.field_set.label.timeoofday", "Time of Day");
+
+l10nSupport.addOne("js.coupon.form.coupon.label.coupon_code_count", "Number of Coupon Codes");
+
+l10nSupport.addOne("js.searchableattributes.meta_data.msg.type.na", "N/A");
+
+l10nSupport.addOne("js.product_dynamic_sorting.msg.error.dynamic_attr.duplicate_attr", "The dynamic attribute has duplicate attributes. Please remove one of the duplicates.");
+
+l10nSupport.addOne("js.promotion_utils.promotion_schedule.field.enddate.label", "To:");
+
+l10nSupport.addOne("js.coupon.form.coupon.group.redemptioon_limits.label", "Redemption Limits");
+
+l10nSupport.addOne("js.slot_list.msg.loading.category_tree", "Please wait, loading category tree...");
+
+l10nSupport.addOne("js.sortingrules.grid.rule_preview.msg.empty", "Click &quot;Preview&quot; to test this sorting rule.");
+
+l10nSupport.addOne("js.coupon.form.coupon.field.coupon_code.msg.min_length", "Please enter at least 1 character.");
+
+l10nSupport.addOne("js.slot_list.grid.slots.pagingbar.msg", "Displaying items {0} - {1} of {2}");
+
+l10nSupport.addOne("js.paymentmethods.paymentmethod.dialog.button.new.tooltip", "Create a new payment method.");
+
+l10nSupport.addOne("js.promotion_list.price_books_dialog.grid.msg.empty", "No price books could be found.");
+
+l10nSupport.addOne("js.paymentmethods.paymentmethod.dialog.field.enabled.no", "No");
+
+l10nSupport.addOne("js.overlay.link.overlay.locale.unassigned", "({0})");
+
+l10nSupport.addOne("js.promotion_utils.promotion_schedule.schedule_time_of_day.field.from_time", "From Time:");
+
+l10nSupport.addOne("js.slot_general_section.field.slot_content.label", "Slot Content");
+
+l10nSupport.addOne("js.template_dialog.button.save", "Save");
+
+l10nSupport.addOne("js.slot_general_section.field.content_type.html", "HTML");
+
+l10nSupport.addOne("js.coupon.warn.session_hijack.title", "Warning");
+
+l10nSupport.addOne("js.priceadjustmentlimits.table.message.success.save", "Your changes have been saved.");
+
+l10nSupport.addOne("js.sortingrules.field.relevance.value.n_a", "N/A");
+
+l10nSupport.addOne("js.paymentcards.dialog_card.attributes.field.payment_ranges.label", "Min/Max Payment Ranges:");
+
+l10nSupport.addOne("js.returnableattributes.error.loading.product_index_attributes", "The returnable product attributes couldn\'t be loaded.");
+
+l10nSupport.addOne("js.searchableattributes.confirmation.cancel_changes.title", "Lose Changes?");
+
+l10nSupport.addOne("js.returnableattributes.button.new", "New");
+
+l10nSupport.addOne("js.channel.pagecache.dialog.field.pipelines", "Pipelines");
+
+l10nSupport.addOne("js.channel.pagecache.button.remove_pipeline.tooltip", "Remove a pipeline name from a cache partition.");
+
+l10nSupport.addOne("js.coupon.redemption_list.pagingbar.msg", "Displaying items {0} - {1} of {2}");
+
+l10nSupport.addOne("js.coupon.list.search.tooltip", "Search is case-insensitive and all search terms must be contained in the ID or description of the coupon.");
+
+l10nSupport.addOne("js.link.sf_url_conflicts.header.details_table.type", "Type");
+
+l10nSupport.addOne("js.bonus_product.bonus_products.grid.column.name", "Name");
+
+l10nSupport.addOne("js.category.categorysearchrefinement.buckettype.select.periods", "Periods");
+
+l10nSupport.addOne("js.catalog.categorytree.search.msg.result_count", "{0} of {1} matches for {2}");
+
+l10nSupport.addOne("js.imagemanager.msg.loading", "Please wait...");
+
+l10nSupport.addOne("js.slot_general_section.field_set.addBtn.label", "Add");
+
+l10nSupport.addOne("js.slot_list.msg.warn.title", "Warning");
+
+l10nSupport.addOne("js.paymentmethods.paymentmethod.dialog.error.locale.readonly", "You don\'t have permission to edit data for this language.");
+
+l10nSupport.addOne("js.imagemanager.field.path", "Path");
+
+l10nSupport.addOne("js.slot_general_section.msg.wait.update_slot", "Updating slot configuration...");
+
+l10nSupport.addOne("js.slot_list.msg.confirm.delete", "Are you sure that you want to delete the {0} selected slots?");
+
+l10nSupport.addOne("js.slot_list.grid.slots.column.slot_config", "Slot Configurations");
+
+l10nSupport.addOne("js.promotion_utils.copy_promotion.wait_msg.title", "Copy Promotion");
+
+l10nSupport.addOne("js.searchableattributes.object_type.msg.category_assignment.name", "Category Assignment");
+
+l10nSupport.addOne("js.slot_list.category_tree.column.preview", "Preview");
+
+l10nSupport.addOne("js.customer.adjust_and_move.error.prefix_suffix", "You haven't configured a prefix/suffix.<br/>Use the radio button to select the merge option and enter a prefix/suffix, then click &quot;Change Customer No & Move&quot; again.");
+
+l10nSupport.addOne("js.slot_schedule.field.label.timeofday", "From Time");
+
+l10nSupport.addOne("js.customer.undo_move.confirmation.msg", "Are you sure that you want to undo the move?");
+
+l10nSupport.addOne("js.promotion_list.price_books_dialog.button.save", "Save");
+
+l10nSupport.addOne("js.coupon.couponcode_list.pagingbar.msg", "Displaying items {0} - {1} of {2}");
+
+l10nSupport.addOne("js.paymentcards.dialog_card.select.4.chars", "4 characters");
+
+l10nSupport.addOne("js.product_dynamic_sorting.msg.error.load_dynamic_attr", "The dynamic attribute couldn\'t be loaded.");
+
+l10nSupport.addOne("js.order.button.order_history.lock_history.dialog.cancel", "Cancel");
+
+l10nSupport.addOne("js.paymentmethods.paymentmethod.confirm_navigate_away.msg", "There are pending changes to be applied that\'ll be lost if you navigate away. Do you want to apply these changes first?");
+
+l10nSupport.addOne("js.link.sf_url_conflicts.msg.not_generated", "not generated yet");
+
+l10nSupport.addOne("js.slot_general_section.label.content_asset", "Content Asset:");
+
+l10nSupport.addOne("js.sortingrules.button.copy", "Copy");
+
+l10nSupport.addOne("js.bonus_product.bonus_products.grid.column.manufacturer", "Manufacturer");
+
+l10nSupport.addOne("js.inventory_record_list.button.delete_records.close", "Close");
+
+l10nSupport.addOne("js.coupon.couponcode_list.action.delete.tooltip", "Delete coupon code.");
+
+l10nSupport.addOne("js.slot_schedule.field.label.effective_time_to", "To Time");
+
+l10nSupport.addOne("js.promotion_utils.promotion_schedule.schedule_time_of_day.title", "Time of Day");
+
+l10nSupport.addOne("js.paymentmethods.paymentmethod.dialog.button.delete", "Delete");
+
+l10nSupport.addOne("js.slot_general_section.grid.slots.msg.empty", "No slot configurations are defined. Click &quot;New&quot; to add one.");
+
+l10nSupport.addOne("js.returnableattributes.confirmation.navigate_away.msg", "There are pending changes that\'ll be lost if you navigate away. Do you want to apply these changes first?");
+
+l10nSupport.addOne("js.slot_advanced_search.panel.slot_status.title", "Active/Inactive");
+
+l10nSupport.addOne("js.promotion_utils.promotion_schedule.button.clear", "Clear");
+
+l10nSupport.addOne("js.catalog.categorytree.field.find", "Find:");
+
+l10nSupport.addOne("js.promotion_utils.promotion_schedule.title", "Promotion Schedule");
+
+l10nSupport.addOne("js.returnableattributes.grid.remove_product_attribute.msg", "Removing returnable product attribute...");
+
+l10nSupport.addOne("js.coupon.warn.server_unreachable", "The server is unreachable: {0}");
+
+l10nSupport.addOne("js.slot_schedule.field.label.time", "Time");
+
+l10nSupport.addOne("js.returnableattributes.attribute.error.doesnt_exist", "The attribute no longer exists.");
+
+l10nSupport.addOne("js.product_dialog.msg.grid.empty", "No products are available in the system.");
+
+l10nSupport.addOne("js.paymentcards.msg.loading", "Loading payment cards...");
+
+l10nSupport.addOne("js.coupon.form.general.msg.wait", "Sending data...");
+
+l10nSupport.addOne("js.bonus_product.dialog_choice.warn.max_products", "The maximum number of bonus products is 50. Please remove some products.");
+
+l10nSupport.addOne("js.sortingrules.msg.confirmation.change_context.title", "Change Context?");
+
+l10nSupport.addOne("js.assign_widget.paging.msg", "Displaying items {0} - {1} of {2}");
+
+l10nSupport.addOne("js.sortingrules.grid.rules_preview.column.results", "Results");
+
+l10nSupport.addOne("js.operations.render.msg.quota_enforded_no", "No");
+
+l10nSupport.addOne("js.order_list.button.set_export_status.close", "Close");
+
+l10nSupport.addOne("js.slot_general_section.field.content_type.product", "Product");
+
+l10nSupport.addOne("js.audit.audithistory.event_details.title", "Details for event {0}");
+
+l10nSupport.addOne("js.product_dynamic_sorting.grid.sorting_attr.msg.empty", "No attributes are defined for the selected dynamic attribute.");
+
+l10nSupport.addOne("js.customer.adjust_and_move.append_number.confirmation.title", "Append '{0}' to Customer Numbers and Move Customers from Customer List '{1}' to '{2}'");
+
+l10nSupport.addOne("js.paymentmethods.warn.dialog.title", "Warning");
+
+l10nSupport.addOne("js.promotion_utils.promotion_schedule.warn.save_failed", "Saving failed.");
+
+l10nSupport.addOne("js.slottree.slotTree.field.find", "Find:");
+
+l10nSupport.addOne("js.channel.pagecache.button.add_partition", "Add Partition");
+
+l10nSupport.addOne("js.channel.pagecache.error.partition_id.invalid", "The partition ID isn't valid. Please enter a valid identifier.");
+
+l10nSupport.addOne("js.inventory_list.title.delete_list", "Delete Inventory List");
+
+l10nSupport.addOne("js.link.sf_url_conflicts.msg.updated_at", "Update on {0}");
+
+l10nSupport.addOne("js.paymentmethods.paymentmethod.dialog.sort_order.button.cancel", "Cancel");
+
+l10nSupport.addOne("js.order_list.msg.set_ready_to_push.multiple", "Send {0} selected orders to Order Management?");
+
+l10nSupport.addOne("js.returnableattributes.button.apply", "Apply");
+
+l10nSupport.addOne("js.product_dialog.dialog.title", "Products");
+
+l10nSupport.addOne("js.sortingrules.field.direction.value.n_a", "N/A");
+
+l10nSupport.addOne("js.slot_general_section.msg.confirmation.slot.new_default_save", "You selected this slot configuration as the default. This will override the present default.<br/><br/>Do you want to save your changes?");
+
+l10nSupport.addOne("js.product_dialog.button.cancel", "Cancel");
+
+l10nSupport.addOne("js.sortingrules.pagingbar.msg", "Displaying {0} - {1} of {2} sorting rules");
+
+l10nSupport.addOne("js.product_dynamic_sorting.confirmation.change_context.title", "Change Context?");
+
+l10nSupport.addOne("js.imagemanager.delete.confirmation.msg", "Do you really want to delete '{0}'?");
+
+l10nSupport.addOne("js.slot_list.menu.search.folder_name", "Folder Name");
+
+l10nSupport.addOne("js.shipping.grid.cost.msg.relative_price", "% of Shipment Value");
+
+l10nSupport.addOne("js.sortingrules.msg.error.attribute_missing", "Please select a sorting attribute for all attributes.");
+
+l10nSupport.addOne("js.shipping.grid.costs.msg.suffix.more", "or more");
+
+l10nSupport.addOne("js.coupon.list.pagingbar.msg", "Displaying items {0} - {1} of {2}");
+
+l10nSupport.addOne("js.searchableattributes.grid.loading_content.msg", "Loading searchable content attribute...");
+
+l10nSupport.addOne("js.searchableattributes.error.content_attribute.boost_factor_too_large", "The current content index attribute has a boost factor greater than 100. Please correct the boost factor.");
+
+l10nSupport.addOne("js.paymentcards.dialog_card.button.cancel", "Cancel");
+
+l10nSupport.addOne("js.paymentcards.dialog_card.error.number_length_invalid", "The card number length must contain only numbers separated by &quot;-&quot; and/or &quot;,&quot; characters.");
+
+l10nSupport.addOne("js.product_dynamic_sorting.msg.error.ading_dynamic_attr", "The new dynamic attribute couldn\'t be added.");
+
+l10nSupport.addOne("js.coupon.list.pagingbar.msg.empty", "No items to display");
+
+l10nSupport.addOne("js.slot_list.menu.search.type", "Type");
+
+l10nSupport.addOne("js.slot_general_section.msg.confirmation.save", "Do you want to save your changes?");
+
+l10nSupport.addOne("js.bonus_product.dialog_choice.toolbar.button.add", "Add Bonus Product");
+
+l10nSupport.addOne("js.slot_general_section.field.enabled.value.no", "No");
+
+l10nSupport.addOne("js.promotion_utils.promotion_schedule.schedule_dow.msg.day.saturday", "Saturday");
+
+l10nSupport.addOne("js.framework.select_sites.button", "Cancel");
+
+l10nSupport.addOne("js.deployment.submit_api_version.error.no_version", "No API version has been selected. Please select an API version and submit again.");
+
+l10nSupport.addOne("js.sortingrules.msg.category_field.empty", "Select a category...");
+
+l10nSupport.addOne("js.promotion_list.price_books_dialog.grid.paging.msg", "Displaying items {0} - {1} of {2}");
+
+l10nSupport.addOne("js.framework.msg.server_unrechable", "The server is unreachable: {0}.");
+
+l10nSupport.addOne("js.channel.pagecache.button.invalidate", "Invalidate");
+
+l10nSupport.addOne("js.customer.merge_duplicate_logins.error.no_logins", "You haven't selected any duplicate logins.<br/>Use the checkboxes to select the duplicate logins you want to merge, then click &quot;Merge&quot; again.");
+
+l10nSupport.addOne("js.priceadjustmentlimits.table.msg.type.item", "Item");
+
+l10nSupport.addOne("js.sortingrules.msg.applying_changes", "Applying changes...");
+
+l10nSupport.addOne("js.customer.merge_duplicate_logins.error.no_options", "You haven't selected any merge options.<br/>Use the checkboxes to select one or more merge options, then click &quot;Merge&quot; again.");
+
+l10nSupport.addOne("js.permissions_filter.field.assigned_permissions_funcorg", "{0} of {1} assigned");
+
+l10nSupport.addOne("js.channel.pagecache.description", "A page cache partition defines a subset of the page cache that can be invalidated. The partition is defined by a set of pipeline start nodes, which are specified using the form <b>PipelineName-StartNode</b>. Pipeline names can be for the current site or for remote includes. A pipeline can only appear in one partition. Modifying an existing partition by removing a pipeline will set the page cache clear time to the partition clear time, possibly leading to the invalidation of cached content.");
+
+l10nSupport.addOne("js.coupon.list.header.id", "Promotion ID");
+
+l10nSupport.addOne("js.slot_list.grid.slots.column.slot_configuration", "Slot Configurations");
+
+l10nSupport.addOne("js.slot_general_section.field.content.value.recommendation", "Recommendation");
+
+l10nSupport.addOne("js.link.sf_url_conflicts.header.details_table.ids", "ID");
+
+l10nSupport.addOne("js.slot_general_section.error.no_locale_write_permision", "You don't have permission to write data in this locale.");
+
+l10nSupport.addOne("js.returnableattributes.meta_data.msg.type.date_time", "Date+Time");
+
+l10nSupport.addOne("js.slot_list.button.delete", "Delete");
+
+l10nSupport.addOne("js.bonus_product.bonus_products.paging.msg", "Displaying items {0} - {1} of {2}");
+
+l10nSupport.addOne("js.permissions_filter.link.assigned_permissions_webdav", "{0} of {1} assigned");
+
+l10nSupport.addOne("js.order_list.msg.delete_orders.multiple", "Delete {0} selected orders?");
+
+l10nSupport.addOne("js.overlay.heading.overlay.bmorg", "Business Manager Modules (Organization)");
+
+l10nSupport.addOne("js.product_dialog.msg.pagingbar.empty", "No items to display");
+
+l10nSupport.addOne("js.slot_list.grid.slots.column.slot_id_description", "Slot ID/Description");
+
+l10nSupport.addOne("js.product_dynamic_sorting.confirmation.lose_changes.navigate_away.msg", "There are pending changes to the selected dynamic attribute that\'ll be lost if you navigate away. Do you want to apply these changes first?");
+
+l10nSupport.addOne("js.promotion_list.add_product_options.button.ok", "OK");
+
+l10nSupport.addOne("js.paymentmethods.paymentmethod_details.title", "Payment Method Details");
+
+l10nSupport.addOne("js.slot_schedule.field.label.startdate", "From");
+
+l10nSupport.addOne("js.slot_list.menu.search.slot_id", "Slot ID");
+
+l10nSupport.addOne("js.shipping.grid.costs.msg.fixed_price", "Fixed Price");
+
+l10nSupport.addOne("js.product_dialog.column.manufacturer", "Manufacturer");
+
+l10nSupport.addOne("js.bonus_product.bonus_product.search.msg.empty", "No products could be found for your search. Check the spelling or try a new search term.");
+
+l10nSupport.addOne("js.promotion_utils.copy_promotion.warn.session_hijacked", "Your session may have been hijacked. You\'ll be redirected to Login Page in 3 seconds.");
+
+l10nSupport.addOne("js.promotion_utils.promotion_schedule.warn.server_unreachable", "The server is unreachable : {0}");
+
+l10nSupport.addOne("js.slot_general_section.warn.unknown_products", "Unknown products: {0}");
+
+l10nSupport.addOne("js.slottree.slotTree.field.defaultSlotSpace", "       ");
+
+l10nSupport.addOne("js.content_assets.msg.pagingbar.empty", "No items to display");
+
+l10nSupport.addOne("js.slot_list.button.search.simple", "Simple");
+
+l10nSupport.addOne("js.link.error.unknown", "Unknown error: {0}");
+
+l10nSupport.addOne("js.promotion_utils.promotion_schedule.schedule_dow.msg.day.sunday", "Sunday");
+
+l10nSupport.addOne("js.slot_schedule.field_set.label.dow", "Day of Week");
+
+l10nSupport.addOne("js.slot_advanced_search.search.format.time_format", "M/D/Y");
+
+l10nSupport.addOne("js.paymentmethods.paymentmethod.confirm_lose_changes.button.apply", "Apply");
+
+l10nSupport.addOne("js.product_dynamic_sorting.msg.error.title", "Error");
+
+l10nSupport.addOne("js.searchableattributes.meta_data.msg.type.number_set", "Set of Number");
+
+l10nSupport.addOne("js.coupon.warn.save_failed.title", "Warning");
+
+l10nSupport.addOne("js.paymentcards.title.card_details", "{0} Details");
+
+l10nSupport.addOne("js.promotion_utils.copy_promotion.msg.help", "Enter a unique ID for the new promotion. The new promotion will be disabled and must be enabled manually.");
+
+l10nSupport.addOne("js.coupon.form.coupon.field.enabdled.label", "Enabled:");
+
+l10nSupport.addOne("js.framework.link.additional.info", "Click here for additional information</a>.");
+
+l10nSupport.addOne("js.slot_schedule.field_set.label.effective_period", "Effective Period");
+
+l10nSupport.addOne("js.imagemanager.variation_attribute_panel.title", "Image Manager");
+
+l10nSupport.addOne("js.bonus_product.dialog_choice.list.column.id", "ID");
+
+l10nSupport.addOne("js.imagemanager.confirm.remove.images", "Do you wish to remove {0} attribute groups containing {1} images?");
+
+l10nSupport.addOne("js.channel.pagecache.list.header.partition", "Partition");
+
+l10nSupport.addOne("js.framework.select_sites.button.ok", "OK");
+
+l10nSupport.addOne("js.returnableattributes.error.unknown", "An unexpected system error occurred.");
+
+l10nSupport.addOne("js.imagemanager.grid.images.column.name", "Name");
+
+l10nSupport.addOne("js.bonus_product.dialog_choice.list.msg.status.none_selected", "No bonus products are selected.");
+
+l10nSupport.addOne("js.paymentmethods.paymentmethod.dialog.column.enabled", "Enabled");
+
+l10nSupport.addOne("js.returnableattributes.object_type.msg.product.name", "Product");
+
+l10nSupport.addOne("js.sortingrules.msg.copy_rule", "Copying selected sorting rule...");
+
+l10nSupport.addOne("js.customer.report_duplicate_customer.confirmation.title", "Write a report about all customers with duplicate customer No - compare '{0}' with '{1}'.");
+
+l10nSupport.addOne("js.slot_list.msg.searching_slots", "Please wait, searching slots...");
+
+l10nSupport.addOne("js.slot_advanced_search.panel.adv_search.title", "Advanced Search");
+
+l10nSupport.addOne("js.content_assets.dialog.title", "Content Assets");
+
+l10nSupport.addOne("js.catalog.categorytree.grid.pagingbar.msg", "Displaying items {0} - {1} of {2}");
+
+l10nSupport.addOne("js.promotion_utils.msg.loading", "Loading page...");
+
+l10nSupport.addOne("js.product_dynamic_sorting.grid.sorting_attr.title", "{0} Attributes");
+
+l10nSupport.addOne("js.sortingrules.msg.error.apply_changes", "The changes couldn\'t be applied.");
+
+l10nSupport.addOne("js.product_dialog.column.id", "ID");
+
+l10nSupport.addOne("js.promotion_list.price_books_dialog.grid.column.name", "Name");
+
+l10nSupport.addOne("js.imagemanager.grid.images.column.folder", "Folder");
+
+l10nSupport.addOne("js.paymentmethods.paymentmethod.confirm_lose_changes.title", "Lose Changes?");
+
+l10nSupport.addOne("js.link.details_table.header.type", "Type");
+
+l10nSupport.addOne("js.paymentcards.dialog_card.field.enabled.value.yes", "Yes");
+
+l10nSupport.addOne("js.permissions_filter.field.assigned_permissions_webdav", "{0} of {1} assigned");
+
+l10nSupport.addOne("js.paymentmethods.msg.creating_new", "Creating new payment method...");
+
+l10nSupport.addOne("js.promotion_product_filter.field.disable_global_exlusions.label", "Disable Global Product Exclusions");
+
+l10nSupport.addOne("js.sortingrules.grid.rule_attributes.msg.empty", "Select a sorting rule to see its attributes.");
+
+l10nSupport.addOne("js.imagemanager.image_manager.save_msg.msg", "Sending data...");
+
+l10nSupport.addOne("js.operations.quota.msg.level.ok", "OK");
+
+l10nSupport.addOne("js.imagemanager.folder.label.filter", "Filter");
+
+l10nSupport.addOne("js.imagemanager.error_dialog.title", "Error");
+
+l10nSupport.addOne("js.sortingrules.msg.missing", "{0} (missing)");
+
+l10nSupport.addOne("js.product_dynamic_sorting.button.copy", "Copy");
+
+l10nSupport.addOne("js.permissions_filter.link.assigned_permissions_funcsite", "{0} of {1} assigned");
+
+l10nSupport.addOne("js.paymentmethods.paymentmethod.dialog.button.cards", "Credit/Debit Cards");
+
+l10nSupport.addOne("js.product_dynamic_sorting.grid.dynamic_sort_attr.column.attribute", "Attribute");
+
+l10nSupport.addOne("js.catalog.categorytree.grid.cataloggrouping.msg", "Categories Selected: ");
+
+l10nSupport.addOne("js.deployment.activate_new_code_version.confirmation.msg", "Activating code version '{0}' will automatically update your sites to compatibility mode {1}. This could adversely affect your sites. Please test this change before rolling it out to your production environment. Are you sure you want to continue?");
+
+l10nSupport.addOne("js.slottree.slotTree.field.defaultSlot", "Select Current Slot");
+
+l10nSupport.addOne("js.order_list.msg.set_ready_to_push.one", "Send 1 selected order to Order Management?");
+
+l10nSupport.addOne("js.sortingrules.msg.error.save_rule", "The sorting rule couldn't be saved because there are errors.");
+
+l10nSupport.addOne("js.paymentcards.dialog_card.select.none", "None");
+
+l10nSupport.addOne("js.slot_list.msg.loading_slots", "Please wait, loading slots...");
+
+l10nSupport.addOne("js.sortingrules.msg.error.apply_changed", "The changes couldn\'t be applied.");
+
+l10nSupport.addOne("js.paymentmethods.title.payment.details", "{0} Details");
+
+l10nSupport.addOne("js.paymentcards.remove_card.confirmation.title", "Remove {0}");
+
+l10nSupport.addOne("js.link.sf_url_conflicts.msg.conflicts_found", "{0} conflicting {1} found");
+
+l10nSupport.addOne("js.sortingrules.button.new.tooltip", "New.");
+
+l10nSupport.addOne("js.product_dynamic_sorting.msg.copy_dynamic_attr", "Copying selected dynamic attribute...");
+
+l10nSupport.addOne("js.sortingrules.msg.confirmation.apply_preview.button.cancel", "Cancel");
+
+l10nSupport.addOne("js.paymentmethods.paymentmethod.dialog.msg.table.empty", "No payment methods have been defined.");
+
+l10nSupport.addOne("js.customer.report_duplicate_customer.confirmation.msg", "Are you sure that you want to generate a report of all customers with duplicate customer numbers?");
+
+})();
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- beg Page Navigator -->
+<div id="bm-breadcrumb">
+
+<a class="breadcrumb" href="https://zztr-022.dx.commercecloud.salesforce.com/on/demandware.store/Sites-Site/default/ViewApplication-ExpandMenuGroup?MenuGroupID=AdministrationMenu&amp;OverviewPage=SiteNavigationBar-ShowAdministrationOverview">Administration</a>&nbsp;&gt;&nbsp;
+
+<a class="breadcrumb" href="https://zztr-022.dx.commercecloud.salesforce.com/on/demandware.store/Sites-Site/default/SiteNavigationBar-ShowMenuitemOverview?CurrentMenuItemId=sites">Sites</a>&nbsp;&gt;&nbsp;
+
+
+
+Manage Sites
+</div>
+<!-- end Page Navigator -->
+
+
+
+
+
+
+
+
+<form action="https://zztr-022.dx.commercecloud.salesforce.com/on/demandware.store/Sites-Site/default/ViewChannelList-Dispatch" method="post" name="detailForm">
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td>
+<!-- Main Content -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td width="100%" class="table_title aldi">Storefront Sites</td>
+</tr>
+<tr>
+<td class="w e s"><img src="/on/demandware.static/Sites-Site/-/default/vafac256fc623099215d4afb16a74bb175c7bc1d9/images/space.gif" width="1" height="2" alt="" border="0"/></td>
+</tr>
+
+
+
+
+
+<tr>
+<td class="table_title_description w e s">
+<p>The list shows all Storefront sites defined in this organization.</p>
+
+<p>Click <b>New</b> to create a new site. Click <b>Delete</b> to delete an existing site and all its content.</p>
+
+<p>Click the site name to edit the site settings. Use the <b>Up</b> and <b>Down</b> buttons to define the order in which sites appear throughout the Business Manager.</p>
+
+</td>
+</tr>
+
+</table>
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+<tr>
+<td class="w s"width="70">
+
+<div id="A">
+<table border="0" cellspacing="0" cellpadding="0" class="table_header center" width="75">
+<tr>
+<td nowrap="nowrap"><a href="javascript:selectAll('detailForm');" class="tableheader">Select All</a></td>
+</tr>
+</table>
+</div>
+<div id="B" style="display:none">
+<table border="0" cellspacing="0" cellpadding="0" class="table_header center" width="75">
+<tr>
+<td nowrap="nowrap"><a href="javascript:selectAll('detailForm');" class="tableheader">Clear All</a></td>
+</tr>
+</table>
+</div>
+
+</td>
+<td class="table_header w e s">Name</td>
+<td class="table_header e s">ID</td>
+<td class="table_header e s center" nowrap="nowrap">Status</td>
+
+<td class="table_header e s">Sorting</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+
+
+<td class="w s center ">
+<input type="hidden" name="ObjectUUID" value="35ca50d27fdee2679448cf12e3"/>
+<input type="checkbox" name="SelectedObjectUUID" value="35ca50d27fdee2679448cf12e3"  />
+</td>
+
+<td class="table_detail w e s" width="50%" nowrap="nowrap">&nbsp;<a href="https://zztr-022.dx.commercecloud.salesforce.com/on/demandware.store/Sites-Site/default/ViewChannel-Edit?RepositoryUUID=35ca50d27fdee2679448cf12e3" class="table_detail_link">RefArch</a></td>
+<td class="table_detail e s" width="50%" nowrap="nowrap">RefArch&nbsp;</td>
+<td class="table_detail e s center bold" nowrap="nowrap">
+
+Online
+
+</td>
+
+
+<td class="table_detail top e s center sort " nowrap="nowrap" rowspan="3">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr><td class="center"><input type="image" name="moveTop" src="/on/demandware.static/Sites-Site/-/default/vafac256fc623099215d4afb16a74bb175c7bc1d9/images/sort_top.gif" width="26" height="16" alt="" border="0" ></td></tr>
+<tr><td><img src="/on/demandware.static/Sites-Site/-/default/vafac256fc623099215d4afb16a74bb175c7bc1d9/images/space.gif" width="1" height="4" alt="" border="0"></td></tr>
+<tr><td class="center"><input type="image" name="moveUp" src="/on/demandware.static/Sites-Site/-/default/vafac256fc623099215d4afb16a74bb175c7bc1d9/images/sort_up.gif" width="26" height="16" alt="" border="0" ></td></tr>
+<tr><td><img src="/on/demandware.static/Sites-Site/-/default/vafac256fc623099215d4afb16a74bb175c7bc1d9/images/space.gif" width="1" height="4" alt="" border="0"></td></tr>
+<tr><td class="center"><input type="image" name="moveDown" src="/on/demandware.static/Sites-Site/-/default/vafac256fc623099215d4afb16a74bb175c7bc1d9/images/sort_down.gif" width="26" height="16" alt="" border="0" ></td></tr>
+<tr><td><img src="/on/demandware.static/Sites-Site/-/default/vafac256fc623099215d4afb16a74bb175c7bc1d9/images/space.gif" width="1" height="4" alt="" border="0"></td></tr>
+<tr><td class="center"><input type="image" name="moveBottom" src="/on/demandware.static/Sites-Site/-/default/vafac256fc623099215d4afb16a74bb175c7bc1d9/images/sort_bottom.gif" width="26" height="16" alt="" border="0" ></td></tr>
+</table>
+</td>
+
+
+
+</tr>
+
+
+
+<tr>
+
+
+<td class="w s center ">
+<input type="hidden" name="ObjectUUID" value="30087912a25e215d5085cbc7b9"/>
+<input type="checkbox" name="SelectedObjectUUID" value="30087912a25e215d5085cbc7b9"  />
+</td>
+
+<td class="table_detail w e s" width="50%" nowrap="nowrap">&nbsp;<a href="https://zztr-022.dx.commercecloud.salesforce.com/on/demandware.store/Sites-Site/default/ViewChannel-Edit?RepositoryUUID=30087912a25e215d5085cbc7b9" class="table_detail_link">RefArchGlobal</a></td>
+<td class="table_detail e s" width="50%" nowrap="nowrap">RefArchGlobal&nbsp;</td>
+<td class="table_detail e s center bold" nowrap="nowrap">
+
+Online
+
+</td>
+
+
+</tr>
+
+
+
+<tr>
+
+
+<td class="w s center ">
+<input type="hidden" name="ObjectUUID" value="3b79736bdbbc034d738f712e7c"/>
+<input type="checkbox" name="SelectedObjectUUID" value="3b79736bdbbc034d738f712e7c"  />
+</td>
+
+<td class="table_detail w e s" width="50%" nowrap="nowrap">&nbsp;<a href="https://zztr-022.dx.commercecloud.salesforce.com/on/demandware.store/Sites-Site/default/ViewChannel-Edit?RepositoryUUID=3b79736bdbbc034d738f712e7c" class="table_detail_link">Maytronics</a></td>
+<td class="table_detail e s" width="50%" nowrap="nowrap">maytronics&nbsp;</td>
+<td class="table_detail e s center bold" nowrap="nowrap">
+
+Online
+
+</td>
+
+
+</tr>
+
+
+</table>
+
+<table class="w e s" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="buttonspacing">
+<button type="button" name="refresh" class="button" onclick="location.href='/on/demandware.store/Sites-Site/default/ViewChannelList-ListAll?SelectedMenuItem=sites&amp;CurrentMenuItemId=sites&amp;csrf_token=Pc7y0JSxH4seaKyZdLKCJtL4e4SaXjFHD8izHYW9vcKqB2W8_vl6s1Kk67O_o0bYTglkv1eIyG_nom2c5BVNSMokTcMWCrgtpi4iAgt7OesVmSh4V6lCNMsypHEAXpbPvUOrCc6IQrpcAFxNw3mxixi1ALrDUrUhon9H81DbAEd_hsVjsu0%3d';return false;">Refresh</button>
+</td>
+<td align="right">
+<table border="0" cellspacing="4" cellpadding="0">
+<tr>
+
+<td class="button"><button type="submit" name="new"  class="button ">New</button></td>
+
+<td class="button"><button type="submit" name="confirmDelete"  class="button ">Delete</button></td>
+
+
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</form>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td width="100%" height="25"><img src="/on/demandware.static/Sites-Site/-/default/vafac256fc623099215d4afb16a74bb175c7bc1d9/images/space.gif" width="1" height="6" alt="" border="0"/></td>
+</tr>
+<tr>
+<td>
+<!-- Main Content -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td width="100%" class="table_title aldi">Business Manager Site</td>
+</tr>
+<tr>
+<td class="w e s"><img src="/on/demandware.static/Sites-Site/-/default/vafac256fc623099215d4afb16a74bb175c7bc1d9/images/space.gif" width="1" height="2" alt="" border="0"/></td>
+</tr>
+<tr>
+<td class="table_title_description w e">
+Manage the <a href="https://zztr-022.dx.commercecloud.salesforce.com/on/demandware.store/Sites-Site/default/ViewApplicationDetails-Edit?DomainUUID=01c189a7d0746561baaf2b17c0" class="table_detail_link">Business Manager</a> site.</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td width="100%" height="25"><img src="/on/demandware.static/Sites-Site/-/default/vafac256fc623099215d4afb16a74bb175c7bc1d9/images/space.gif" width="1" height="6" alt="" border="0"/></td>
+</tr>
+<tr>
+<td>
+<!-- Main Content -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td width="100%" class="table_title aldi">Global Static Cache</td>
+</tr>
+<tr>
+<td class="w e s"><img src="/on/demandware.static/Sites-Site/-/default/vafac256fc623099215d4afb16a74bb175c7bc1d9/images/space.gif" width="1" height="2" alt="" border="0"/></td>
+</tr>
+<tr>
+<td class="table_title_description w e">
+Manage the <a href="https://zztr-022.dx.commercecloud.salesforce.com/on/demandware.store/Sites-Site/default/ViewGlobalStaticCacheSettings-Start" class="table_detail_link">Global Static Cache</a> settings.</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- EO Working Area -->
+
+<div><img src="/on/demandware.static/Sites-Site/-/default/vafac256fc623099215d4afb16a74bb175c7bc1d9/images/space.gif" width="1" height="40" alt="" border="0"/></div>
+
+</td>
+<td><img src="/on/demandware.static/Sites-Site/-/default/vafac256fc623099215d4afb16a74bb175c7bc1d9/images/space.gif" width="6" height="1" alt="" border="0"/></td>
+</tr>
+</table>
+<!-- EO global spacer table -->
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" type="text/css" href="/on/demandware.static/Sites-Site/-/default/vafac256fc623099215d4afb16a74bb175c7bc1d9/css/footer.css" />
+
+<!-- EO Main Content Table-->
+<div class="footer">
+  <ul class="footer__instance-details">
+  		
+		
+		<li>
+            Instance Time Zone:&nbsp;Eastern Standard Time
+        </li>
+		
+		<li>
+			<span class="footer__version" title="23.2.1.19">Version: 23.2</span>
+			Last Updated: Jan 30, 2023
+			(Compatibility Mode: 22.7)
+		</li>
+	</ul>
+	&copy; 2023 Salesforce, Inc. All Rights Reserved.
+</div>
+
+
+</div>
+</div>
+</body>
+</html>
+
+
+<link rel="stylesheet" type="text/css" href="/on/demandware.static/Sites-Site/-/default/vafac256fc623099215d4afb16a74bb175c7bc1d9/css/tooltipster.css">
+<script type="text/javascript" src="/on/demandware.static/Sites-Site/-/default/vafac256fc623099215d4afb16a74bb175c7bc1d9/jscript/jquery.tooltipster.min.js"></script>
+<script type="text/javascript">
+var Dw = Dw || {};
+Dw.tooltipUrl = "https://zztr-022.dx.commercecloud.salesforce.com/on/demandware.store/Sites-Site/default/ViewApplication-GetTooltipJson?csrf_token=jgcvsC-_gV7VSDS0PZ-H7bdLnXduIQk3hP_FhiVeggAeW03t-nPGZFwE9VJLsb7H83vSV0iI8rXDAu_w1scYomwWY7NRsNFme8CEDSiN7Wtc4OCyKG6A19_Gj7-tNooSCjwrRmeqIuEPQLKHFUN4oUyMf_BIoN7sAPnz4X_VNs__wwTZoYw%3d";
+
+Dw.onlineHelpUrl = "https://documentation.b2c.commercecloud.salesforce.com/DOC2";
+
+</script>
+<script type="text/x-handlebars-template" id="popupTooltipsTitle">
+<div class="tooltipField"><span class="tooltipFieldName">{{name}}</span> {{id}}</div>
+</script>
+<script type="text/x-handlebars-template" id="popupTooltipsBody">
+<div class="tooltipTextStandard">
+{{text}}
+</div>
+</script>
+<script type="text/x-handlebars-template" id="popupTooltipsCustom">
+<div class="tooltipTextCustom">
+{{customText}}
+</div>
+</script>
+<script src="/on/demandware.static/Sites-Site/-/default/vafac256fc623099215d4afb16a74bb175c7bc1d9/jscript/framework/l10n/PopupTooltip.js"></script>
+
+
