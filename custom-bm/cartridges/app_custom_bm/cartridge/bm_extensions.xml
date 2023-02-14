@@ -7,7 +7,7 @@
 			Create a site shortly
 		</short_description>
 		<description xml:lang="x-default">
-			Creating a site for idiots
+			Creating a site with ease
 		</description>
 		<icon>icons/integration_ico.gif</icon>
 	</menuitem>
@@ -21,7 +21,7 @@
 			Click here to show your sites
 		</description>
 		<exec pipeline="BMCustomFeeds" node="Start" />
-		<icon>icons/createAsite.gif</icon>
+		<icon>icons/mySites.gif</icon>
 	</menuaction>
 
 
@@ -63,6 +63,6 @@
 			<pipeline name="BMEditFooter-Start" />
 			<pipeline name="BMEditFooter-HandleForm" />
 		</sub-pipelines>
-		<icon>icons/createAsite.gif</icon>
+		<icon>icons/editFooter.gif</icon>
 	</menuaction>
 </extensions>
