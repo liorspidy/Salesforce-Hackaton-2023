@@ -1,0 +1,26 @@
+.images-container {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: auto;
+}
+
+.line-item {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    border-bottom: 3px solid black;
+    padding-bottom: 10px;
+    font-weight: bold;
+    font-size: medium;
+    
+}
+
+.line-item img {
+    width: 50%;
+    margin: 10px 0;
+}
+
+.big-image {
+    width: 100% !important;
+}

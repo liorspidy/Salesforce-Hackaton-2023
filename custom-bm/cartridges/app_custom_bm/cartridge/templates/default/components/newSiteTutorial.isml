@@ -1,39 +1,19 @@
-<style>
-    .images-container {
-        display: flex;
-        flex-direction: column;
-        width: 70%;
-        margin: auto;
-    }
-
-    .line-item {
-        display: flex;
-        flex-direction: column;
-        margin: 20px 0;
-        border-bottom: 3px solid black;
-        padding-bottom: 10px;
-    }
-
-    .line-item img {
-        width: 50%;
-        margin: 10px 0;
-    }
-</style>
+<link rel="stylesheet" href="${URLUtils.staticURL('/css/newSiteTutorial.css')}">
 
 <div class="images-container">
     <div class="line-item">
-        <p>1. Move file to project folder</p>
-        <p>2. Right click -> Run with powershell </p>
-        <img src="${URLUtils.staticURL('/images/Picture1.png')}" alt="">
+        <p>1. Move file "my_new_${pdict.siteId}_site.ps1" to project folder</p>
+        <p>2. Right click -> Run with powershell -> Click open </p>
+        <img src="${URLUtils.staticURL('/images/pic1.png')}" alt="">
     </div>
     <div class="line-item">
         <p>3. Press R(Capital letter)</p>
-        <img src="${URLUtils.staticURL('/images/Picture2.png')}" alt="">
-        <img src="${URLUtils.staticURL('/images/Picture3.png')}" alt="">
+        <img class="big-image" src="${URLUtils.staticURL('/images/pic2.png')}" alt="">
+        <img class="big-image" src="${URLUtils.staticURL('/images/pic3.png')}" alt="">
     </div>
     <div class="line-item">
-        <p>4. After complete (2-3 minutes), black window will close -> Delete ps1 file</p>
-        <img src="${URLUtils.staticURL('/images/Picture4.png')}" alt="">
+        <p>4. After complete (2-3 minutes) press Enter, black window will close -> Delete ps1 file</p>
+        <img src="${URLUtils.staticURL('/images/pic4.png')}" alt="">
     </div>
     <div class="line-item">
         <p>your new site is uploaded to your sandbox!</p>
