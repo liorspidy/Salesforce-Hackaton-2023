@@ -66,6 +66,7 @@
         <tr>
             <th class="tableHeads">ID</th>
             <th class="tableHeads">Name</th>
+            <th class="tableHeads">Delete</th>
         </tr>
         <isloop items="${pdict.sites}" var="site" status="loopstatus">
             <tr>
@@ -74,6 +75,7 @@
                         href="https://${site.httpsHostName}/on/demandware.store/Sites-${site.id}-Site">${site.id}</a>
                 </td>
                 <td class="tableData">${site.name}</td>
+                <td class="tableData"><button type="btn">Delete site</button></td>
             </tr>
         </isloop>
     </table>
