@@ -1,0 +1,15 @@
+{
+    "name": "Footer",
+    "description": "Footer",
+    "group": "Footer",
+    "attribute_definition_groups": [
+        {
+          "id": "footer1",
+          "name": "Footer1",
+          "description": "Pick A Color",
+          "attribute_definitions": []
+        }
+  
+    ],
+    "region_definitions": []
+  }
