@@ -3,8 +3,15 @@
     assets.addCss('/css/experience/components/blank_site_custom/mainLogo.css');
 </isscript>
 
+<style>
+    .logoBox {
+        background-color: rgb(<isprint value="${pdict.bgred}"/>,
+            <isprint value="${pdict.bggreen}"/>,
+            <isprint value="${pdict.bgblue}"/>);
+    }
+</style>
 
-<div>
+<div class="logoBox">
     <div class="logoContent">
         <a href="${URLUtils.url('Home-Show')}">
             <img class="logo" src="${pdict.imgUrl}" alt="${pdict.imgAlt}">

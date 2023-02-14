@@ -22,7 +22,14 @@
       "description": "Background color for number of items in cart",
       "type": "string",
       "required": false
-    }
+    },
+    {
+      "id": "bgcolor",
+      "name": "background color",
+      "description": "Background color",
+      "type": "string",
+      "required": false
+  }
   ]
   }
 

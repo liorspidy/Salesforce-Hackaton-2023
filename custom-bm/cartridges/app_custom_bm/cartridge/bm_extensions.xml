@@ -47,9 +47,6 @@
 	</menuaction>
 
 
-
-
-
 	<menuaction id="editFooter" menupath="custom-integration" position="102" site="false">
 		<name xml:lang="x-default">Edit Footer</name>
 		<short_description xml:lang="x-default">

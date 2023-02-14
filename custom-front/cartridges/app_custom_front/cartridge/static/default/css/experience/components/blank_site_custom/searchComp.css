@@ -1,9 +1,11 @@
 .mainBox {
+  width: 100%;
   display: -ms-flexbox;
   display: flex;
+  height: 100%;
   -ms-flex-align: center;
       align-items: center;
-  margin: 0.5rem 0.6rem;
+  padding: 0.5rem 0.6rem;
 }
 
 .form-control {
