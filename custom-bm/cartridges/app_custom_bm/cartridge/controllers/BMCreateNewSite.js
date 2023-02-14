@@ -10,12 +10,17 @@ var Response = require("*/cartridge/scripts/util/Response");
 var CSRFProtection = require("dw/web/CSRFProtection");
 var Site = require("dw/system/Site");
 
+
+
 function start() {
   const sites = Site.getAllSites();
   const sitesArr = [];
   for (let i = 0; i <= sites.length - 1; i++) {
     sitesArr[i] = sites[i].name;
   }
+
+
+
   const sitesJson = JSON.stringify(sitesArr);
   const sandboxUrl = request.httpHost;
   const a = "";

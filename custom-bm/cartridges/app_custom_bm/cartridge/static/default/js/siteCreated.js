@@ -12,6 +12,8 @@ const getSiteUUID = async (token) => {
   const data = await res.text();
   const parser = new DOMParser();
   const doc = parser.parseFromString(data, "text/html");
+
+
   const inputs = doc.getElementsByName("SelectedObjectUUID");
   const UUID = inputs[inputs.length - 1].value;
   return UUID;

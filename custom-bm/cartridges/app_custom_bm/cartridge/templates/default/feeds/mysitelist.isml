@@ -60,6 +60,8 @@
             background-color: darkgray;
         }
     </style>
+    <input type="hidden" id="sandboxUrl" value="${pdict.sandboxUrl}">
+    <input type="hidden" id="siteId" value="${pdict.siteId}">
 
     <h1 class="title">My Sites</h1>
     <table class="tableContent">
@@ -90,4 +92,7 @@
     <iscomment>
         <isinclude url="${URLUtils.url('BMCustomFeeds-Preview')}" />
     </iscomment>
+
+    <script defer src="${URLUtils.staticURL('/js/deleteSite.js')}"></script>
+
 </isdecorate>
