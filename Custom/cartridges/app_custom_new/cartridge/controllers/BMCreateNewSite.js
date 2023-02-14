@@ -35,6 +35,7 @@ function handle() {
   const body = request.httpParameterMap;
   const siteId = convertNameToId(body.siteName.value);
   const sites = Site.getAllSites();
+  const current = Site.current;
   const newSiteUUID = sites.toArray().filter((site) => site.ID === siteId)[0]
     .preferences.UUID;
   const siteData = {
