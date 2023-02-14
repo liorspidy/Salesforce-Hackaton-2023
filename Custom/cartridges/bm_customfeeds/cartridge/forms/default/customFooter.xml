@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<form>
+    <field formid="backgroundColor"  type="string"  max-length="20"/>
+    <field formid="textColor"  type="string"  max-length="20"/>
+
+    <action formid="subscribe" valid-form='true'/>
+</form>

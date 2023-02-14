@@ -1,18 +1,15 @@
 <iscontent type="text/html" charset="UTF-8" compact="true" />
 
+
 <isinclude template="/components/modules" sf-toolkit="off" />
-
-<!-- Include Page Designer Campaign Banner JavaScript and Styles only once here rather than at component level. -->
-<!-- There should only be one Campagin Banner added on a PD page. Multiple Banners is unsupported at the moment. -->
-
-<isif condition="${pdict.resetEditPDMode}">
-    <script> var resetCampaignBannerSessionToken = true; </script>
-</isif>
-
 <isscript>
-    var assets = require('*/cartridge/scripts/assets.js');
-    assets.addCss('/css/experience/components/commerceAssets/campaignBanner.css');
-    assets.addJs('/js/campaignBanner.js');
+        var assets=('*/cartridge/scripts/assets.js');
+        assets.addCss('/css/experience/storePage.css');
+        assets.addCss('/css/experience/components/blank_site_custom/searchComp.css');
+        assets.addCss('/css/experience/components/blank_site_custom/mainLogo.css');
+        assets.addCss('/css/experience/components/blank_site_custom/colorBox.css');
+        assets.addCss('/css/experience/components/commerceLayouts/layout.css');
+        assets.addCss('/css/experience/components/blank_site_custom/loginComponent.css');
 </isscript>
 
 <!DOCTYPE html>
@@ -34,7 +31,21 @@
     ${dw.system.HookMgr.callHook('app.template.beforeHeader', 'beforeHeader', pdict) || ''}
 
     <div class="page" data-action="${pdict.action}" data-querystring="${pdict.queryString}">
-        <isinclude template="/components/header/pdStorePageHeader" />
+
+        <isscript>
+        var PageMgr = require('dw/experience/PageMgr');
+        var pageheader = PageMgr.getPage('pageheader');
+        </isscript>
+
+        <isif condition="${pageheader}">
+            <isinclude url="${URLUtils.url('PageHeader-Show')}" sf-toolkit="on" />
+
+        <iselse/>
+            <isinclude template="/components/header/pdStorePageHeader" />
+        </isif>
+
+
+
         <div role="main" id="maincontent">
             <isreplace/>
         </div>
