@@ -3,41 +3,53 @@
   "description": "Header menu component",
   "group": "blank_site_custom",
   "attribute_definition_groups": [
-      {
-          "id": "colorPicker",
-          "name": "Color Picker",
-          "description": "Pick A Color",
-          "attribute_definitions": [
-              {
-                  "id": "color1",
-                  "name": "Background Color",
-                  "description": "Pick A Background Color",
-                  "type": "string",
-                  "required": true
-              },
-                            {
-                  "id": "color2",
-                  "name": "Text Color",
-                  "description": "Pick A Text Color",
-                  "type": "string",
-                  "required": true
-              },
-              {
-                "id": "color3",
-                "name": "Hover Background Color",
-                "description": "Pick A Hover Background Color",
-                "type": "string",
-                "required": false
-                },
-                {
-                "id": "color4",
-                "name": "Hover Text Color",
-                "description": "Pick A Hover Text Color",
-                "type": "string",
-                "required": false
-                }
-          ]
+    {
+      "id": "colorPicker",
+      "name": "Color Picker",
+      "description": "Pick A Color",
+      "attribute_definitions": [
+        {
+          "id": "color1",
+          "name": "Background Color",
+          "description": "Pick A Background Color",
+          "type": "custom",
+          "required": true,
+          "editor_definition": {
+            "type": "themer.colorPicker"
+          }
+        },
+        {
+          "id": "color2",
+          "name": "Text Color",
+          "description": "Pick A Text Color",
+          "type": "custom",
+          "required": true,
+          "editor_definition": {
+            "type": "themer.colorPicker"
+          }
+        },
+        {
+          "id": "color3",
+          "name": "Hover Background Color",
+          "description": "Pick A Hover Background Color",
+          "type": "custom",
+          "required": false,
+          "editor_definition": {
+            "type": "themer.colorPicker"
+          }
+        },
+        {
+          "id": "color4",
+          "name": "Hover Text Color",
+          "description": "Pick A Hover Text Color",
+          "type": "custom",
+          "required": false,
+          "editor_definition": {
+            "type": "themer.colorPicker"
+          }
         }
+      ]
+    }
   ],
   "region_definitions": []
 }

@@ -14,10 +14,10 @@ module.exports.render = function (context) {
   const model = new HashMap();
   const content = context.content;
 
-  model.color1 = content.color1 ? content.color1 : "#ffffff";
-  model.color2 = content.color2 ? content.color2 : "#000000";
-  model.color3 = content.color3 ? content.color3 : "#ffffff";
-  model.color4 = content.color4 ? content.color4 : "#000000";
+  model.color1 = content.color1.value ? content.color1.value : "#ffffff";
+  model.color2 = content.color2.value ? content.color2.value : "#000000";
+  model.color3 = content.color3.value ? content.color3.value : "#ffffff";
+  model.color4 = content.color4.value ? content.color4.value : "#000000";
 
   let r = 0,
     g = 0,

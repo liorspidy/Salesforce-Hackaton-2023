@@ -3,29 +3,31 @@
   "description": "Search Bar Component",
   "group": "blank_site_custom",
   "attribute_definition_groups": [
-{
-  "id": "displayCart",
-  "name": "Side of the cart",
-  "description": "diplay",
-  "attribute_definitions": [
     {
-      "id": "leftOrRight",
-      "name": "Choose if the cart will be in right side or left",
-      "description": "choose side of cart related to search component",
-      "type": "enum",
-      "values": ["Right","Left"],
-      "required": true
-    },
-    {
-      "id": "cartNumColor",
-      "name": "Background color for number of items in cart",
-      "description": "Background color for number of items in cart",
-      "type": "string",
-      "required": false
+      "id": "displayCart",
+      "name": "Side of the cart",
+      "description": "diplay",
+      "attribute_definitions": [
+        {
+          "id": "leftOrRight",
+          "name": "Choose if the cart will be in right side or left",
+          "description": "choose side of cart related to search component",
+          "type": "enum",
+          "values": ["Right", "Left"],
+          "required": true
+        },
+        {
+          "id": "cartNumColor",
+          "name": "Background color for number of items in cart",
+          "description": "Background color for number of items in cart",
+          "type": "custom",
+          "required": false,
+          "editor_definition": {
+            "type": "themer.colorPicker"
+          }
+        }
+      ]
     }
-  ]
-  }
-
   ],
   "region_definitions": []
 }

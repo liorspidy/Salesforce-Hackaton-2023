@@ -1,8 +1,8 @@
-'use strict';
+"use strict";
 
-const Template = require('dw/util/Template');
-const HashMap = require('dw/util/HashMap');
-const URLUtils = require('dw/web/URLUtils');
+const Template = require("dw/util/Template");
+const HashMap = require("dw/util/HashMap");
+const URLUtils = require("dw/web/URLUtils");
 
 /**
  * Render logic for storefront.productBannerStrip component.
@@ -15,9 +15,9 @@ module.exports.render = function (context) {
   const content = context.content;
 
   model.leftOrRight = content.leftOrRight;
-  model.cartColor = content.cartNumColor;
+  model.cartColor.value = content.cartNumColor.value;
 
   return new Template(
-    'experience/components/blank_site_custom/searchComp'
+    "experience/components/blank_site_custom/searchComp"
   ).render(model).text;
 };

@@ -1,30 +1,32 @@
 {
-    "name": "Color Box",
-    "description": "A simple color box",
-    "group": "blank_site_custom",
-    "attribute_definition_groups": [
+  "name": "Color Box",
+  "description": "A simple color box",
+  "group": "blank_site_custom",
+  "attribute_definition_groups": [
+    {
+      "id": "colorPicker",
+      "name": "Color Picker",
+      "description": "Pick A Color",
+      "attribute_definitions": [
         {
-          "id": "colorPicker",
-          "name": "Color Picker",
+          "id": "color",
+          "name": "Color",
           "description": "Pick A Color",
-          "attribute_definitions": [
-              {
-                  "id": "color",
-                  "name": "Color",
-                  "description": "Pick A Color",
-                  "type": "string",
-                  "required": true
-              },
-                            {
-                  "id": "height",
-                  "name": "Height (Numbers)",
-                  "description": "Pick A Height",
-                  "type": "string",
-                  "required": false
-              }
-          ]
+          "type": "custom",
+          "required": true,
+          "editor_definition": {
+            "type": "themer.colorPicker"
+          }
+        },
+        {
+          "id": "height",
+          "name": "Height (Numbers)",
+          "description": "Pick A Height",
+          "type": "string",
+          "required": false
         }
-  
-    ],
-    "region_definitions": []
-  }
+      ]
+    }
+  ],
+  "region_definitions": []
+}
