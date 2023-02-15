@@ -1,9 +1,16 @@
 <isscript>
-        function getCustomObject() {
-            var CustomObjectMgr = require('dw/object/CustomObjectMgr');
-            var num = CustomObjectMgr.getAllCustomObjects('siteColor').getCount();
-            var co = CustomObjectMgr.getCustomObject('siteColor', num.toString());
-            return co;
+    var Site = require('dw/system/Site');
+    var currentSite = Site.getCurrent();
+    var curSiteName = currentSite.name;
+    var CustomObjectMgr = require('dw/object/CustomObjectMgr');
+
+        function getCustom() {
+        var num = CustomObjectMgr.getAllCustomObjects('siteColor').getCount();
+            for(let i=num;i>0;i--){
+            var co = CustomObjectMgr.getCustomObject('siteColor', i.toString());
+            if(co.custom.siteName === curSiteName)
+            return co.custom;
+            }
         }
 
         let r = 0,
@@ -24,14 +31,15 @@
 
             return [r, g, b];
         };
-        var footerColor = getCustomObject() ;
-        var bgred = hexToRgb(footerColor.custom.backgroundColor)[0];
-        var bggreen = hexToRgb(footerColor.custom.backgroundColor)[1];
-        var bgblue = hexToRgb(footerColor.custom.backgroundColor)[2];
+        
+        var finalCustom= getCustom();
+        var bgred = hexToRgb(finalCustom.backgroundColor)[0];
+        var bggreen = hexToRgb(finalCustom.backgroundColor)[1];
+        var bgblue = hexToRgb(finalCustom.backgroundColor)[2];
 
-        var textred = hexToRgb(footerColor.custom.textColor)[0];
-        var textgreen = hexToRgb(footerColor.custom.textColor)[1];
-        var textblue = hexToRgb(footerColor.custom.textColor)[2];
+        var textred = hexToRgb(finalCustom.textColor)[0];
+        var textgreen = hexToRgb(finalCustom.textColor)[1];
+        var textblue = hexToRgb(finalCustom.textColor)[2];
 
 </isscript>
 <style>
@@ -50,7 +58,7 @@
         <div class="footer-container row">
             <div class="footer-item col-sm-3 store">
                 <iscontentasset aid="footer-locate-store" />
-                ${x}
+
             </div>
             <div class="footer-item col-sm-3 collapsible-xs">
                 <iscontentasset aid="footer-account" />

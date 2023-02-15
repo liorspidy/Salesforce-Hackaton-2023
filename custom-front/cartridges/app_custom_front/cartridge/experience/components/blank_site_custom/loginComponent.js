@@ -1,8 +1,8 @@
-'use strict';
+"use strict";
 
-const Template = require('dw/util/Template');
-const HashMap = require('dw/util/HashMap');
-const URLUtils = require('dw/web/URLUtils');
+const Template = require("dw/util/Template");
+const HashMap = require("dw/util/HashMap");
+const URLUtils = require("dw/web/URLUtils");
 
 /**
  * Render logic for storefront.productBannerStrip component.
@@ -15,7 +15,40 @@ module.exports.render = function (context) {
   const content = context.content;
 
   model.BtnPosition = content.BtnPosition;
+  model.backgroundColor = content.backgroundColor.value
+    ? content.backgroundColor.value
+    : "#ffffff";
+  model.textColor = content.textColor.value
+    ? content.textColor.value
+    : "#000000";
+
+  let r = 0,
+    g = 0,
+    b = 0; // Check if hex code is valid
+  // Convert hex code to RGB parameters
+  const hexToRgb = (hex) => {
+    if (hex.match(/^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$/)) {
+      // If hex code is in 6-digit format, grab the 3 pairs of characters
+      if (hex.length === 7) {
+        r = parseInt(hex.substring(1, 3), 16);
+        g = parseInt(hex.substring(3, 5), 16);
+        b = parseInt(hex.substring(5, 7), 16);
+      } else {
+        // If hex code is in 3-digit format, repeat each character twice
+        r = parseInt(hex[1] + hex[1], 16);
+        g = parseInt(hex[2] + hex[2], 16);
+        b = parseInt(hex[3] + hex[3], 16);
+      }
+    }
+
+    return [r, g, b];
+  };
+
+  model.txtred = hexToRgb(model.textColor)[0];
+  model.txtgreen = hexToRgb(model.textColor)[1];
+  model.txtblue = hexToRgb(model.textColor)[2];
+
   return new Template(
-    'experience/components/blank_site_custom/loginComponent'
+    "experience/components/blank_site_custom/loginComponent"
   ).render(model).text;
 };

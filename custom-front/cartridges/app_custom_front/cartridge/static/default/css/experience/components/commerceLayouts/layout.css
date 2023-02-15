@@ -39,7 +39,8 @@ div.sf-interactions-proxyHoverContainer a {
 
 .experience-component.experience-blank_site_custom-colorBox,
 .experience-component.experience-blank_site_custom-mainLogo,
-.experience-component.experience-blank_site_custom-headerMenuComp {
+.experience-component.experience-blank_site_custom-headerMenuComp,
+.experience-component.experience-blank_site_custom-loginComponent {
   height: 100%;
   display: -ms-flexbox;
   display: flex;

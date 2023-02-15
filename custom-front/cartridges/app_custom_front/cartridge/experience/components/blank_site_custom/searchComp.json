@@ -10,16 +10,36 @@
       "attribute_definitions": [
         {
           "id": "leftOrRight",
-          "name": "Choose if the cart will be in right side or left",
-          "description": "choose side of cart related to search component",
+          "name": "Cart's side (Left / Right)",
+          "description": "choose the side of the cart",
           "type": "enum",
           "values": ["Right", "Left"],
           "required": true
         },
+                {
+          "id": "backgroundColor",
+          "name": "Background color",
+          "description": "Background color",
+          "type": "custom",
+          "required": false,
+          "editor_definition": {
+            "type": "themer.colorPicker"
+          }
+        },
         {
           "id": "cartNumColor",
-          "name": "Background color for number of items in cart",
-          "description": "Background color for number of items in cart",
+          "name": "Color of items number",
+          "description": "The color of items number",
+          "type": "custom",
+          "required": false,
+          "editor_definition": {
+            "type": "themer.colorPicker"
+          }
+        },
+        {
+          "id": "bagColor",
+          "name": "Color of the bag",
+          "description": "The color of the bag",
           "type": "custom",
           "required": false,
           "editor_definition": {

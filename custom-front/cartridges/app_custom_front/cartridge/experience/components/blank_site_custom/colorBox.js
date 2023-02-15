@@ -1,8 +1,8 @@
-'use strict';
+"use strict";
 
-const Template = require('dw/util/Template');
-const HashMap = require('dw/util/HashMap');
-const URLUtils = require('dw/web/URLUtils');
+const Template = require("dw/util/Template");
+const HashMap = require("dw/util/HashMap");
+const URLUtils = require("dw/web/URLUtils");
 
 /**
  * Render logic for storefront.productBannerStrip component.
@@ -17,7 +17,7 @@ module.exports.render = function (context) {
   model.color = content.color.value ? content.color.value : "#ffffff";
   model.height = content.height ? content.height : "1";
 
-  return new Template('experience/components/blank_site_custom/footer').render(
-    model
-  ).text;
+  return new Template(
+    "experience/components/blank_site_custom/colorBox"
+  ).render(model).text;
 };

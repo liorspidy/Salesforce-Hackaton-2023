@@ -1,16 +1,25 @@
 <isscript>
     var assets = require('*/cartridge/scripts/assets.js');
-   
 </isscript>
+
+<style>
+    .loginBox a {
+        color: rgb(<isprint value="${pdict.txtred}"/>,
+            <isprint value="${pdict.txtgreen}"/>,
+            <isprint value="${pdict.txtblue}"/>) !important;
+    }
+</style>
 
 
 <isif condition="${pdict.name === null}">
-    <div class="user hidden-md-down ${pdict.BtnPosition} displayHeight">
-        <a href="${URLUtils.https('Login-Show')}" role="button"
-            aria-label="${Resource.msg('label.header.loginbutton', 'account', null)}">
-            <i class="fa fa-sign-in" aria-hidden="true"></i>
-            <span class="user-message">${Resource.msg('link.header.login', 'account', null)}</span>
-        </a>
+    <div class="loginBox" style="background-color:${pdict.backgroundColor}; height: 100%; width: 100%;">
+        <div class="user hidden-md-down ${pdict.BtnPosition} displayHeight">
+            <a href="${URLUtils.https('Login-Show')}" role="button"
+                aria-label="${Resource.msg('label.header.loginbutton', 'account', null)}">
+                <i class="fa fa-sign-in" aria-hidden="true"></i>
+                <span class="user-message">${Resource.msg('link.header.login', 'account', null)}</span>
+            </a>
+        </div>
     </div>
 <iselse/>
     <div class="user hidden-md-down nav-item">

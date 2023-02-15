@@ -1,5 +1,5 @@
 {
-    "name": "loginComponent",
+    "name": "Login Component",
     "description": "Search Bar Component",
     "group": "blank_site_custom",
     "attribute_definition_groups": [
@@ -17,9 +17,27 @@
               "type": "enum",
               "values": ["left","right","center"],
               "required": true
-            }
-      
-
+            },                
+            {
+          "id": "backgroundColor",
+          "name": "Background color",
+          "description": "Background color",
+          "type": "custom",
+          "required": false,
+          "editor_definition": {
+            "type": "themer.colorPicker"
+          }
+        },
+                    {
+          "id": "textColor",
+          "name": "Text color",
+          "description": "Text color",
+          "type": "custom",
+          "required": false,
+          "editor_definition": {
+            "type": "themer.colorPicker"
+          }
+        }
     ]
   }
 ],
