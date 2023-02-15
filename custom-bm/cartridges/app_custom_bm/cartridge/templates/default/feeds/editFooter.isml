@@ -1,28 +1,34 @@
+<link rel="stylesheet" type="" href="${URLUtils.staticURL('css/editFooterPage.css')}">
+
+
 <isdecorate template="application/MenuFrame">
     <div class="main-container">
-        <h1>Edit The Footer's Colors</h1>
-        <form action="${URLUtils.url('ViewLibraryContentList_52-Start')}" name="SiteSelectionForm" method="POST">
-            <button class="manual-link" type="submit" name="new">Edit Footer Manually</button>
-        </form>
-        <iscomment> *********************** </iscomment>
-        <div class="form-container">
-            <form action="${URLUtils.url('BMEditFooter-HandleForm')}" method="POST">
-                <div class="input-container">
-                    <label for="backgroundColor">Choose Background Color</label>
-                    <input id="backgroundColor" name="backgroundColor" type="color"
-                        value="${pdict.customFooter.backgroundColor.attributes}" encoding="off" />
-                </div>
-                <div class="input-container">
-                    <label for="textColor">Choose Text Color</label>
-                    <input id="textColor" name="textColor" type="color"
-                        value="${pdict.customFooter.textColor.attributes}" encoding="off" />
-                </div>
-                <p class="error-message"></p>
-                <div class="btn-container">
-                    <button id="submit" type="submit">Change Colors</button>
+        <div class="formsContainer">
 
-                </div>
+            <h1>Edit The Footer's Colors</h1>
+            <form action="${URLUtils.url('ViewLibraryContentList_52-Start')}" name="SiteSelectionForm" method="POST">
+                <button class="manual-link" type="submit" name="new">Edit Footer Manually</button>
             </form>
+            <iscomment> *********************** </iscomment>
+            <div class="form-container">
+                <form action="${URLUtils.url('BMEditFooter-HandleForm')}" method="POST">
+                    <div class="input-container">
+                        <label for="backgroundColor">Choose Background Color</label>
+                        <input id="backgroundColor" name="backgroundColor" type="color"
+                            value="${pdict.customFooter.backgroundColor.attributes}" encoding="off" />
+                    </div>
+                    <div class="input-container">
+                        <label for="textColor">Choose Text Color</label>
+                        <input id="textColor" name="textColor" type="color"
+                            value="${pdict.customFooter.textColor.attributes}" encoding="off" />
+                    </div>
+                    <p class="error-message"></p>
+                    <div class="btn-container">
+                        <button id="submit" type="submit">Change Colors</button>
+
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 </isdecorate>

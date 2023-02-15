@@ -24,13 +24,17 @@ function handleForm() {
 
   //create storage service
 
+  var checkLastId = CustomObjectMgr.getAllCustomObjects('siteColor').getCount();
+  const fixedCheckLastId = checkLastId ? checkLastId + 1 : 0;
+
   Transaction.begin();
   try {
     var CustomObject = CustomObjectMgr.createCustomObject(
-      'siteCustomColor',
-      body.backgroundColor.value
+      'siteColor',
+      fixedCheckLastId.toString()
     );
 
+    CustomObject.custom.backgroundColor = body.backgroundColor.value;
     CustomObject.custom.textColor = body.textColor.value;
     var co = CustomObject;
 
