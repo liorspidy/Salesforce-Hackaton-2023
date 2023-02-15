@@ -3,20 +3,20 @@
   <link rel="stylesheet" href="${URLUtils.staticURL('/css/siteCreated.css')}">
 
 
-    <h1 class="heading">Instructions:</h1>
+  <h1 class="heading">Instructions:</h1>
 
-    <input type="hidden" id="siteId" value="${pdict.siteId}">
-    <input type="hidden" id="newSiteUUID" value="${pdict.newSiteUUID}">
-    <input type="hidden" id="sandboxUrl" value="${pdict.sandboxUrl}">
-    
-    <isinclude template="components/newSiteTutorial" />
-    
-    <a class="btn" href="${URLUtils.url('BMCustomFeeds-Start')}">See all sites</a>
+  <input type="hidden" id="siteId" value="${pdict.siteId}">
+  <input type="hidden" id="newSiteUUID" value="${pdict.newSiteUUID}">
+  <input type="hidden" id="sandboxUrl" value="${pdict.sandboxUrl}">
+
+  <isinclude template="components/newSiteTutorial" />
+
+  <a class="btn" href="${URLUtils.url('BMCustomFeeds-Start')}">See all sites</a>
 
 
 
-    <script defer src="${URLUtils.staticURL('/js/siteCreated.js')}"></script>
-    <script defer src="${URLUtils.staticURL('/js/downloadSiteFile.js')}"></script>
+  <script defer src="${URLUtils.staticURL('/js/siteCreated.js')}"></script>
+  <script defer src="${URLUtils.staticURL('/js/downloadSiteFile.js')}"></script>
 
 
 

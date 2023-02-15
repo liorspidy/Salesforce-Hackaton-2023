@@ -1,7 +1,6 @@
-<link rel="stylesheet" type="" href="${URLUtils.staticURL('css/editFooterPage.css')}">
-
-
 <isdecorate template="application/MenuFrame">
+    <link rel="stylesheet" type="" href="${URLUtils.staticURL('css/editFooterPage.css')}">
+
     <div class="main-container">
         <div class="formsContainer">
 

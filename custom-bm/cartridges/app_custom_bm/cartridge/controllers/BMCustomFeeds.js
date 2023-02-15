@@ -36,7 +36,8 @@ function preview() {
 function start() {
     var Site = require('dw/system/Site');
     var Response = require('bc_library/cartridge/scripts/util/Response');
-    
+    const sandboxUrl = request.httpHost;
+
     var allSites = Site.getAllSites();
     
     var sites = [];
@@ -48,10 +49,12 @@ function start() {
         sites.push(site);
     }
     
-    ISML.renderTemplate('feeds/mysitelist.isml',{sites:sites});
+    ISML.renderTemplate('feeds/mysitelist.isml',{sites:sites,sandboxUrl:sandboxUrl});
 
     // Response.renderJSON(sites);
 }
+
+
 
 
 
