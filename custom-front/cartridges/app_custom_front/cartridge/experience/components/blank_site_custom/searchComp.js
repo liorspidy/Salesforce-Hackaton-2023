@@ -19,6 +19,7 @@ module.exports.render = function (context) {
   model.backgroundColor = content.backgroundColor.value
     ? content.backgroundColor.value
     : "#ffffff";
+  model.bagColor = content.bagColor.value ? content.bagColor.value : "#000000";
 
   let r = 0,
     g = 0,
@@ -49,6 +50,10 @@ module.exports.render = function (context) {
   model.cartred = hexToRgb(model.cartColor)[0];
   model.cartgreen = hexToRgb(model.cartColor)[1];
   model.cartblue = hexToRgb(model.cartColor)[2];
+
+  model.bagred = hexToRgb(model.bagColor)[0];
+  model.baggreen = hexToRgb(model.bagColor)[1];
+  model.bagblue = hexToRgb(model.bagColor)[2];
 
   return new Template(
     "experience/components/blank_site_custom/searchComp"

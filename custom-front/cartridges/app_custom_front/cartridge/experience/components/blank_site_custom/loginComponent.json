@@ -27,6 +27,16 @@
           "editor_definition": {
             "type": "themer.colorPicker"
           }
+        },
+                    {
+          "id": "textColor",
+          "name": "Text color",
+          "description": "Text color",
+          "type": "custom",
+          "required": false,
+          "editor_definition": {
+            "type": "themer.colorPicker"
+          }
         }
     ]
   }

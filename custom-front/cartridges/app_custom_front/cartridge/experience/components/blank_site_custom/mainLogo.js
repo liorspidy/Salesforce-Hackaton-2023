@@ -17,7 +17,7 @@ module.exports.render = function (context) {
   model.imgUrl = content.image ? content.image.absURL : null;
   model.imgAlt = content.alt;
 
-  model.bgcolor = content.bgcolor ? content.bgcolor : "#ffffff";
+  model.bgcolor = content.bgcolor.value ? content.bgcolor.value : "#ffffff";
 
   let r = 0,
     g = 0,

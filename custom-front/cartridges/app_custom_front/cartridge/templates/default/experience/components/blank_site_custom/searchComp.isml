@@ -15,6 +15,12 @@
             <isprint value="${pdict.cartgreen}"/>,
             <isprint value="${pdict.cartblue}"/>);
     }
+
+    i.minicart-icon.fa.fa-shopping-bag {
+        color: rgb(<isprint value="${pdict.bagred}"/>,
+            <isprint value="${pdict.baggreen}"/>,
+            <isprint value="${pdict.bagblue}"/>);
+    }
 </style>
 
 <div class="mainBox  ${pdict.leftOrRight}">

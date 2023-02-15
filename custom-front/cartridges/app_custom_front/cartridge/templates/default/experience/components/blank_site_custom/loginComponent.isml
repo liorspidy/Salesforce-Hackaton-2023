@@ -2,6 +2,14 @@
     var assets = require('*/cartridge/scripts/assets.js');
 </isscript>
 
+<style>
+    .loginBox a {
+        color: rgb(<isprint value="${pdict.txtred}"/>,
+            <isprint value="${pdict.txtgreen}"/>,
+            <isprint value="${pdict.txtblue}"/>) !important;
+    }
+</style>
+
 
 <isif condition="${pdict.name === null}">
     <div class="loginBox" style="background-color:${pdict.backgroundColor}; height: 100%; width: 100%;">

@@ -26,8 +26,11 @@
                   "id": "bgcolor",
                   "name": "logo's background color",
                   "description": "Background color",
-                  "type": "string",
-                  "required": false
+                  "type": "custom",
+                  "required": false,
+                  "editor_definition": {
+                  "type": "themer.colorPicker"
+                }
               }
           ]
         }
