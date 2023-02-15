@@ -14,8 +14,9 @@ const getSiteUUID = async (token) => {
     const parser = new DOMParser();
     const doc = parser.parseFromString(data, "text/html");
 
-    const inputTdRows = doc.querySelectorAll('tr td.w.s.center'); 
     const sitesDetails = [];
+    
+    const inputTdRows = doc.querySelectorAll('tr td.w.s.center'); 
     for (let i = 0; i < inputTdRows.length; i++) {
       const inputsUUID = inputTdRows[i].querySelectorAll('input'); 
       const site = { 
@@ -34,8 +35,7 @@ const getSiteUUID = async (token) => {
       sitesDetails[i].id = allSitesId[i];
     }
 
-
-
+    console.log(sitesDetails);
 
 
 
