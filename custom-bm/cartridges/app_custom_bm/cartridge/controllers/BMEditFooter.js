@@ -6,6 +6,7 @@
 var boguard = require('bc_library/cartridge/scripts/boguard');
 var ISML = require('dw/template/ISML');
 var server = require('server');
+var Site = require('dw/system/Site');
 var customFooterForm = server.forms.getForm('customFooter');
 function start() {
   //   var Site = require('dw/system/Site');
@@ -24,8 +25,11 @@ function handleForm() {
 
   //create storage service
 
+  var currentSite = Site.getCurrent();
+  var siteName = currentSite.name;
+
   var checkLastId = CustomObjectMgr.getAllCustomObjects('siteColor').getCount();
-  const fixedCheckLastId = checkLastId ? checkLastId + 1 : 0;
+  const fixedCheckLastId = checkLastId ? checkLastId + 1 : 1;
 
   Transaction.begin();
   try {
@@ -34,6 +38,7 @@ function handleForm() {
       fixedCheckLastId.toString()
     );
 
+    CustomObject.custom.siteName = siteName;
     CustomObject.custom.backgroundColor = body.backgroundColor.value;
     CustomObject.custom.textColor = body.textColor.value;
     var co = CustomObject;
