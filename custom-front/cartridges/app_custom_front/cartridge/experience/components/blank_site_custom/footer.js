@@ -14,9 +14,6 @@ module.exports.render = function (context) {
   const model = new HashMap();
   const content = context.content;
 
-  model.color = content.color.value ? content.color.value : "#ffffff";
-  model.height = content.height ? content.height : "1";
-
   return new Template('experience/components/blank_site_custom/footer').render(
     model
   ).text;
