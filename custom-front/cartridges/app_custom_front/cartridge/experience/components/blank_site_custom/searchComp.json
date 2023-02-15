@@ -16,6 +16,16 @@
           "values": ["Right", "Left"],
           "required": true
         },
+                {
+          "id": "backgroundColor",
+          "name": "Background color",
+          "description": "Background color",
+          "type": "custom",
+          "required": false,
+          "editor_definition": {
+            "type": "themer.colorPicker"
+          }
+        },
         {
           "id": "cartNumColor",
           "name": "Background color for number of items in cart",
