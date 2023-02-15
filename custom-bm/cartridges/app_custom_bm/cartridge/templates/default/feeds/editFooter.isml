@@ -1,3 +1,21 @@
+<isscript>
+    var Site = require('dw/system/Site');
+    var currentSite = Site.getCurrent();
+    var curSiteName = currentSite.name;
+    var CustomObjectMgr = require('dw/object/CustomObjectMgr');
+
+        function getCustom() {
+        var num = CustomObjectMgr.getAllCustomObjects('siteColor').getCount();
+            for(let i=num;i>0;i--){
+            var co = CustomObjectMgr.getCustomObject('siteColor', i.toString());
+            if(co.custom.siteName === curSiteName)
+            return co.custom;
+            }
+        }
+
+        var finalCustom= getCustom();
+</isscript>
+
 <isdecorate template="application/MenuFrame">
     <link rel="stylesheet" type="" href="${URLUtils.staticURL('css/editFooterPage.css')}">
 
@@ -6,7 +24,7 @@
         <div class="formsContainer">
 
             <form action="${URLUtils.url('ViewLibraryContentList_52-Start')}" name="SiteSelectionForm" method="POST">
-                <button class="manual-link" type="submit" name="new">Edit Footer Manually</button>
+                <button class="manual-link" type="submit" name="new">Edit Footer's Assets Manually</button>
             </form>
             <iscomment> *********************** </iscomment>
             <div class="form-containerBox">
@@ -16,18 +34,21 @@
                             <div class="input-container">
                                 <label for="backgroundColor">Choose Background Color</label>
                                 <input id="backgroundColor" name="backgroundColor" type="color"
-                                    value="${pdict.customFooter.backgroundColor.attributes}" encoding="off" />
+                                    value="${finalCustom.backgroundColor}" encoding="off" />
                             </div>
                             <div class="input-container">
                                 <label for="textColor">Choose Text Color</label>
-                                <input id="textColor" name="textColor" type="color"
-                                    value="${pdict.customFooter.textColor.attributes}" encoding="off" />
+                                <input id="textColor" name="textColor" type="color" value="${finalCustom.textColor}"
+                                    encoding="off" />
                             </div>
                             <p class="error-message"></p>
                         </div>
                         <div class="btn-container">
                             <button id="submit" type="submit">Change Colors</button>
                         </div>
+                        <isif condition="${pdict.status}">
+                            <h4 class="status">${pdict.status}</h4>
+                        </isif>
                     </form>
                 </div>
             </div>
