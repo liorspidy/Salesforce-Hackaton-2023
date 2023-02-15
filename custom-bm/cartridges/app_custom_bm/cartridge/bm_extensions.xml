@@ -12,7 +12,7 @@
 		<icon>icons/integration_ico.gif</icon>
 	</menuitem>
 
-	<menuaction id="siteForIdiots" menupath="custom-integration" position="100" site="false">
+	<menuaction id="easySite" menupath="custom-integration" position="100" site="false">
 		<name xml:lang="x-default">Show Me My Sites</name>
 		<short_description xml:lang="x-default">
 			Showing my sites
@@ -46,8 +46,23 @@
 		<icon>icons/createAsite.gif</icon>
 	</menuaction>
 
+	<menuaction id="customHeader" menupath="custom-integration" position="102" site="false">
+		<name xml:lang="x-default">Custom header</name>
+		<short_description xml:lang="x-default">
+			Create a custom header
+		</short_description>
+		<description xml:lang="x-default">
+			Click here to create a custom header
+		</description>
+		<exec pipeline="BMCreateCustomHeader" node="Start" />
+		<sub-pipelines>
+			<pipeline name="BMCreateCustomHeader-Start" />
+		</sub-pipelines>
+		<icon>icons/createAheader.gif</icon>
+	</menuaction>
 
-	<menuaction id="editFooter" menupath="custom-integration" position="102" site="false">
+
+	<menuaction id="editFooter" menupath="custom-integration" position="103" site="false">
 		<name xml:lang="x-default">Edit Footer</name>
 		<short_description xml:lang="x-default">
 			Edit Footer

@@ -1,0 +1,52 @@
+<style>
+    .inst {
+        border-top: 1px solid #ccc;
+        padding: 1rem 0;
+        margin: 1rem 0;
+    }
+
+    .instImg {
+        border-bottom: 1px solid #ccc
+    }
+</style>
+
+<isdecorate template="application/MenuFrame">
+
+    <h1 class="title">Creating a new custom header</h1>
+    <p class="guide">In order to create a new <span style="color: blue;">Custom Header</span> follow these steps:</p>
+
+
+    <div class="images-container">
+        <div class="line-item">
+            <p class="inst">1. Pick your desired site and go to Merchant Tools -> under "Content" look for "Page
+                Designer"</p>
+            <iscomment> <a
+                    href="https://${sandboxUrl}/on/demandware.store/Sites-Site/default/ViewLdsBusinessManagerScreen-PageDesigner/">
+                    <button class="manual-link" type="submit" name="new">Click here to go to pages</button>
+                </a> </iscomment>
+            <p class="inst">2. Click on "New".</p>
+            <img class="instImg" src="${URLUtils.staticURL('/images/pageheader1.png')}" alt="">
+            <br>
+            <p class="inst">3. Pick "Page Header" type.</p>
+            <img class="instImg" src="${URLUtils.staticURL('/images/pageheader2.png')}" alt="">
+            <br>
+            <p class="inst">4. Click on Next.</p>
+            <img class="instImg" src="${URLUtils.staticURL('/images/pageheader3.png')}" alt="">
+            <br>
+            <p class="inst">5. Set the name of the page to "pageHeader" - it will set automaticaly the ID to
+                "pageheader" (lowercase)
+                , click on "Next".
+            </p>
+            <img class="instImg" src="${URLUtils.staticURL('/images/pageheader4.png')}" alt="">
+            <br>
+            <p class="inst">6. Click on "Save & Create"
+            </p>
+            <img class="instImg" src="${URLUtils.staticURL('/images/pageheader5.png')}" alt="">
+            <br>
+            <p class="inst">7. Start building your own header using the page designer components</p>
+            <img class="instImg" src="${URLUtils.staticURL('/images/pageheader6.png')}" alt="">
+        </div>
+    </div>
+
+
+</isdecorate>

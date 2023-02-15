@@ -1,6 +1,6 @@
 {
-    "name":"Page Header",
-    "description":"A Storefront Page Header",
+    "name": "Page Header",
+    "description": "A Storefront Page Header",
     "region_definitions":[
         {
             "id":"campainBanner",
