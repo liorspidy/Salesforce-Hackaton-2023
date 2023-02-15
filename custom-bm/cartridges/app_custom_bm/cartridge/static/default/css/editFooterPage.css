@@ -2,18 +2,93 @@ html {
   font-family: sans-serif;
 }
 
-.main-container {
-  margin-top: 2rem;
-}
-.main-container h1 {
+.footerTitle {
   font-size: 2rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.input-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+
+.form-container {
+  margin-top: 2rem;
+  padding: 1.2rem;
+  box-shadow: 0 0 28px 10px rgba(0, 0, 0, 0.06);
 }
 
 .formsContainer {
-  border: 1px solid rgb(13, 186, 13);
-  width: 30rem;
   margin: auto;
   text-align: center;
   border-radius: 0.8rem;
-  margin-top: 1rem;
+  padding: 1.5rem;
+}
+
+.form-containerBox {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.form-container {
+  margin-top: 2rem;
+  padding: 1.2rem;
+  width: 35rem;
+  border-radius: 30px;
+  height: 14rem;
+  box-shadow: 0 0 28px 10px rgba(0, 0, 0, 0.06);
+}
+
+.manual-link {
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 15px;
+  background-color: rgb(0, 106, 108);
+  color: white;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  border: none;
+}
+
+.contentBox {
+  height: 8rem;
+  -ms-flex-align: center;
+      align-items: center;
+  display: -ms-grid;
+  display: grid;
+}
+
+.main-container {
+  margin-top: 2rem;
+}
+.main-container label {
+  font-size: 1rem;
+  margin: 1rem 1rem;
+}
+.main-container #backgroundColor,
+.main-container #textColor {
+  height: 30px;
+  width: 30px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+.main-container #submit {
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 15px;
+  background-color: rgb(0, 5, 108);
+  color: white;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  border: none;
 }
