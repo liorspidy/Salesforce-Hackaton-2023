@@ -9,6 +9,12 @@
             <isprint value="${pdict.bggreen}"/>,
             <isprint value="${pdict.bgblue}"/>);
     }
+
+    .minicart .minicart-quantity {
+        background-color: rgb(<isprint value="${pdict.cartred}"/>,
+            <isprint value="${pdict.cartgreen}"/>,
+            <isprint value="${pdict.cartblue}"/>);
+    }
 </style>
 
 <div class="mainBox  ${pdict.leftOrRight}">

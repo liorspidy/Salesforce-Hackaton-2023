@@ -15,9 +15,8 @@ module.exports.render = function (context) {
   const content = context.content;
 
   model.leftOrRight = content.leftOrRight;
-  model.cartColor = content.cartNumColor;
-
   model.bgcolor = content.bgcolor ? content.bgcolor : "#ffffff";
+  model.cartcolor = content.cartNumColor ? content.cartNumColor : "#00a1e0";
 
   let r = 0,
     g = 0,
@@ -44,6 +43,10 @@ module.exports.render = function (context) {
   model.bgred = hexToRgb(model.bgcolor)[0];
   model.bggreen = hexToRgb(model.bgcolor)[1];
   model.bgblue = hexToRgb(model.bgcolor)[2];
+
+  model.cartred = hexToRgb(model.cartcolor)[0];
+  model.cartgreen = hexToRgb(model.cartcolor)[1];
+  model.cartblue = hexToRgb(model.cartcolor)[2];
 
   return new Template(
     "experience/components/blank_site_custom/searchComp"
