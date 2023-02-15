@@ -62,9 +62,11 @@
     </style>
     <input type="hidden" id="sandboxUrl" value="${pdict.sandboxUrl}">
     <input type="hidden" id="siteId" value="${pdict.siteId}">
+    <input type="hidden" id="allsitesId" value="${pdict.sitesIds}">
 
     <h1 class="title">My Sites</h1>
     <table class="tableContent">
+        <isprint value="${pdict.sitesIds[0].id}" encoding="on" />
         <tr>
             <th class="tableHeads">ID</th>
             <th class="tableHeads">Name</th>
@@ -77,7 +79,9 @@
                         href="https://${site.httpsHostName}/on/demandware.store/Sites-${site.id}-Site">${site.id}</a>
                 </td>
                 <td class="tableData">${site.name}</td>
-                <td class="tableData"><button type="btn">Delete site</button></td>
+                <td class="tableData"><button class="btn-delete" value="${site.id}" type="btn">Delete
+                        site</button>
+                </td>
             </tr>
         </isloop>
     </table>

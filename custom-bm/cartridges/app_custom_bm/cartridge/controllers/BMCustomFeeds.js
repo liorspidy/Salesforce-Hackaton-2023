@@ -41,12 +41,15 @@ function start() {
     var allSites = Site.getAllSites();
     
     var sites = [];
+
     for each(var availableSite in allSites) {
         var site = {};
         site['id'] = availableSite.ID;
         site['name'] = availableSite.name;
         site['httpsHostName'] = availableSite.httpsHostName;
         sites.push(site);
+
+
     }
     
     ISML.renderTemplate('feeds/mysitelist.isml',{sites:sites,sandboxUrl:sandboxUrl});
