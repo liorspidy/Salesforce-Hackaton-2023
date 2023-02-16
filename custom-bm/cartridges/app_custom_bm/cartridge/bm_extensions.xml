@@ -45,7 +45,6 @@
 		<icon>icons/createAsite.gif</icon>
 	</menuaction>
 
-<<<<<<< Updated upstream
 	<menuaction id="customHeader" menupath="custom-integration" position="102" site="false">
 		<name xml:lang="x-default">Custom Header</name>
 		<short_description xml:lang="x-default">
@@ -63,9 +62,6 @@
 
 
 	<menuaction id="editFooter" menupath="custom-integration" position="103" site="false">
-=======
-	<menuaction id="editFooter" menupath="custom-integration" position="102" site="false">
->>>>>>> Stashed changes
 		<name xml:lang="x-default">Edit Footer</name>
 		<short_description xml:lang="x-default">
 			Edit Footer
