@@ -24,7 +24,6 @@
 		<icon>icons/mySites.gif</icon>
 	</menuaction>
 
-
 	<menuaction id="createSite" menupath="custom-integration" position="101" site="false">
 		<name xml:lang="x-default">New Site</name>
 		<short_description xml:lang="x-default">
@@ -77,4 +76,49 @@
 		</sub-pipelines>
 		<icon>icons/editFooter.gif</icon>
 	</menuaction>
+
+<menuaction id="UploadFile" menupath="custom-integration" position="102" site="false">
+		<name xml:lang="x-default">Upload File</name>
+		<short_description xml:lang="x-default">
+			Upload File
+		</short_description>
+		<description xml:lang="x-default">
+			Click here to Edit the Footer
+		</description>
+		<exec pipeline="practice" node="Start" />
+		<sub-pipelines>
+			<pipeline name="BMEditFooter-Start" />
+			<pipeline name="BMEditFooter-HandleForm" />
+		</sub-pipelines>
+		<icon>icons/editFooter.gif</icon>
+	</menuaction>
+
+<menuitem id="invItem" position="99900" site="false">
+    <name xml:lang="x-default">Inventory options</name>
+    <short_description xml:lang="x-default">Inventory options</short_description>
+    <description xml:lang="x-default">Inventory options</description>
+</menuitem>
+	<menuaction id="linesayer" menupath= "invItem" position="500" site="false">
+		<name xml:lang="x-default">Inventory List</name>
+		<short_description xml:lang="x-default">Inventory List for merchants. </short_description>
+		<description xml:lang="x-default">Inventory List for merchants. </description>
+		
+		<exec pipeline="test" node="Start" />
+		<sub-pipelines>
+			<pipeline name="test-Start" /> 
+			<pipeline name="test-clickSumbit"/> 
+		</sub-pipelines>
+	</menuaction>
+
+
+
+
+
+
+
+
+
+
+
+
 </extensions>
