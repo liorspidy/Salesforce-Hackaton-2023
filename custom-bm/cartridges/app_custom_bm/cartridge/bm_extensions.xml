@@ -26,7 +26,7 @@
 
 
 	<menuaction id="createSite" menupath="custom-integration" position="101" site="false">
-		<name xml:lang="x-default">New site</name>
+		<name xml:lang="x-default">New Site</name>
 		<short_description xml:lang="x-default">
 			Create a new site
 		</short_description>
@@ -47,7 +47,7 @@
 	</menuaction>
 
 	<menuaction id="customHeader" menupath="custom-integration" position="102" site="false">
-		<name xml:lang="x-default">Custom header</name>
+		<name xml:lang="x-default">Custom Header</name>
 		<short_description xml:lang="x-default">
 			Create a custom header
 		</short_description>
@@ -58,7 +58,7 @@
 		<sub-pipelines>
 			<pipeline name="BMCreateCustomHeader-Start" />
 		</sub-pipelines>
-		<icon>icons/createAheader.gif</icon>
+		<icon>icons/customHeader.gif</icon>
 	</menuaction>
 
 
