@@ -1,0 +1,159 @@
+<isdecorate template="application/MenuFrame">
+
+<isif condition="${pdict.whatiscurrent.getID()==="Sites-Site"}">
+	<p>You lack a current site. Please select a site.</p>
+	<a class="button" width="50%" nowrap="nowrap" href="${URLUtils.url('ViewApplication-SelectSite')}">Click here to select a site</a>
+
+
+
+
+<iselseif condition="${!pdict.myinventory}">
+	<p>You lack a current inventory. Please Assign an inventory to this site first.</p>
+	<p> Once you click the button below, click on edit for the inventory you want for your site, or create a new one with the new button.</p>
+	<p>Once there, click on site assignment and assign your site</p>
+	<a class="button" width="50%" nowrap="nowrap" href="${URLUtils.url('ViewInventoryLists_52-ListAll')}">Assign an inventory</a>
+</iselseif>
+
+
+
+
+<iselse>
+	<isscript>
+		var fulllist = pdict.prodlist
+		var curlist = fulllist.slice(0,10)
+
+	</isscript>
+
+
+
+
+    <tbody>
+        <tr>
+            <td width="100%" class="table_title w e s ">Instructions</td>
+        </tr>
+        <tr>
+            <td class="w e s"><img src="/on/demandware.static/Sites-Site/-/default/vbe5984f6e2848c393290bb8f65aa98e2221ec3f2/images/space.gif" width="1" height="2" alt="" border="0"></td>
+        </tr>
+
+        <tr>
+            <td class="table_title_description w e s" nowrap="nowrap">
+			
+			<p>Allocation refers to how many of this product are in storage. Perpetual refers to whether or not a product has a perpetual inventory.</p>
+			<p>Click the edit button to change these. Products shown here are all the products already assigned to your site inventory</p>
+			<p>Click the product ID or name to edit the entire product.</p>
+</p></td>
+        </tr>
+        
+
+    </tbody>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" data-automation="inventory-list-table">
+				
+				<thead>
+					<tr>
+					    
+						
+						<td class="table_header e s w" nowrap="nowrap">
+							Product ID
+						</td>
+
+                        <td class="table_header e s w" nowrap="nowrap">
+							Thumbnail
+						</td>
+
+						<td class="table_header e s" width="100%" nowrap="nowrap">
+							Name
+						</td>
+						
+						<td class="table_header e s center" nowrap="nowrap">
+							Perpetual
+						</td>
+						
+						<td class="table_header e s center" nowrap="nowrap">
+							Allocation
+						</td>
+
+						<td class="table_header e s" nowrap="nowrap">&nbsp;</td>
+						
+					</tr>
+				</thead>
+			<tbody>
+					
+						
+<isloop items=${curlist} var="prod">
+	<tr id="listingTable">
+						
+							
+
+		<td name="ProductID_value" class="table_detail4 e s w">					
+			<a class="table_detail_link" href="${URLUtils.url('ViewProduct_52-Edit', 'ProductID', prod.UUID, 'InventoryListUUID', pdict.myinventory.UUID)}">${prod.getID()}</a>
+		</td>
+
+        <td name="ProductID_value" class="table_detail4 e s w">				
+			<img src=${prod.image.url} style="width:2rem;height:2rem" alt="${prod.name}"/>
+		</td>
+
+		<td class="table_detail4 e s">					
+			<a class="table_detail_link" href="${URLUtils.url('ViewProduct_52-Edit', 'ProductID', prod.UUID, 'InventoryListUUID', pdict.myinventory.UUID)})}">${prod.name} </a>&nbsp;				
+		</td>
+
+		
+
+        <td name="Perpetual_value" class="table_detail4 e s center" nowrap="nowrap">
+			${pdict.myinventory.getRecord(prod.getID()).isPerpetual()}
+
+        </td>
+
+        <td name="Allocation_value" class="table_detail4 e s right" nowrap="nowrap">
+				${pdict.myinventory.getRecord(prod.getID()).getAllocation().value}
+        </td>
+
+		<td class="table_detail4 e s center" nowrap="nowrap">													
+			<a class="button perm_site_product" href="${URLUtils.url('ViewInventoryRecord_52-Edit', 'InventoryListUUID', pdict.myinventory.UUID, 'RecordUUID', pdict.myinventory.getRecord(prod.getID()).getUUID(), 'BackToProduct', true)}">Edit</a>&nbsp;				
+		</td>		
+
+	</tr>
+</isloop>  
+					
+				</tbody>
+
+				<tbody>
+				<tr>
+					
+		<td colspan="12">
+							
+
+
+
+            <table class="pagecursor" width="100%" border="0" cellspacing="1" cellpadding="1">
+                <tbody><tr>
+                    <td class="pagecursortxt top" align="left" nowrap="nowrap">&nbsp;Showing&nbsp;<span class="pagecursoritem bold">1</span>&nbsp;-&nbsp;<span class="pagecursoritem bold">1</span>&nbsp;of&nbsp;<span data-automation="count-of-files" class="pagecursoritem bold">1</span>&nbsp;items<input type="hidden" name="PageNumberPrefix" value="PageNumber_"><input type="hidden" name="PageableID" value="b2142b5ec2e41f96c79adfceab"><input type="hidden" name="PageableName" value="InventoryRecords"><input type="hidden" name="CurrentPageNumber" value="0"></td>
+
+
+                    </tr>
+                </tbody>
+            </table>
+
+
+
+		</td>
+					
+		</tr>
+	</tbody>
+</table>
+</iselse>
+</isif>
+
+
+</isdecorate>
+
+
+				<iscomment> <select name="perpetual">
+					<option value="${pdict.myinventory.getRecord(prod.getID()).isPerpetual()}">
+						${pdict.myinventory.getRecord(prod.getID()).isPerpetual()}
+					</option>
+					<option value="${!pdict.myinventory.getRecord(prod.getID()).isPerpetual()}">
+						${!pdict.myinventory.getRecord(prod.getID()).isPerpetual()}
+					</option>
+				</select> </iscomment>
+				<iscomment> <input name="allocation" type="number" value="${pdict.myinventory.getRecord(prod.getID()).getAllocation().value}"> </iscomment>
