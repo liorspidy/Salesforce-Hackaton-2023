@@ -13,7 +13,7 @@
 	</menuitem>
 
 	<menuaction id="easySite" menupath="custom-integration" position="100" site="false">
-		<name xml:lang="x-default">Show Me My Sites</name>
+		<name xml:lang="x-default">My Sites</name>
 		<short_description xml:lang="x-default">
 			Showing my sites
 		</short_description>
@@ -26,7 +26,7 @@
 
 
 	<menuaction id="createSite" menupath="custom-integration" position="101" site="false">
-		<name xml:lang="x-default">Create a new site</name>
+		<name xml:lang="x-default">New site</name>
 		<short_description xml:lang="x-default">
 			Create a new site
 		</short_description>
