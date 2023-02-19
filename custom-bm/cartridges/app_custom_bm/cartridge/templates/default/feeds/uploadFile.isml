@@ -1,13 +1,14 @@
 <iscomment> background-image:url(${URLUtils.staticURL('images/uploadImage.jpg')}); </iscomment>
+
 <div style="background-repeat:no-repeat;background-size:cover;background: rgb(2,0,36);
 background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,246,218,1) 0%, rgba(230,251,255,1) 97%);
 box-shadow: inset 0px 40px 10px rgba(0,0,0,0.9);
 ">
-<isdecorate template="application/MenuFrame">
-<link rel="stylesheet" href="${URLUtils.staticURL('/css/test.css')}"/>
-    <h1 style="text-align:center;font-size:30pt;margin:20px 0 0 0;">Site Files<h1>
+    <isdecorate template="application/MenuFrame">
+        <link rel="stylesheet" href="${URLUtils.staticURL('/css/test.css')}" />
+        <h1 style="text-align:center;font-size:30pt;margin:20px 0 0 0;">Site Files<h1>
 
-            <div style=" margin: 0;
+                <div style=" margin: 0;
              background: url(klematis.jpg) repeat; 
                 position: absolute;
                 top: 50%;
@@ -19,41 +20,42 @@ box-shadow: inset 0px 40px 10px rgba(0,0,0,0.9);
                 text-align: center;
                 border-radius:30px;
                 box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.2), 0 4px 24px 0 rgba(50, 0, 0, 0.19);">
-                <form id="myForm" method="post" name="ImportFileUploadForm" enctype="multipart/form-data">
-                    <div>
-                        <br>
-                        <label><b>${pdict.message}</b></label>
-                        <br>
-                        <br>
-                        <select id="format" onchange="GetSelectedTextValue(this)">
-                            <option></option>
-                            <option value="PriceBook">PriceBook</option>
-                            <option value="Catalog">Catalog</option>
-                            <option value="Product">Product</option>
-                            <option value="Inventory">Inventory
-                            </option>
-                        </select>
-                        <br>
-                        <br>
-                        <div id="uploadFiles" style="display:none;" ; class="infobox_title" width="1%" nowrap="">
-                            &nbsp;Upload File:&nbsp;
-                            <input style="background: url(klematis.jpg) repeat;" id="inpFile" type="File" style="padding:15px;" name="File" size="20" value=""
-                                class="inputfield_en">
-                            <input type="hidden" name="Mode" value="Import">
+                    <form id="myForm" method="post" name="ImportFileUploadForm" enctype="multipart/form-data">
+                        <div>
+                            <br>
+                            <label><b>${pdict.message}</b></label>
+                            <br>
+                            <br>
+                            <select id="format" onchange="GetSelectedTextValue(this)">
+                                <option></option>
+                                <option value="PriceBook">PriceBook</option>
+                                <option value="Catalog">Catalog</option>
+                                <option value="Product">Product</option>
+                                <option value="Inventory">Inventory
+                                </option>
+                            </select>
+                            <br>
+                            <br>
+                            <div id="uploadFiles" style="display:none;" ; class="infobox_title" width="1%" nowrap="">
+                                &nbsp;Upload File:&nbsp;
+                                <input style="background: url(klematis.jpg) repeat;" id="inpFile" type="File"
+                                    style="padding:15px;" name="File" size="20" value="" class="inputfield_en"
+                                    onchange="return fileValidation()">
+                                <input type="hidden" name="Mode" value="Import">
 
-                            <button type="button" id="sub" style="border-radius:10px;padding:5px;margin:0 17px;">
-                                Upload
-                                File</button>
+                                <button type="button" id="sub" style="border-radius:10px;padding:5px;margin:0 17px;">
+                                    Upload
+                                    File</button>
+                            </div>
+                            <img src="/on/demandware.static/Sites-Site/-/default/v6ff201b6d1a6a8890710edfe08cb598c9740c940/images/space.gif"
+                                width="1" height="6" alt="" border="0">&nbsp;
+                            <input type="hidden" name="" id="info" value="${pdict.sandBoxUrl1}">
                         </div>
-                        <img src="/on/demandware.static/Sites-Site/-/default/v6ff201b6d1a6a8890710edfe08cb598c9740c940/images/space.gif"
-                            width="1" height="6" alt="" border="0">&nbsp;
-                        <input type="hidden" name="" id="info" value="${pdict.sandBoxUrl1}">
-                    </div>
-                </form>
-            </div>
+                    </form>
+                </div>
 </div>
-            <script> 
-            const inpFile = document.getElementById("inpFile");
+<script> 
+            // const inpFile = document.getElementById("inpFile");
 
             const myForm = document.getElementById("myForm");
             const btn = document.getElementById("sub");
@@ -81,6 +83,20 @@ box-shadow: inset 0px 40px 10px rgba(0,0,0,0.9);
              var selVal = format.value;
              InputuploadFiles.style.display = "block";
             }
+
+            function fileValidation() {
+                 var fileInput =
+                  document.getElementById('inpFile');
+                   var filePath = fileInput.value;
+                   // ה-type של הקובץ          
+                    var allowedExtensions =
+                     /(\.pdf|\.xml)$/i;
+                      if (!allowedExtensions.exec(filePath)) {
+                        alert('Invalid file type. please upload xml file');
+                         fileInput.value = '';
+                         return false;
+                          }
+                        }
             </script>
 
 </isdecorate>
